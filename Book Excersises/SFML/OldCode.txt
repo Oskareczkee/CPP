@@ -1,0 +1,82 @@
+		Mainly code from main.cpp
+
+
+
+		Axis x(Axis::Orientation::x, Vector2f(0+40, yCenter), winWidth - 80,"X", 40);
+		Axis y(Axis::Orientation::y, Vector2f(xCenter, 0+40), winHeight - 80,"Y", 40);
+
+		x.draw(win);
+		y.draw(win);
+
+		Function sinus(sin, -20, 20, Vector2f(xCenter, yCenter),200,23,23);
+		Function cosinus(cos, -20, 20, Vector2f(xCenter, yCenter), 200, 23, 23);
+		Function scsq(sin_cos, -20, 20, Vector2f(xCenter, yCenter), 200, 23, 23);
+
+		scsq.set_color(Color::Cyan);
+		cosinus.set_color(Color::Blue);
+		sinus.draw(win);
+		cosinus.draw(win);
+		scsq.draw(win);
+
+		ConvexShape rectangle;
+
+		rectangle.setPointCount(4);
+		rectangle.setPoint(0,Vector2f(200, 200));
+		rectangle.setPoint(1,Vector2f(200, 300));
+		rectangle.setPoint(2,Vector2f(300, 300));
+		rectangle.setPoint(3,Vector2f(300, 200));
+		rectangle.setFillColor(Color::Transparent);
+		rectangle.setOutlineThickness(10);
+		rectangle.setOutlineColor(Color::Red);
+
+
+		RectangleShape rect(Vector2f(200,200));
+		Text text;
+		Font font;
+		font.loadFromFile("arial.ttf");
+		text.setFont(font);
+		text.setPosition(125, 125);
+		text.setString("Siema siema");
+		text.setFillColor(Color::Blue);
+
+		rect.setFillColor(Color::Transparent);
+		rect.setOutlineThickness(10);
+		rect.setOutlineColor(Color::Blue);
+		rect.setPosition(100,100);
+
+
+		//win.draw(SuperElipsis(200, 200, 3, 3, 100));
+		//win.draw(RoundedRectangle(100, 100));
+		Elipsis elipsis(Vector2f(200, 100), 30);
+		//elipsis.setPosition(Vector2f(200, 200));
+		elipsis.setFillColor(Color::Transparent);
+		elipsis.setOutlineColor(Color::Red);
+		elipsis.setOutlineThickness(2);
+		elipsis.setPosition(200, 200);
+		ShowElipsisFocals(elipsis, win);
+
+		Vector2f Point(600,600);
+		Vector2f* Focals = CalculateFocals(elipsis);
+
+		DrawLine(Focals[0], Point, win);
+		DrawLine(Focals[1], Point, win);
+
+		win.draw(elipsis);
+
+
+
+
+		Immobile_Circle ic(Vector2f(200,200), 100, "Immobile Circle");
+		ic.set_radius(50);
+		ic.draw(win);
+
+		Test_Controler tc;
+		tc.on();
+		tc.set_level(20);
+		tc.show();
+
+		Shape_Controler sc(new CircleShape(20));
+		sc.off();
+		sc.on();
+		sc.show(win);
+		cin.get();

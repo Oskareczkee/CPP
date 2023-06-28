@@ -1,0 +1,48 @@
+Notki jak zawsze pisane po polsku dla mojej wygody
+
+nie u¿ywam biblioteki FLTK i funkcji bibliotek pomocniczych z ksi¹¿ki, importowaie ich nie dzia³a³o
+wyskakiwa³o mi du¿o b³êdów i po 2 dniach ju¿ nie mia³em ochoty naprawiaæ ich
+Dlatego zainstalowa³em SFML, ma on wiêkszoœæ potrzebnych klas ju¿ zaimplementowanych,
+te klasy, których brakuje, s¹ w pliku Shapes.h, s¹ tam te¿ niektóre figury zrobione w ramach zadañ
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+C13
+
+Gdy mamy klasê dziedzicz¹c¹ z innej klasy np. Circle: Shape i mamy przeci¹¿one funkcje wirtualne np. add
+Aby u¿yæ oryginalnej funkcji klasy Shape w klasie Circle nale¿y u¿yæ podanej sk³adni
+Shape::add();
+
+u¿ycie initializer_list(typ) pozwala nam na u¿ywanie listy inicjilizacyjnej przy tworzeniu obiektu
+Lines{Line{Point(100,200), Point(200,300)}, Line{{300,200}, {400,300}}}
+
+Deklaracja using Shape::Shape sprawia, ¿e obiekt danego typu mo¿e u¿ywaæ konstruktorów zdefiniowanych dla klasy Shape
+using Open_polyline::Open_polyline; oznacza, ¿e dana klasa bêdzie mia³a takie same konstruktory jak Open_polyline
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+C14
+
+Jeœli zmienne/funckje s¹ chronione (protected), to wtedy wszystkie te funckje i zmienne, konstruktory s¹ dostêpne tylko dla klas dziedzicz¹cych z klasy matki
+oznaczenie konstruktora jako protected sprawia, ¿e obiektu danej klasy nie mo¿na utworzyæ
+Jeœli u¿ywamy zmiennych chronionych nale¿y u¿yæ notacji klasa::nazwa_zmmiennej
+
+zmienne/funkcje chronione w klasie bazowej, daj¹ nam pewnoœæ, ¿e klasy podrzêdne przejmuj¹ kontrolê nad tymi funkcjami i sk³adowymi
+
+Jeœli tworzymy klasê, która jest baz¹ hierarchii dobrym pomys³em jest jej wy³¹czenie wszystkich opcji kopiowania, dla bezpieczeñstwa w przysz³oœci
+Zamiast tego w klasach pochodnych mo¿emy u¿yæ funkcji kopiuj¹cych, przystosowanych dla danej klasy i nadaæ jej nazwê np. clone()
+
+Jeœli chcemy w czytelny sposób oznajmiæ, ¿e dana funkcja przes³ania jak¹œ funkcjê klasy bazowej, mo¿emy u¿yæ s³owa kluczowego override
+Nie jest to konieczne, ale w wielu przypadkach mo¿e zwiêkszyæ czytelnoœæ i zrozumienie kodu
+
+Mo¿emy te¿ stworzyæ klasê abstrakcyjn¹ definiuj¹c w niej funkcje czysto abstrakcyjne
+virtual void g()=0 - oznacza, ¿e funkcja jest czysto abstrakcyjna, obiektu tej klasy nie bêdziemy mogli utworzyæ
+
+Kiedy dziedziczymy z takiej klasy, wszystkie funkcje czysto abstrakcyjne musz¹ zostaæ przes³oniête, inaczej klasa pochodna te¿ zostanie oznaczona jako abstrakcyjna
+
+
+
+
+
+
