@@ -1,0 +1,27 @@
+//C code with some help with C++ output to test it
+       
+       
+       //HelloWorld();
+        //func("foo", 7);
+
+        const char* d = "sieeema";
+        const char* p = "sieeema";
+        char chuj[20];
+        const char* hehe = "chuj hehe";
+        cout << my_strlen(d)<<"\n";
+        cout << my_strcmp(d, p)<<"\n";
+        my_strcpy(chuj, hehe);
+        cout << chuj;
+
+        //intrusive_list_test();
+        //lexicographic_order_check();
+        //number_nine();
+        /*
+        struct result results;
+
+        int x[] = { 1,2,3,4,7,2,1,4,7,1,1,3,10,12 };
+
+        results = get_results(x, 14);
+
+        cout << results.max << " " << results.min << " " << results.average << " " << results.median;
+        */

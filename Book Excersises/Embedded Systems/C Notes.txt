@@ -1,0 +1,250 @@
+Notki te s¹ pisane po polsku (standardowo)
+
+maj¹ one za zadanie opisaæ jêzyk C, porównaæ go do jêzyka C++ i pokazaæ ró¿nice pomiêdzy tymi 2 jêzykami
+
+Jêzyk C++, którego siê uczê jest nadzbiorem jêzyka C, czyli jêzyk C++ du¿o dziedziczy z jêzyka C, ale nie za du¿o
+kod napisany w C nie zawsze jest zgodny z jêzykiem C++, wynika to czêsto ze œciœlejsz¹ kontrol¹ typów, która s³u¿y ochronie naszego programu
+oraz tym, ¿e niektórych rzeczy nie ma w C, a jest w C++ (np. operator new i delete), czasami nazwy zmiennych w C maj¹ w³aœnie takie nazwy
+
+Ró¿nice pomiêdzy C i C++ (w skrócie co jest w C++, a czego nie ma w C)
+	-w C nie ma klas (class), przez co trzeba u¿ywaæ struktur i funkcji globalnych
+	-Klas pochodnych i funkcji wirtualnych, nale¿y u¿ywaæ struktur, funkcji globalnych i wskaŸników na funkcje
+	-Szablonów i funkcji wstawianych (inline), nale¿y u¿ywaæ makr
+	-Wyj¹tków, nale¿y u¿ywaæ kodów b³êdów, wartoœci zwrotnych oznaczaj¹cych b³¹d
+	-Przeci¹¿ania funkcji, ka¿da funkcja musi mieæ unikatow¹ nazwê
+	(to jest naprawdê pojebane, bo istnieje wiele wersji tej samej funkcji, przyjmuj¹cej inne argumenty i ka¿da inaczej siê nazywa)
+	(a numer 2 jest taki, ¿e czasami jak sobie napiszemy funkcjê dla naszej biblioteki, to mog¹ nazwy funkcji siê powtarzaæ XD i jest wtedy bruh momento)
+	-Operatorów new i delete, u¿ywamy funkcji malloc() i free() oraz osobnego kody inicjalizuj¹cego i czyszcz¹cego
+	-Referencji (XD), nale¿y u¿ywaæ wskaŸników
+	-const i constexpr, nale¿y u¿ywaæ makr
+	-typu bool, nale¿y u¿ywaæ int
+	-rzutowañ static_cast, reinterpret_cast, const_cast, nale¿y u¿ywaæ rzutowania w stylu C np. (int)x;
+
+Ogólnie jak piszemy kod w C, to waaaaarto jest u¿ywaæ jakiœ narzêdzi do analizy naszego programu, bo jêzyk C naprawdê pozwala czasami
+na pojebane rzeczy, które w C++ nie przesz³yby, a mog¹ stanowiæ powa¿ne zagro¿enie dla naszego programu
+jednym z takich narzêdzi jest lint
+
+G³ówne czêœci biblioteki standardowej C
+	<stdlib.h> - narzêdzia ogólnego przeznaczenia (malloc, free)
+	<stdio.h> - standardowe wyjœcie i wejœcie
+	<math.h> - funkcje matematyczne
+	<errno.h> - kody b³êdów dla <math.h>
+	<limits.h> - rozmiary typów ca³kowitoliczbowych
+	<time.h> - daty i godziny
+	<assert.h> - asercje wspomagaj¹ce debugowanie
+	<ctype.h> - klasyfikacja znaków
+	<stdbool.h> - makra logiczne
+Tych bilbiotek mo¿na u¿ywaæ te¿ w C++
+
+Dziwne (ang. sus) rzeczy w jêzyku C
+
+	 - w C nie trzeba deklarowaæ funkcji, przed jej u¿yciem, przez co kompilator C widz¹c funkcjê f(2) powie spoko, tylko konsolidator siê wkurwi, bo jej nie znajdzie
+	 i wywali b³¹d nam
+	 -lepsze jest to, ¿e jak ta funkcja jest zadeklarowana, ale np przyjmuje zamiast int char, to konsolidator wtedy siê nie wkurwi i program siê odpali
+	 (ale wywali nam b³¹d, albo zwróci ta funkcja jak¹œ losow¹ wartoœæ) XD
+	 Ogólnie, jeœli chcemy, ¿eby funkcja jednak sprawdza³a typy argumentów, to musimy napisaæ jej prototyp, ale prototyp musi mieæ okreœlone argumenty
+	 np. prototyp int h();, wcale nie jest prototypem i nie wymusza sprawdzania argumentów funkcji, co wiêcej jego argumenty s¹ nieokreœlone wtedy
+	 -w C istnieje drugi, inny styl definiowania funkcji:
+		int old_style(p,b,x) char* p; char b;{}
+	 Styl ten NIE JEST prototypem, przez co jak zawsze mo¿na wywo³ywaæ jego jakieœ pojebane wersje (np. bez argumentów XD)
+	 
+W C++ i C mo¿emy wywo³ywaæ funkcje z C z poziomu C++ i C++ z poziomu C
+
+u¿ywamy do tego s³owa kluczowego extern "C" double sqrt(double);
+Wtedy taka funkcja bêdzie kompilowana z konwencjami jêzyka C
+W jêzyku C mo¿emy u¿yæ dos³ownie tego samego wyra¿enia, aby np. móc u¿yæ sobie funkcji z C++
+hahahah ale jak zawsze, jak chcemy sobie wywo³aæ funkcjê z C++ w C, to ta funkcja nie mo¿e byæ funkcj¹ wirtualn¹, a jak przekazujemy klasê, to tylko struct w innym
+przypadku, najlepiej, ¿eby to by³y wskaŸniki na te obiekty, a operacje na nich i tak powinniœmy wykonywaæ w C++
+
+WskaŸniki na funkcje w jêzyku C pozwalaj¹ nam zastosowaæ techniki obiektowe w tym jêzyku
+
+Przyk³ad:
+	typedef void(*Pfct0)(struct Shape*);
+	typedef void(*Pfct1int)(struct Shape*, int);
+	struct Shape
+	{
+		Pfct0 draw;
+		Pfct1int rotate;
+	}
+
+	void draw(struct Shape* p)
+	{
+		(p->draw)(p);
+	}
+	void rotate(struct Shape* p)
+	{
+		(p->rotate)(p);
+	}
+
+	draw(pp);
+	rotate(pp);
+
+w C jak sobie zainicjalizujemy strukturkê, to potem jak chcemy utworzyæ jej obiekt, to musimy dodaæ przedrostek struct
+struct pair{int x;int y;};
+struct pair p1;
+
+typedef struct {int x,y;} pair;
+
+pair p1;
+pair p2;
+
+tego typedefa u¿ywamy, jak ju¿ nie chce nam siê tego s³owa struct ci¹gle pisaæ
+
+POJEBANA RZECZ:
+	struct S
+	{
+		struct T{};
+	};
+W C++, ¿eby utowrzyæ obiekt T, musielibyœmy napisaæ S::T x;
+a w C, obiekt T mo¿emy od tak sobie utworzyæ XD struct T x;
+Dlatego w C nale¿y unikaæ zagnie¿d¿ania struktur
+
+W C nie ma tylu s³ów kluczowych, co w C++(ale to sobie w internecie sprawdŸ dzbanie, bo tutaj nieskoñczonoœæ miejsca to zajmie)
+
+GIGA POJEBANA RZECZ:
+ w jêzyku C definicje mo¿na umieszczaæ w mniejszej iloœci ró¿nych miejsc np.
+ for(int x=0;x<10;x++)// git w C++, ale nie w C
+ C:
+ int x=0;
+ for(x=0;x<10;x++)//teraz git w C
+
+ ALBO
+	if(i<0 || max<=i) error("Nwm zrobi³eœ coœ Ÿle goœciu");
+	int a[max];//w C++ git, ale w C to jest b³¹d
+	C:
+	if(i<0 || max<=i) error("Nwm zrobi³eœ coœ Ÿle goœciu");
+	{
+	int a[max];//w C++ git, ale w C to jest b³¹d
+	}
+	Ogólnie to jest tak pojebane XDDD a¿ nie mogê, no ale jak coœ to bêdê musia³ takie trikasy robiæ
+
+W C++ niezainicjalizowana deklaracja jest definicj¹, ale nie w C, przez co mo¿na pisaæ coœ takiego
+	int x;
+	int x;
+Jeszcze ciekawiej jest jak te x sobie umieœcimy w odzielnych plikach nag³ówkowych (No w sensie, jak piszê jeszcze ciekawiej, to lepiej tego nie robiæ)
+
+jak chcemy, ¿eby te x by³y traktowane jako wspó³dzielone mo¿emy napisaæ coœ takiego
+int x=0; // definicja
+extern int x; //deklaracja 
+
+A najlepiej jest unikaæ zmiennych globalnych i siema elo, nie ma problema
+
+RZUTOWANIE ZMIENNYCH W C
+Rzutowanie w jêzyku C jest tak niebezpieczne, ¿e porówna³bym to do maratonu na polu minowym
+podczas rzutowania, nie jest zachowywana ¿adna dos³ownie kontrola i jêzyk C pozwala nam rzutowaæ wszystko na wszystko
+Jak coœ zjebiemy podczas rzutowania i wywali b³¹d, to szukaj wiatru w polu
+
+Dlatego czasami, jak jest jakiœ kochany programista, to sobie napisze na szybkoœci takie makra
+#define REINTERPRET_CAST(T, v)((T)(v))
+itd...
+i wtedy jest troszeczkê lepiej, bo przynajmniej mamy jak¹œ œwiadomoœæ co siê dzieje w naszym programie
+
+typu void* mo¿emy sobie u¿ywaæ w C po prawej stronie
+np. int* x=void*;
+Dlatego, ¿eby zachowaæ pozory bezpieczeñstwa lepiej pisaæ coœ takiego
+int* x= (int*)alloc(n*sizeof(int));// teraz jest git w C i C++
+
+konwersja z dowolnego typu na void* jest bezpieczna i mo¿na j¹ bez problemu wykonywaæ w C i C++
+
+w C mo¿na przypisaæ typ int do enum bez rzutowania, przez co jest ryzyko wypadniêcia za brzeg
+typ enum nale¿y jak struct do w³asnej przestrzeni nazw
+enum color c1;
+
+Zarz¹dzanie pamiêci¹ woln¹ w C:
+<stdlib.h>
+	void* malloc(size_t sz);//alokuje sz bajtów
+	void free(void* p);//dealokuje pamiêæ wskazywan¹ przez p
+	void* calloc(size_t n, size_t sz)// alokuje sz*n bajtów zainicjalizowanych wartoœci¹ 0
+	void* realloc(void* p, size_t sz)// realokuje pamiêæ wskazywan¹ przez p, na przestrzeñ o rozmiarze sz
+
+Nie nale¿y pod ¿adnym pozorem ich u¿ywaæ w C++
+Nie trzeba ich rzutowaæ, ale mimo wszystko jest lepiej to zrobiæ dla pewnoœci
+
+w jêzyku C nie ma typu string, u¿ywa siê za to char* albo char[]
+narzêdzia do przetwarzania ³añcuchów znajduj¹ siê w bibliotece <string.h>
+³añuchy w C zawsze s¹ zakoñczone znakiem 0
+
+char* p ="asdf";
+p[2]='x;//git w C, nie git w C++
+
+ogólnie w C++ litera³y znakowe s¹ sta³e i nie mo¿na ich modyfikowaæ, w C nie s¹ sta³ymi
+dlatego warto jest przed litera³em znakowym w C u¿ywaæ
+const char* p="asdf";//teraz na pewno nie mo¿na modyfikowaæ
+Tego jest warto u¿ywaæ w C i C++
+
+OPERACJE NA PAMIÊCI
+	void* memcpy(void* s1, const void* s2, size_t n);//kopiuje n bajtów z s2 do s1
+	void* memmove(void* s1, const void* s2, size_t n);//kopiuje n bajtów z s2 do s1 ([s1,s1+n]) mo¿e siê czêœciowo pokrywaæ z [s2, s2+n]
+	int   memcmp(const void* s1, const void* s2, size_t n);//porównuje n bajtów z s2 z bajtami z s1
+	void* memchr(const void* s, int c, size_ t n);//znajduje c (po konwersji na char) w pierwszych n bajtach s
+	void* memset(void* s, int c, size_t n);//kopiuje c (po konwersji na char) dp lazdegp z n pierwszych bajtów, na które wskazuje s
+Funkcji tych nale¿y jak ognia unikaæ w kodzie C++
+
+WEJŒCIE I WYJŒCIE
+znajduje siê w <stdio.h>
+
+ funkcja printf() pozwala nam wydrukowaæ znaki
+ printf("Siema siema, o tej porze kazdy wypic moze");
+ albo mo¿na jeszcze takie trikasy w niej robiæ
+ printf("double %g, string %s, int %d, char%c Siema siema,  tej porze kazdy wypic moze", d,s,i,ch);
+
+ wtedy %g oznacza - drukuj pierwszy argument (d) jako liczbê zmiennoprzecinkow¹
+ %s - drukuj jako ci¹g znaków , przed s mo¿na dodaæ liczbê, wtedy wczyta okreœlon¹ liczbê znaków
+ %d - jako liczbê ca³kowit¹ liczbami dziesiêtnymi (no w sensie, ¿e tak jak my czytamy, bo jeszcze mo¿na np. w systemie 16 sobie liczbê wydrukowaæ)
+ %c - jako znak
+
+ scanf() - dzia³a tak samo jak printf, tylko ¿e wczytuje znaki w odpowiednim formacie
+ ogólnie tej funkcji lepiej nie u¿wywaæ, bo jest niebezpieczna, lepiej zastosowaæ domowe sposoby
+ while((x=getchar())!=EOF) {/*coœ se tam rób*/}
+
+ istnieje jeszcze wersja int fprintf(FILE* stream, const char* format, ...)
+ s³u¿y ona do drukowania z pliku
+
+
+ GIGA TRICK JAK ZOSTAÆ HAKEREM:
+	1. jakiœ ch³op pisze taki kod:
+		char a[12];
+		gets(a);//gets s³u¿y do wczytania ci¹gu znaków
+
+	2.WprowadŸ wiêcej ni¿ 11 znaków i spowoduj uszkodzenie pamiêci
+	Brawo, wygra³eœ talon
+
+ PLIKI
+	FILE* fopen(const char* fileName, const char* mode); //otwiera plik w podanym trybie
+	int fclode(FILE* stream);//zamyka plik, zwraca int oznaczaj¹cy kod b³êdu
+
+	mode to mo¿e byæ np.
+	"r" - read, odczyt
+	"w"- write, zapis
+
+
+W jêzyku C obiekty const nie s¹ STA£E W CZASIE KOMPILACJI
+przez co mo¿emy pisaæ taki kod:
+const int x;//nie przejdzie w C++, przejdzie w C
+int a1[max];//granica tablicy nie jest sta³¹, git w C++, jak max jest const
+
+Dlatego w C do definicji sta³ych czasu kompilacji u¿ywa siê makr
+
+#define MAX 30
+nale¿y pamiêtaæ, ¿eby makra pisaæ wielk¹ liter¹, dla wygody ogó³u spo³eczeñstwa, ¿eby by³o wiadomo wszêdzie na œwiecie
+¿e to co piszemy to MAKRO
+
+Mo¿na u¿yæ makr do napisania sobie funkcji
+#define MAX(x,y) ((x)>=(y)?(x):(y))
+ta du¿a iloœæ nawiasów jest dla bezpieczeñstwa
+
+makro w razie potrzeby, jak nam przeszkadza, bo przes³ania inn¹ definicjê mo¿na "undefn¹æ" (serio nie wiem jakie jest przeciwieñstwo zdefinowaæ w polskim)
+#undef MAX
+
+Giga trick w Makrach
+
+#define ALLOC(T, n) (error_var=(T*)malloc(sizeof(T)* n),\
+					(error_var==0),\
+					?(error("B³ad alokacji hehe"),0)\
+					:error_var)
+
+"\" s³u¿y do dzielenia makra na wiele wierszy
+
+aaaaaa ostania rzecz
+
+W c++ i C mo¿emy traktowaæ wskaŸnik na strukturê, jak wskaŸnik na jej pierwszy element

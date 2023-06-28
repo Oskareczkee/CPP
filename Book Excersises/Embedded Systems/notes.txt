@@ -1,0 +1,356 @@
+notki jak zawsze pisane po polsku (po co ja to znowu tutaj piszê aaaa)
+
+C22
+
+Nie ma notek, historia programowania, raczej nic ciekawego
+no w sensie nic ciekawego, ale fajnie widaæ rozwój jêzyków i tego co teraz mamy
+ka¿dy jêzyk ma jakieœ wady
+
+///////////////////////////////////////////////////////////////////////////////
+
+C23
+
+typ string, którego u¿ywamy w c++, jest tak naprawdê typem basic_string<char> string
+jeœli chcemy, aby nasz string móg³ obs³ugiwaæ inne zestawy znaków, nale¿y go utworzyæ w³aœnie przy u¿yciu typu basic_string<T>
+
+Sk³adnia wyra¿eñ regluarnych (regex) <regex>
+
+przyk³ad wyra¿enia regularnego
+
+regex pattern{R"(\w{2}\s*\d{5}(-\d{4})?)"}
+
+R - pocz¹tek surowego litera³u ³añcuchowego (w c++ i w innych jêzykach)
+R"( - pocz¹tek ³añcucha
+)" - koniec ³añcucha
+\w - litera
+{liczba} - oznacza ile danej rzeczy powinno byæ (\w{5}) oznacza, ¿e spodziewamy siê 5 liter
+\s - spacja
+* - oznacza dowoln¹ iloœæ danego znaku (\s* oznacza dowoln¹ iloœæ spacji)
+? - oznacza, ¿e wyra¿enie jest opcjonalne
+() - w nawiasach mo¿emy robiæ grupowanie
+- - oznacza zwyk³y myœlnik
+. - dowolny pojedynczy znak (symbol wieloznaczny)
++ - jeden lub wiêcej
+[] - klasa znakowa
+| - alternatywa (lub)
+^ - pocz¹tek wiersza; negacja
+$ - koniec wiersza
+\l - ma³a litera
+\u - wielka litera
+\D - nie \d (czyli znak nie jest cyfr¹ dziesiêtn¹)
+\L - nie \l
+\S - nie \s
+\U - nie \u
+\W - nie \w
+{n,} - n lub wiêcej razy
+{n,m} - przynajmniej n razy i najwy¿ej m razy
+? - opcjonalny(0 lub 1) tj. {0,1}
+CYFRY S¥ ZNAKAMI \w
+
+----------------ZBIORY I PRZEDZIA£Y ZNAKÓW----------------
+
+[\w @] - litera spacja lub znak @
+[a-z] - ma³e litery od a do z
+[a-zA-Z] - ma³e lub du¿e litery od a do z
+[Pp] - ma³a lub wielka litera p
+[\w\-] - litera lub myœlnik
+[.] - kropka
+[.[{(\\*+?^$] - znaki o specjalnym znaczeniu w wyra¿eniu regularnym
+
+- - oznacza przedzia³ znaków (nie w ka¿dym systemie operacyjnym znaki s¹ w takiej samej kolejnoœci, nale¿y dok³adnie przeczytaæ dokumentacjê)
+[^aeiouy] - ¿adna z tych samog³osek
+[ ^aeiouy] - spacja, jedna z tych samog³osek lub ^
+
+operator negacji (^) musi byæ na pocz¹tku przedia³u, inaczej jest brany jako zwyk³y znak
+
+-----------------------------------------------------------
+
+---------------PRZYK£ADY-----------------
+
+\d+ - jedna lub wiêcej cyfr dziesiêtnych
+\+ - oznacza ju¿ znak plusa
+Ax* - pasuje do litery A, po której jest 0 lub wiêcej liter x
+Ax+ - po A musi wyst¹piæ co NAJMNIEJ 1 litera x
+Subject: (FW: |RE:)?(.*) - rozpoznaje wiersz tematu z polem opcjonalnym FW: lub RE:, po którym znajduje siê wiêcej znaków
+
+-----------------------------------------
+
+
+³añcuchy, które pasuj¹ do wzorców przechowujemy w kontenerze smatch, stworzonym specjalnie dla biblioteki regex
+smatch jest praktycznie zwyky³ym wektorem, bardzo podobnie siê go u¿ywa
+
+aby wyszukaæ teksty, które pasuj¹ do wzorca u¿ywamy funkcji regex_search(string linia, smatch kontener, regex pattern)
+linia - typ string, w którym szukamy danego wzorca
+kontener - wszystkie wyniki zostan¹ dodane do tego kontenera
+pattern - wzorzec, którym siê pos³ugujemy
+
+istnieje funkcja regex_match(), ró¿ni siê ona od funkcji regex_search tym, ¿e pierwsza musi dopasowaæ wszystkie znaki pojawiaj¹ce siê na wejœciu,
+a druga musi znaleŸæ tylko pod³añcuch pasuj¹cy do jej wzorca
+
+tak w skrócie regex_match() sprawdza, ca³y string pasuje do wzorca
+a regex_search() sprawdza czy jakakolwiek czêœæ naszego stringa pasuje do wzorca
+
+///////////////////////////////////////////////////////////////////////////////
+
+C24
+
+w³asnoœæ typów wbudowanych implementacji C++ s¹ przechowywane w nag³ówkach <limits>, <climits>, <limits.h> oraz <float.h>
+
+Ogólnie lepiej nie u¿ywaæ standardowej implementacji tablic wielowymiarowych w c++
+Tablice wielowymiarowe s¹ bardzo podatne na b³êdy, ich obs³uga wymaga czasami skomplikowanych i prymitywnych, podatnych na b³êdy operacji
+Kod taki czêsto jest nieczytelny oraz niezrozumia³y, trudno siê tak¹ tablicê przekazuje do funkcji
+Pozatym tablice wielowymiarowe nie znaj¹ tak naprawdê swoich wymiarów, przez co czêsto trzeba obliczaæ miejsce w pamiêci
+I kolejna rzecz nie napisana w ksi¹¿ce jest taka, ¿e usuwanie takich tablic w wiêkszoœci przypadków prowadzi do wycieku pamiêci
+o którym mo¿emy nie byæ œwiadomi.
+
+aaaaaa w c++ nie istnieje biblioteka <Matrix.h>, jest to biblioteka napisana przez Bjarnego Stroustrupa na potrzeby ksi¹¿ki (chyba)
+Link do kodu: https://www.stroustrup.com/Programming/Matrix/Matrix.h
+
+Liczby losowe mo¿emy generowaæ przy u¿yciu biblioteki <random>
+do takiego standardowego losowania liczb u¿ywamy generatora default_random_engine
+oraz rozk³adu uniform_int_distribution<>{min, max}(ran) // jak sama nazwa wskazuje, ten rozk³ad jest raczej przeznaczony dla liczb ca³kowitych
+
+mo¿na u¿ywaæ innych generatorów oraz innych rozk³adów, aby uzyskaæ lepsze wyniki
+jednak wtedy warto przeczytaæ dokumentacjê generatora oraz rozk³adu
+
+nale¿y pamiêtaæ, ¿eby generatorowi przekazaæ ziarno, inaczej wartoœci które wygeneruje za ka¿dym razem bêd¹ takie same
+ziarnem najczêœciej jest czas
+
+Ciekawostka:
+jak u¿ywamy rozk³adu dla liczb ca³kowitych, to dostaniemy liczbe z przedzia³u [a,b]
+a dla liczb zmiennoprzecinkowych [a,b)
+
+Funkcje matematyczne w bibliotece <cmath> lub <math.h> ustawiaj¹ wartoœæ zmiennej errno na ró¿ne wartoœci
+wartoœæ zmiennej errno mo¿emy sprawdziæ przy pomocy if
+
+EDOM - B³¹d dziedziczny (w sensie, przekazany argument nie nale¿y do dziedziny funkcji XD)
+ERANGE - B³¹d zakresu(liczba jest zbyt wielka)
+
+ogólnie te wartoœci wy¿ej s¹ u¿ywane w bibliotece matematycznej, ale inne funckje spoza niej te¿ ustawiaj¹ czasami zmienn¹ errno
+wiêc trzeba siê upewniæ, poczytaæ trochê dokumentacji, jakie wartoœci errno zwracaj¹ funkcje
+
+definicja liczb zespolonych znajduje siê w bibliotece <complex>
+complex nie udostêpnia operatorów < > % dla liczb zespolonych
+
+aaaa linki do stron z matm¹ (ale zaawansowan¹, rip matura)
+http://www-gap.dcs.st-and.ac.uk/~history
+i ksi¹¿ka (podobno opisuje podstawy), mo¿e warto j¹ kupiæ
+Jan Gullberg "Mathematics - From the birth of Numbers"  - tylko ¿eby by³a w wersji po polsku, to bêdzie giga kox
+
+///////////////////////////////////////////////////////////////////////////////
+
+//25
+
+Ogólnie ten rozdzia³ opisuje jak pisaæ systemy, które musz¹ byæ niezawodne w ka¿dym czasie, nawet czasami po 50 latach dzia³aæ bez zarzutu
+Mam nadziejê, ¿e to wszystko zapamiêtam i bêdê mia³ gdzieœ z ty³u g³owy, bo mimo wszystko to bardzo potrzebne rzeczy s¹
+
+Jeœli piszemy program z ostrymi ograniczeniami (czasowyi np.) nasz program musi byæ przewidywalny
+Przewidywalnoœæ oznacza, ¿e operacja zawsze na ka¿dym urz¹dzeniu zabiera tyle samo czasu
+
+Operacje, które nie s¹ przewidywalne
+-alokacja pamiêci za pomoc¹ new i delete
+-rzucanie wyj¹tków
+-operacja dynamic_cast<T>()
+
+Czêsto kod, który ma ostre ograniczenia czasowe jest pisany blisko niskiego poziomu jêzyka, co zwiêksza jego podatnoœæ na b³êdy
+Jednak w miarê mo¿liwoœci powinniœmy zachowywaæ najwiêkszy poziom abstrakcji kodu
+
+ZARZ¥DZANIE PAMIÊCI¥
+
+pamiêæ w programie dzielimy na:
+pamiêæ statyczn¹ - rzerwowana przez program ³¹cz¹cy i trwaj¹ca przez ca³y czas dzia³ania programu
+stos(pamiêæ automatyczna) - rezerwowana w chwili wywo³ania funkcji i zwalniana w chwili wyjœcia z funkcji
+pamiêæ dynamiczna (sterta) - alkowana za pomoc¹ operatora new i dealokana za pomoc¹ operatora delete
+
+Alokacja pamiêci dynamicznej nie jest przewidywalna, nie mamy gwarancji, ¿e zawsze zajmie tyle samo czasu
+(np. pamiêæ mo¿e byæ pofragmentowana, co utrudnia znalezienie miejsca w pamiêci dla naszej zmiennej)
+
+Fragmentacja polega na tym, ¿e alokuj¹c obiekty i je dealokuj¹c mog¹ czasami pozostaæ luki w naszej pamieci, które bêd¹ niezainicjalizowane
+jeœli bêdziemy alokowaæ obiekty wiêksze ni¿ ta luka, nigdy nie zostanie ona za³atana, powoduje to wyciek pamiêci oraz mo¿e sprawiæ do przepe³nienia pamiêci
+nawet jeœli w naszej pamiêci bêdzie du¿o miejsca, tylko bêdzie ona pofragmentowana, bêdzie mia³a luki
+
+Zamiast u¿ywaæ ogólnej pamiêci wolnej, lepiej jest stosowaæ struktury danych, które zapewniaj¹, ¿e fragmentacja nie nast¹pi
+Nale¿¹ do nich:
+-Stosy - mo¿emy alokowaæ dowoln¹ iloœæ pamiêci i dealokowaæ tylko ostatnio alokowany obiekt, w ten sposób nie dojdzie do fragmentacji
+-Pule - jest zbiorem obiektów tego samego rozmiaru, mo¿na alokowaæ i dealokowaæ obiekty, dopóki w puli jest wolne miejsce
+w puli fragmentacja nie zachodzi, dziêki temu, ¿e wszystkie obiekty s¹ takiego samego rozmiaru
+
+Alokacja i dealokacja w stosach i puli s¹ przewidywalne i szybkie, czyli w sam raz na nasze potrzeby
+
+pisz¹c systemy wbudowane powinniœmy jak najbardziej unikaæ jawnych konwersji za pomoc¹ static_cast<T>(), reinterpret_cast<T>() itd.
+przekazywania wskaŸników do elementów tablicy (tablica przekazana jako wskaŸnik nie zna swojego rozmiaru, co znacznie zwiêksza podatnoœæ na b³êdy)
+
+-----
+
+Giga ciekawostka:
+
+ogólnie mo¿emy wczytywaæ sobie zmienne za pomoc¹ ich miejsca w pamiêci (czêsto sterowniki maj¹ sta³e miejsce w pamiêci)
+takie miejsce czêsto znajdziemy w dokumentacji sterownika
+
+Device_driver* driver = reinterpret_cast<Device_driver*>(0xffb8)// zwraca wskaŸnik do device driver pod adresem 0xffb8
+nale¿y pamiêtaæ, ¿e jest to wyj¹tek w u¿ywaniu reinterpret_cast, taki kod pojawia siê rzadko i tylko w bardzo okreœlonych warunkach
+reinterpret_cast<T>() jest nieprzewidywalny i niekontrolowany (nie daje nam gwarancji, ¿e pod tym adresem rzeczywiœcie znajduje siê sterownik np., nie sprawdza tego)
+
+-----
+
+Nale¿y bezwzglêdnie uwa¿aæ na klasy dziedzicz¹ce z danego interfejsu
+Jeœli mamy np. funkcjê przyjmuj¹c¹ interfejs Shape, c++ pozwala nam przekazaæ obiekt typu Circle dziedzicz¹cy z Shape
+(kompilator powinien w takiej sytuacji wyrzuciæ b³¹d, inaczej chyba lepiej pomyœleæ nad zmian¹ kompilatora XD)
+W takim wypadku mo¿e dojœæ do sytuacji, w której bêdziemy iterowaæ za pomoc¹ wskaŸnika Shape, po obiektach typu Circe, które mog¹ mieæ wiêkszy rozmiar
+przez co mo¿e wyst¹piæ sytacja, ¿e nasz wskaŸnik jest ustawiony na jakieœ randomowe miejsce w Circle i jest wtedy tzw. chuj
+
+Dlatego warto zamiast u¿ywaæ wskaŸników na interfejs, lepiej jest przekazywaæ wskaŸnik np. na kontener przechowuj¹cy takie interfejsy
+najlepiej jak nie wiemy czego u¿ywaæ, to standardowo do gry wchodzi vector, ale on alokuje pamiêæ i dealokuje, wiêc czasami nie najlepiej
+Dlatego mo¿na sobie samemu napisaæ taki kontenerek, który jest ³atwy w u¿ytku, zna swój rozmiar, ale nic nie wie o obiektach, które przechowuje, przechowuje wtedy tylko wskaŸnik
+taki kontener nie powinien te¿ zarz¹dzaæ w jakikolwiek sposób pamiêci¹
+
+-----
+
+Kolejna giga ciekawostka (a¿ trudno sobie wyobraziæ, ¿e jeszcze 30 stron tekstu mi zosta³o do przeczytania):
+
+mo¿emy napisaæ T(&pp)[s], to deklaruje argument pp jako referencjê do tablicy[s] typu T
+
+-----
+
+Znowu giga ciekawostka
+
+int* const& hej = new int(3);
+mo¿emy tak napisaæ XDD
+
+ogólnie jest to przydatny zapis, const w tym przypadku oznacza, ¿e potrzebujemy sta³ego wskaŸnika, a nie wskaŸnika do sta³ych
+mo¿e mieæ to zastosowanie np w takim przypadku
+void better(const Array_ref<Shape* const> a)
+
+wtedy Array_ref musi byæ const i musi zawieraæ wskaŸniki, które s¹ sta³e
+
+mo¿emy nawet sobie tak napisaæ
+const int*const*const&const aaaa = new int*const [3];
+&const - jest sta³¹ referencj¹ wtedy
+
+-----
+
+Do klas mo¿na dodawaæ operator konwersji (kod do jego implementacji jest zagmatwany trochê)
+
+template<class T>
+class Array_ref
+{
+	public:
+	template<class Q>
+	operator const Array_ref<const Q>()
+	{
+		//sprawdza niejawne konwersje elementów
+		static_cast<Q>(*static_cast<T*>(nullptr));//sprawdza konwersjê elementu
+		//rzutuje na Array_ref
+		return Array_ref<const Q>(reinterpret_cast<Q*>(p), sz)
+	}
+	//implementacja Array_ref...
+}
+
+ten przeci¹¿ony operator:
+- rzutuje na typ Array_ref<const Q> dla ka¿dego typu Q, pod warunkiem, ¿e mo¿liwe jest rzutowanie Array_ref<T> na Array_ref<Q>
+- tworzy nowy obiekt Array_ref<Q> przy u¿yciu reinterpret_cast<Q*>, aby otrzymaæ wskaŸnik na element, w takim wypadku nie powinno siê korzystaæ
+z Array_ref, do konwersji z klasy wykorzystuj¹cej wielokrotne dziedziczenie
+- s³owo const w deklaracji uniemo¿liwia skopiowanie kontenera Array_ref<const Q>, do modyfikowalnego Array_ref<Q>
+
+-----
+
+Ciekawostka:
+typ bool, mimo ¿e jest pojedyñczym bitem, to zajmuje miejsce dla ca³ego bajta
+
+Operacje bitowe:
+x|y [lub] - Bit n w operacji x|y ma wartoœc 1, jeœli bit n w x lub bit n w y ma wartoœæ 1		a[10101010]
+																							    b[00001111]
+																							  a|b[10101111]
+
+x&y [i] - Bit w operacji x&y na wartoœæ, jeœli bity n w x i y maj¹ wartoœæ 1					a[10101010]
+																							    b[00001111]
+																							  a&b[00001010]
+
+x^y [lub wykluczaj¹ce] - Bit n w operacji x^y ma wartoœæ 1, jeœli bit n w x						a[10101010]
+lub bit n w y ma wartoœæ 1, ale nie oba na raz													b[00001111]
+																							  a^b[10100101]
+
+x<<s [przesuniêcie w lewo] - Bit n w operacji x<<s jest bitem n+s w x							a[10101010]
+																							 a<<1[01010100]
+
+x>>s [przesuniêcie w prawo] - Bit n w operacji x>>s jest bitem n-s w x							a[10101010]
+																							 a>>1[01010100]
+
+~x [dope³nienie] - Bit n operacji ~x jest przeciwieñstwem bitu n w x							a[10101010]
+																							   ~a[01010101]
+
+
+klasê bitset<iloœæ bitów> mo¿emy znaleŸæ w nag³ówku <bitset>
+
+klasê bitset mo¿na zaincjalizowaæ:
+liczb¹ ca³kowit¹ bitset<16> =32;
+liczb¹ szesnatkow¹ (ósemkow¹ te¿ mo¿na, dlaczego by nie) bitset<4>=0xb;
+³añcuchem 0 i 1 bitset<128> {string("1010101010101010")};
+//w przypadku powy¿ej bitset bêdzie zawiera³ 112 zer i 16 bitów zdefiniowanych w ³añcuchu
+//podczas wczytywania danych do obiektu bitset s¹ brane tylko 0 i 1, np.  z 10121 wczytane zostanie tylko 101
+
+obiekty bitset s¹ z regu³u inicjalizowane samymi zerami
+na obiektach bitset mo¿na u¿ywaæ zwyk³ych operatorów bitowych
+obiekty typu bitset mo¿na indeksowaæ [], aby wy³uskaæ z nich pojedyñcze bity
+
+u¿ywaj¹c typów ze znakiem i bez znaku (unsigned, sprawia, ¿e bit, który by³ poœwiêcany na znak[0 dla +, 1 dla -]teraz staje siê u¿yteczny dla liczby)
+trzeba uwa¿aæ na nie, gdy¿ np. int i unsigned int nie potrafi¹ przechowaæ tak samo wielkiej liczby (2^15-1 dla int, 2^16-1 dla unsigned int)
+
+mo¿na te¿ od razu deklarowaæ typy ze znakiem (signed), typ int od razu jest np. signed, ale typ char ju¿ nie, dlatego signed char mo¿e przechowywaæ wartoœci od -127 do 127
+
+Do nazywania bitów mo¿na u¿yæ wyliczeñ (wtedy to niby jest wygodne)
+no w sensie to jest jakiœ giga trick, jak jesteœmy leniwi, wiêc mo¿e warto zapamiêtaæ, jak kiedyœ mi zlec¹ jakieœ sterowniki pojebane pisaæ
+
+enum Printer_flags
+{
+	acknowledge=1,			0000 0001
+	paper_empty=1<<1,		0000 0010
+	busy = 1<<2,			0000 0100
+	out_of_black=1<<3,		0000 1000
+	out_of_color = 1<<4		0001 0000
+	...
+};
+
+Maska okreœla, które bity chcesz zachowaæ, a które bity chcesz wyczyœciæ (tak skopiowa³em to z neta)
+ogólnie jak chcemy zamaskow¹c jakieœ bity w naszej liczbie, to u¿ywamy do tego & val&0xff // maskuje bity 0xff w val
+
+Inn¹ nienormaln¹ rzecz¹ s¹ pola bitowe i "s³owa"(w sensie nie wiem kto tê nazwê wymyœli³, to jest struktura przechowuj¹ca bity)
+//32 bity
+struct PPN
+{
+	unsigned int PFN : 22;  // 22 bity dla PFN
+	int : 3;                //jak zmienna nie ma nazwy, to bity s¹ nieu¿ywane
+	unsigned int CCA : 3;
+	bool unreachable :1; // 1 bit na flagê
+	bool dirty :1; // 1 bit na flagê
+	bool valid :1; // 1 bit na flagê
+	bool global :1; // 1 bit na flagê
+}
+bity mo¿na normalnie sobie wydobyæ tak o przy u¿yciu np. unsigned int x=pn.CCA; //wydobywa CCA
+
+///////////////////////////////////////////////////////////////////////////////
+
+Dobra, ten rozdzia³ by³ ogólnie o testowaniu, trochê takie nudy, no w sensie du¿o tych technik tam napisanych
+jest raczej logiczna w testowaniu i znana mi, no jednak mo¿na jakieœ ciekawostki sobie zapisaæ
+
+ogólnie fajnie jest, jak robimy testy i znajdziemy b³¹d, zapisanie tego testu, który wywo³a³ b³¹d,
+¿eby w przysz³oœci, gdybyœmy jeszcze musieli testowaæ funkcjê/system, to ¿eby poddaæ je temu w³aœnie testowi, na który mog¹ byæ podatny
+
+W kwestiach wydajnoœci, trzeba uwa¿aæ, ¿eby przypadkowo nie robiæ czegoœ za du¿o, w sensie czasami mo¿na napisaæ bezsensown¹ funkcjê,
+która bêdzie np. niepotrzebnie przechodzi³a kilka razy przez tê sam¹ sekwencjê, co jest zbêdne
+
+W testowaniu dobrze jest u¿ywaæ losowych testów, ale te¿ trzeba przeprowadzaæ takie kontrolowane, gdzie dajemy specyficzne
+wartoœci, z którymi naszym zdaniem mo¿e byæ problem
+Ogólnie testowanie, to takie bycie skurwysynem wzglêdem naszej funkcji/systemu, gdzie na si³ê szukamy jakiejœ luki, której nie powinno byæ
+no chyba, ¿e np. w wymaganiach mamy napisane, ¿e np. funkcja przyjmuje POSORTOWANY kontener, no to wtedy bez sensu na si³ê j¹ testowaæ pod tym wzglêdem
+
+Do naszych testów mo¿na dodaæ odmierzanie czasu. Ogólnie odmierzanie czasu pozwala znaleŸæ wadliwe algorytmy, które w³aœnie mog¹ robiæ coœ bezsensownego przypadkowo
+
+Do odmierzania czasu s³u¿y biblioteka <chrono>
+jest tam zegar jak system_clockm, ale te¿ inne dok³adniejsze zegary
+jak chcemy wyœwietliæ czas w specyficznej jednostce np. milisekundach, to wtedy mo¿emy zrobiæ taki zapis
+
+duration_cast<miliseconds>(t2-t1).count; i to da nam czas w milisekundach
+
+Albo jak jest siê szefem, to siê u¿ywa biblioteki CrackTimer.h, napisanej przezemnie B) i wszystko staje siê jeszcze ³atwiejsze
+

@@ -1,0 +1,79 @@
+        //findDates();
+        //findCreditCardNumbers();
+        //NumberEight();
+        NewlineCheck();
+
+
+        double arr_A[2][2] = { { 0, 1 }, { 1, 0} };
+		double arr_b[2] = { 5, 6 };
+
+		GaussElimination::Matrix A(2, 2);
+		GaussElimination::Vector b(2);
+		GaussElimination::Vector x(2);
+
+		A[0] = arr_A[0];
+		A[1] = arr_A[1];
+		b = arr_b;
+
+		x = GaussElimination::classical_gaussian_elimination(A, b);
+
+		cout << x[0]<< "  " << x[1];
+		//default_random_enigne_check(50, 30);
+
+		----------------------------------------------------------------------
+
+		//2
+        /*unsigned*/ int x=bitset<32>("00000000000000000000000000000000").to_ulong();
+        /*unsigned*/ int y = ~x;
+        /*unsigned*/ int z=bitset<32>("10101010101010101010101010101010").to_ulong();
+        /*unsigned*/ int a = ~z;
+
+        cout << x<<"  "<<y<<"  "<<z<<"  "<<a<<"\n";
+
+		//4
+		while(1){}
+
+		//5, better do not run it
+		for (signed char x = 'a'; x < 128; x++)
+            cout << x;
+
+		print_hex(0, 400);
+        cout << "\n\n";
+        print_hex(-200, 200);
+
+
+		----------------------------------------------------------------------------
+
+
+		//vector<int> ints = { 1,2,3,4,5,6,7,8,9,10 };
+        //cout << Custom_Binary_Search(ints.begin(), ints.end(), 1);
+        //test1();
+        //test_data_test("TestData_test.txt");
+         //bool result=modify_test();
+         //cout << "\n\nModify test result: " << result;
+        /*
+        row_accum_test(100);
+        cout << "\n\n";
+        row_accum_test(1000);
+        cout << "\n\n";
+        row_accum_test(10000);
+        cout << "\n\n";
+        */
+        /*
+        random_number_test(0, 10000, 500000);
+        cout << "\n";
+        random_number_test(0, 1000, 5000000);
+        cout << "\n";
+        random_string_test(0, 100, 500000);
+        cout << "\n";
+        random_string_test(0, 100, 5000000);
+        */
+
+        random_string_map_test(0, 100, 500000);
+        random_string_map_test(0, 100, 5000000);
+
+        //check_bytes_count();
+        //usePPN();
+        //decipher("input.txt", "output.txt", "bs");
+        //encipher("output.txt", "input.txt", "bs");
+        //alloc_dealloc_check();
