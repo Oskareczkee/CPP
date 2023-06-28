@@ -1,0 +1,13 @@
+﻿  Potężne programowańsko.cpp
+P:\Visual Studio Programy\Potężne programowańsko\Class.h(116,19): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(103,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(151,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(155,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(185,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(189,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(312,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(321,13): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Potężne programowańsko\Potężne programowańsko.cpp(154,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(146): warning C4715: "zwroc_index_znacznika”: niewszystkie ścieżki kodu zwracają wartość
+P:\Visual Studio Programy\Potężne programowańsko\IO Stream.h(293): warning C4715: "formatuj_tekst”: niewszystkie ścieżki kodu zwracają wartość
+  Potężne programowańsko.vcxproj -> P:\Visual Studio Programy\Potężne programowańsko\Debug\Potężne programowańsko.exe
