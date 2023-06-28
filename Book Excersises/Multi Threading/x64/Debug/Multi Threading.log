@@ -1,0 +1,4 @@
+﻿  Multi Threading.cpp
+P:\Visual Studio Programy\CSharp\Multi Threading\async.h(15,19): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+P:\Visual Studio Programy\CSharp\Multi Threading\Multi Threading.cpp(18,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Multi Threading.vcxproj -> P:\Visual Studio Programy\CSharp\Multi Threading\x64\Debug\Multi Threading.exe
