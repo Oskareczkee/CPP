@@ -1,0 +1,175 @@
+        //stack_check();
+
+        List<string> list;
+
+        list.add("Siema");
+        list.add("Witam");
+        list.add("Hej");
+
+        auto content = list.GetContent(3)->content;
+        cout << content;
+
+        cout << Cfunc::cat_dot("Oskar", "Niedzwiedzki", "..[]")<<"  "<<is_palindrome("kajak");
+
+        /////////////////////////////////
+
+        vector<Test> test{ {2,"siema",3} };
+        vector<Test> test1{ {3,"siemaaa",4} };
+        vector<int> v1{1,2,3,4,5};
+        vector<int> v2{1,2,3,4,5};
+        vector<double>v3{1.5, 2.5, 3.5, 4.5, 5.5};
+        vector<char>v4{ 'a','b','c','d','e' };
+        vector<string>v5{ "siema", "Witaj","Bywaj","Hej","Elo" };
+        f(v1, v2);
+        Excercise::operator<<(cout, v1);
+        vector_multiply(v3,v2);
+        Excercise::operator<<(cout, v3);
+
+        /////////////////////////////
+    
+        Unique_ptr<vector<int>>ptr (vector<int>{1, 2, 3, 4, 5, 6, 7, 8});
+
+        (*ptr).push_back(10);
+
+        ptr->push_back(11);
+        cout<<ptr->at(9);
+
+        cout << ptr.release()->at(9);
+        
+        Counted_ptr<int> ptr(int(10));
+
+        cout << ptr.count();
+        cout << " ";
+        cout << *(ptr.release());
+        cout << "\n\n";
+
+        Counted_ptr<int> ptr1(ptr);
+
+        cout << ptr1.count();
+        cout << " ";
+        cout << *(ptr1.release());
+        cout << "\n\n";
+
+        Counted_ptr<int> ptr2(ptr1);
+
+        cout << ptr2.count();
+        cout << " ";
+        cout << *(ptr2.release());
+        cout << "\n\n";
+
+        Counted_ptr<int> ptr3(ptr2);
+
+        cout << ptr3.count();
+        cout << " ";
+        cout << *(ptr3.release());
+        cout << "\n\n";
+
+        ptr.~Counted_ptr();
+
+        cout << ptr1.count();
+        cout << " ";
+        cout << *(ptr1.release());
+        cout << "\n\n";
+
+
+        //////////////////////////////////////////////////////////////////////
+        File_handle file("notes.txt");
+
+        string ss;
+        getline(file.File(), ss);
+        cout << ss;
+
+        file = File_handle("old code.txt");       
+        getline(file.File(), ss);
+        cout << ss;
+
+
+         //////////////////////////////////////////////////////////////////////
+        vector<string> str{ "ania", "Zbyszek", "Maja", "zbigniew", "Gregorz" };
+        cout << findLast(str);
+
+        list<int> lst{ 1,2,3,4,5,6,7,8 };
+        vector<double> vec = ListToVector(lst);
+
+        sort(vec.begin(), vec.end());
+
+        Excercise::operator<<(cout, vec);
+
+         /*
+        struct Test
+        {
+            int x;
+            string y;
+            double b;
+        };
+        */
+
+        //vector<Test> v1{ {2,"siema",3} };
+
+        list<int> vals{ 1,10,2,3,4,100,130,0 };
+        vector<int> valsv{ 1,10,2,3,4,100,130,0 };
+
+        cout<<*High(vals.begin(), vals.end())<<"\n"<< *High(valsv.begin(), valsv.end());
+
+                slist<int> list;
+
+        list.push_back(1);
+        list.push_back(2);
+        list.push_back(3);
+        list.push_back(4);
+        list.push_front(5);
+
+        list.push_front(6);
+
+        list.push_front(7);
+        list.pop_front();
+
+        cout << list.front();
+
+                vector<int> vec{ 1,2,3,5,6,7 };
+
+        Vector<int> vecc;
+
+        vecc.push_back(2);
+        vecc.push_back(3);
+        vecc.push_back(4);
+        vecc.push_back(5);
+
+
+        vector<int>::iterator itr(vec.begin()+2);
+
+
+        //this cuts last number in the original vector
+        Vector<int>::Iterator Itr(&(*vec.begin()), &(*vec.begin()), &(*(vec.end()-1)));
+        Vector<int>::Iterator Itr2(vecc.begin());
+        
+        /*
+        cout <<"\n"<< vecc.at(0)<<"\n";
+        cout << *vecc.end();
+        cout << "\n" << vecc.end() - vecc.begin() << "d";
+        */
+
+
+
+        BentleysExperiment(1000, 2);
+
+         //////////////////////////////////////////////////////////////////////
+        /*
+        vector<int> vec{ 1,1,3,3,4,4,6,6 };
+
+        cout << overloaded_algorithms::count(vec.begin(), vec.end(), 3);
+        cout << overloaded_algorithms::count_if(vec.begin(), vec.end(), [](const int& num){return num == 3; });
+
+        t6();
+
+        cout << overloaded_algorithms::binary_search(vec.begin(), vec.end(), 2);
+        */
+
+        /*
+        ifstream is{ "random text.txt" };
+        CrackTimer timer;
+        timer.StartTimer();
+        word_frequency(is);
+        timer.EndTimer();
+        cout <<"\n\n\n"<< timer.ShowTime();
+        */

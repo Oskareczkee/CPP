@@ -1,0 +1,10 @@
+Kapusta 0 5
+Cukierki 1 10
+Gitara 2 100
+Siema 3 10
+Kawusia 4 3
+Herbatniki 5 3
+Zupa 6 10
+Pierogi 7 15
+VR 8 1200
+DOOM 9 180

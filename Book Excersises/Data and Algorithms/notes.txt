@@ -1,0 +1,399 @@
+Notki jak zawsze pisane po polsku
+
+Nale¿y zwróciæ uwagê, ¿e te notki s¹ bardzo uproszczone ze wzglêdu na to, ¿e wskaŸnikom poœwiêci³em du¿o czasu w swoim ¿yciu
+i niektóre rzeczy s¹ dla mnie bardzo oczywiste, s¹ tutaj raczej rzeczy, których nie wiedzia³em, albo s¹ bardzo przydatne
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C17
+
+w miarê mo¿liwoœci unikaæ rzutowania typów, rzutowanie jest niebezpieczne
+szczególnie reinterpret_cast mo¿e prowadziæ do wielu b³êdów, których wyszukanie mo¿e byæ baaardzo trudne, pozatym kod mo¿e staæ siê nie przenoœny w wiêkszoœci przypadków
+rzutowania u¿ywaæ w ostatecznoœci, gdy nie ma innego rozwi¹zania, w razie mo¿liwoœci lepiej napisaæ kod, który nie wymaga ¿adnego rzutowania
+
+¿eby przekazaæ, ¿e wskaŸnik nie rzutuje na nic, lepiej jest u¿yæ nullptr ni¿ NULL, gdy¿ null jest WARTOŒCI¥ oznaczaj¹c¹ 0, a nullptr wskaŸnikiem wskazuj¹cy konkretne miejsce w pamiêci
+
+static_cast<typ>() - s³u¿y do jawnego konwertowania pomiêdzy spokrewnionymi typami wskaŸnikowymi
+reinterpret_cast<typ>() - umo¿liwia konwersjê pomiêdzy nie spokrewnionymi typami wskaŸnikowymi
+const_cast<typ>() - usuwa modyfikator const ze zmiennej
+
+Nale¿y uwa¿aæ na wskaŸniki zerowe i ZAWSZE je sprawdzaæ w funkcjach u¿ywaj¹cych wskaŸników
+
+giga ciekawostka: ++n - najpierw zwiêksza wartoœæ, póŸniej zwraca j¹
+				  n++ - najpierw zwraca wartoœæ, póŸniej zwiêksza j¹
+
+jeœli u¿yjemy wskaŸnika w if(), to if zwróci prawdê, jeœli wskaŸnik bêdzie zainicjalizowany adresem ró¿nym od nullptr
+
+wskaŸnik this jest niezmienny i nie mo¿na modyfikowaæ adresu na który wskazuje (kompilator powinien wyrzuciæ b³¹d)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C18
+
+Gdy mamy konstruktor kopiuj¹cy vector(const vector&), to mo¿emy u¿ywaæ notacji
+
+vector v1=v;
+LUB
+vector v1{v};
+LUB
+vector v1(v);
+
+Warto zauwa¿yæ, ¿e konstruktor kopiuj¹cy, mimo ¿e wygl¹da jak przypisywanie z kopiowaniem to nim nie jest,
+nale¿y zauwa¿yæ, ¿e wszystkie te wektory napisane wy¿ej s¹ dopiero inicjalizowane, przy u¿yciu w³aœnie konstruktora kopiuj¹cego
+
+przypisanie kopiuj¹ce: 
+vector& operator=(const vector&)
+
+przyk³ad przypisania kopiuj¹cego:
+
+vector& operator=(const vector& a)
+{
+	T* p= new T[a.size];// alokacja pamiêci, kopia elementów ze Ÿród³owego wektora
+	copy(a.elem, a.elem+a.size, elem);// kopiowanie elementów wektora docelowego
+	delete[] elem;//dealokacja starej pamiêci wektora docelowego
+	elem=p;//resetowanie elem na nowe elementy
+	size=a.size;
+	return *this;//zwracanie referencji do samego siebie
+}
+
+Implementuj¹c przypisanie lepiej jest utworzyæ kopiê starych elementów przed utworzeniem kopii, gdy¿ nie zawsze mamy pewnoœæ, ¿e dane informacje bêdzie czym zast¹piæ
+Przyk³adem, który mo¿e powodowaæ problemy jest np. przypisanie wektora do samego siebie, jeœli nie zastosujemy siê do tej zasady, to mo¿emy uzyskaæ dziwne wyniki
+
+Kopiowanie p³ytkie - kopiowanie tylko wskaŸnika , przez co 2 wskaŸniki wskazuj¹ na ten sam obiekt
+Kopiowanie g³êbokie - Kopiowanie tego, co wskazuje wskaŸnik, dziêki czemu 2 wskaŸniki wskazuj¹ na ró¿ne obiekty
+
+Konstruktory i przypisania definiujemy tak, aby uzyskaæ kopiowanie g³êbokie
+
+&& - referencja do r-wartoœci, u¿ywana w definicjach operacji przenoszenia
+operacje przenoszenia nie przyjmuj¹ argumentów const 
+
+Definicje operatorów przenoszenia:
+
+vector(vector&& a): sz{a.sz}, elem{a.elem}
+{
+	a.sz=0;// wektor a staje siê pusty
+	a.elem=nullptr;
+}
+
+vector& operator=(vector&& a)
+{
+	delete[] elem; // dealokacja starej przestrzeni
+	elem=a.elem; // kopiowanie elementu a i sz
+	sz=a.sz;
+	a.elem=nullptr; // wektor a staje siê pusty
+	a.sz=0;
+	return *this;// zwrot referencji do siebie
+}
+
+Operatory przenoszenia s¹ bardzo pomocne w sytuacjach, gdy chcemy "po¿yczyæ" reprezentacjê jednego wektora dla drugiego
+unikaj¹ one wtedy bezpoœredniego kopiowania, co ma du¿e znaczenie, gdy nasz wektor bêdzie mia³ bardzo du¿e rozmiary, wtedy operacja kopiowania mo¿e byæ czasoch³onna,
+lepiej wtedy jest jak nasz wektor "przeniesie siê".
+
+Kompilator z automatu bêdzie wiedzia³ kiedy wykonaæ operacjê przoneszenia, a kiedy operacjê kopiowania
+
+ka¿da klasa korzystaj¹ca z zasobów (np. czêsto pamiêci) powinna mieæ destruktor zwalniaj¹cy te zasoby, gdy stan¹ siê bezu¿yteczne
+destruktor jest wirtualny, gdy klasa, któr¹ piszemy jest klas¹ bazow¹ dla innych klas
+
+Konstruktor przyjmuj¹cy jeden argument definiuje konwersjê z typu tego argumentu na swoj¹ klasê:
+
+complex(double)// definiuje konwersjê typu double na complex
+complex(double, double)
+
+Niejawne konwersje mog¹ byæ groŸne dla niektórych typów, np. dla vectora nie powinna istnieæ konwersja z typu int na vector (jak wygl¹da³aby taka konwersja ?)
+vector(int);
+vector v=20;//tworzy wektor 20 liczb typu int
+v=20; // ??
+void f(const vector &);
+f(10); // ??
+
+Jeœli chcemy, aby nasz konstruktor nie posiada³ niejawnych konwersji, nale¿y u¿yæ s³owa kluczowego explicit:
+explicit vector(int); // nie bêdzie posiada³ niejawnych konwersji
+
+operator uzyskania dostêpu:
+T& operator[](int i){return elem[i];}
+Gdzie T& jest referencj¹ do typu, który przechowuje wektor
+
+taki operator nie bêdzie dzia³a³, gdy nasz vector bêdzie const, gdy¿ operator[] ma potencja³ do jego modyfikacji
+double operator[](int i) const{...}; //operator dla wektorów const, nie ma ju¿ potencja³u do modyfikacji wektora
+const double& operator[](int i){...}// te¿ git, ale double jest ma³ym obiektem, dlatego lepiej go przekazywaæ przez wartoœæ
+Zapisu powy¿ej u¿ywaæ dla du¿ych obiektów
+
+Giga outplay moment:
+        int arr[20]{ 0 };
+        int* p = &arr[10];
+        cout << p[-5];
+
+Arytmetyka wskaŸników:
+p+=5; // przesuwa wskaŸnik o 5 elementów w prawo
+p-=5; // przesuwa wskaŸnik o 5 elementów w lewo
+
+NIGDY NIE ZWRACAÆ WSKANIKA DO ZMIENNEJ LOKALNEJ - takie zmienne s¹ czêsto niszczone na koñcu zakresu, a wiêc taki wskaŸnik nie bêdzie na nic wskazywa³
+
+int* f()
+{
+	int x=7;
+	return &x;// GIGA BLAD
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C19
+
+Szablonów nale¿y u¿ywaæ wszêdzie, gdzie liczy siê wydajnoœæ oraz gdzie najwa¿niejsze jest ³¹czenie informacji z ró¿nych typów
+
+Definicje szablonów najlepiej jest umieszczaæ w plikach nag³ówkowych, ze wzglêdu na to, ¿e kompilatory w wiêkszoœci przypadków
+wymagaj¹ podania pe³nej definicji szablonu, dlatego wszystkie klasy szablonowe i funkcje powinno siê umieszczaæ w plikach nag³ówkowych i nie rozszerzaæ ich
+definicji do plików c++ (cpp). Nie jest to wymóg, ale oszczêdzi nam nerwów dopóki nie pojawi¹ siê radykalnie ulepszone implementacje
+
+W szablonach mo¿emy definiowaæ koncepcje (concepts)
+Jeœli u¿yjemy koncepcji, argument szablonu, który podamy, bêdzie musia³ je spe³niaæ, by mo¿na go by³o u¿ywaæ
+
+template<class T>
+	requires Element<T>() // typ T musi byæ Elementem
+class vector{...}
+
+funkcje consexpr s¹ predykatami typów, ewaluowanymi w czasie kompilacji
+(napisa³em to, bo czasami programiœci pisza funkcje zwracaj¹ce const, a to s¹ predykaty po prostu)
+
+powy¿szy zapis mo¿na skróciæ:
+
+template <Element T> // dla wszystkich typów T, takich, ¿e Element<T>() to prawda
+class vector{...}
+
+Popularne i praktyczne koncepcje:
+
+Element<E>() - E mo¿e byæ elementem w kontenerze
+Container<C>() - C mo¿e przechowywaæ elementy Element oraz mo¿na go przegl¹daæ jako sekwencjê [begin():end()]
+Forward_iterator<For>() - przy u¿yciu For mo¿na przegl¹daæ sekwencjê [b:e) (jak listê powi¹zan¹, wektor lub tablicê)
+Input_iterator<In>() - przy u¿yciu In mo¿na odczytaæ sekwencjê [b:e) tylko raz (jak strumieñ wejœciowy)
+Output_iterator<Out>() - sekwencjê mo¿na wysy³aæ na wyjœcie za pomoc¹ Out
+Random_access_iterator<Ran>() - przy u¿yciu Ran mo¿na wielokrotnie odczytywaæ i zapisywaæ sekwencjê [b:e). Ponadto Ran obs³uguje indeksowanie za pomoc¹ operatora []
+Allocator<A>() - przy u¿yciu A mo¿na zajmowaæ i zwalniaæ pamiêæ (jak pamiêæ wolna)
+Equal_comparable<T>() - dwa T mo¿na porównaæ za pomoc¹ operatora ==, wynik jest wartoœci¹ logiczn¹
+Equal_comparable<T, U>() - T i U mo¿na porównaæ za pomoc¹ operatora ==, wynik jest wartoœci¹ logiczn¹
+Predicate<P,T>() - mo¿emy wywo³aæ P z dwoma argumentami typów T, aby otrzymaæ wynik w postaci wartoœci logicznej
+Binary_predicate<P,T>() - mo¿emy wywo³aæ P z dwoma argumentami typu T , aby otrzymaæ wynik w postaci wartoœci logicznej
+Binary_predicate<P,T,U>() - mo¿emy wywo³aæ P z argumentami typu T i U, aby otrzymaæ wynik w postaci wartoœci logicznej
+Less_comparable<L,T>()- mo¿emy u¿yæ L do porównania dwóch T przy u¿yciu operatora mniejszoœci <, aby otrzymaæ wynik w postaci wartoœci logicznej
+Less_comparable<L,T,U>() - mo¿emy u¿yæ L do porównania T z U przy u¿yciu operatora mniejszoœci <, aby otrzymaæ wynik w postaci wartoœci logicznej
+Binary_operation<B,T,U>() - mo¿emy u¿yæ B, aby wykonaæ operacjê na dwóch T
+Binary_operation<B,T,U>() - mo¿emy u¿yæ B, aby wykonaæ operacjê na T i U
+Number<N>() - N zachowuje siê jak liczba, tzn obs³uguje operacje +,-,/,*
+
+wiêcej o konecepcjach:
+	https://en.cppreference.com/w/cpp/language/constraints
+	https://en.cppreference.com/w/cpp/concepts
+
+
+RADA
+	Szablonów lepiej nie mieszaæ z polimorfizmem, mo¿na, ale mo¿e byæ to bardzo trudne, zreszt¹ kompilator bardzo stara siê nas chroniæ w takich sytuacjach,
+	¿ebyœmy jakiejœ g³upoty nie zrobili
+
+Jako parametrów szablonów mo¿na np. u¿ywaæ liczb ca³kowitych
+Tak naprawdê mo¿na sobie u¿ywaæ ka¿dego typu, ale musimy po prostu wiedzieæ jak on dzia³a i jak go u¿yjemy potem
+
+template<class T, int N> struct array
+{
+	T elem[N];
+	...
+}
+
+array<int, 256>// 256 liczb ca³kowitych
+array<double, 6> ad {0.0,1.1,2.2,3.3,4.4,5.5} // zwróæ uwagê na inicjalizator !
+const int max=1024;
+
+void fct(int n)
+{
+	array<char, max>// git, max jest znany kompilatorowi
+	array<char, n>// nie git, n nie jest znany kompilatorowi (musi byæ najlepiej const)
+}
+
+Czasami szablon potrafi sam wydedukowaæ argumenty, które podamy
+array<char, 1024> buf;
+template <class T, int N> void fill(array<T,N>& b. const T& val)
+{
+	for(int i=0;i<N;++i)b[i]=val;
+}
+
+fill(buf, 'x'); // kompilator dedukuje T i N na podstawie argumentów, nie musimy ich podawaæ
+// T = char
+// N=1024
+
+operator [] w wektorze w c++ nie sprawdza zakresu, zakres sprawdza jego funkcja at(int)
+powodem tego jest to, ¿e wektor musi byæ "flexible", a czasami w ekstremalnych warunkach sprawdzanie zakresu mo¿e spowolniæ program, gdy musi byæ maksymalnie szybki
+czasami nie bêdzie zgodny ze starym kodem/standared
+czasami programiœci maj¹ ostre ograniczenia czasu wykonywania programu i nie mog¹ pozwoliæ sobie na rzucanie wyj¹tków
+jeœli nas nie obowi¹zuj¹ te 3 powody, to lepiej jest sprawdzaæ ten zakres mimo wszystko
+	
+Giga tricki
+
+using size_type = typename std::vector<T>::size_type; // wprowadza synonim dla operatora size_type std::vectora
+using vector<T>::vector // u¿ywa konstruktorów klasy vector<T>
+
+unique_ptr / auto_ptr (w bibliotece standardowej auto_ptr, <memory>)
+unique_ptr zapewnia nam, ¿e obiekt który tam w³o¿ymy, zostanie zawsze poprawnie zniszczony
+unique_ptr jest u¿yteczny, gdy piszemy wra¿liwy kod ze wskaŸnikami i zawsze chcemy mieæ pewnoœæ, ¿e nie nast¹pi wyciek pamiêci
+
+unique_ptr<vector<int>> p = {new vector<int>}// p teraz przechowuje vector<int>* i poprawnie go usunie, gdy coœ z³ego siê stanie
+return p.release()// zwraca wskaŸnik
+
+unique_ptr nie mo¿na przypisywaæ do niego innego unqiue_ptr
+unique_ptr p = unique_ptr i; // blad
+
+Jeœli chcemy wskaŸnik, który gwarantuje usuniêcie i bêdzie móg³ byæ kopiowalny nale¿y u¿yæ
+shared_ptr
+shared_ptr jest "ciê¿szy", gdy¿ zawiera licznik pozwalaj¹cy dopilnowaæ, aby ostatnia kopia zniszczy³a wskazywany obiekt
+
+czasami warto jest zdefiniowaæ klasê "bazow¹" do reprezentacji w niej naszych podstawowych koncepcji
+np. vector u¿ywa vector_base
+takie rozwi¹zanie tak¿e pozwala rozwi¹zywaæ ró¿ne problemy z alokacj¹ pamiêci i niebezpieczeñstawami zwi¹zanymi z tym
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C20
+
+deklaracja using tworzy alias typu, bêd¹cy aliasem (inn¹ nazw¹) danego typu
+Przyk³ady:
+
+using iterator=T*;
+using value_type=T;
+using size_type=unsigned long;
+
+Od teraz, jeœli to zadeklarujemy w klasie naszej, zmienne bêd¹ mog³y przyjmowaæ nazwy naszych aliasów
+U³atwia to czêsto zrozumienie i czytanie naszego kodu
+
+Jest to u¿ywane np. w wektorach
+
+vector<int>::size_type i = 0;
+
+Czasami nie lubimy pisaæ np. vector<int>::iterator itr = vec.begin();
+mo¿emy wtedy stworzyæ alias szablonu
+
+template<typename C>
+using Iterator = typename C::iterator;
+
+od teraz mo¿emy u¿ywaæ konstrukcji Iterator<C>
+
+KATEGORIE ITERATORÓW:
+(jakie operacje zapewniaj¹)
+
+Input iterator -  przechodzenie do przodu za pomoc¹ operatora++
+				  odczyt wartoœci za pomoc¹ *(dereferencja)
+				  LUB odczyt wartoœci za pomoc¹ ->
+
+Output iterator - przechodzenie do przodu za pomoc¹ operatora++
+				  zapis wartoœci za pomoc¹ *(dereferencja)
+				  LUB zapis wartoœci za pomoc¹ ->
+
+Forward iterator - wielokrotne przechodzenie do przodu za pomoc¹ operatora++
+				   odczyt i zapis za pomoc¹ *(dereferencja)
+				   LUB odczyt i zapis za pomoc¹ ->
+
+Bidirectional iterator - pozwala przechodziæ do przodu za pomoc¹ ++
+						 pozwala przechodziæ do ty³u za pomoc¹ --
+						 odczyt i zapis wartoœci (jeœli elementy nie s¹ sta³e) za pomoc¹ *(dereferencja)
+						 LUB odczyt i zapis wartoœci (jeœli elementy nie s¹ sta³e) za pomoc¹ ->
+
+Random-access iterator - pozwala przechodziæ do przodu za pomoc¹ ++
+						 pozwala przechodziæ do ty³u za pomoc¹ --
+						 odczyt i zapis wartoœci (jeœli elementy nie s¹ sta³e) za pomoc¹ *(dereferencja)
+						 odczyt i zapis wartoœci (jeœli elementy nie s¹ sta³e) za pomoc¹ []
+						 LUB odczyt i zapis wartoœci (jeœli elementy nie s¹ sta³e) za pomoc¹ ->
+						 mo¿na sprawdziæ odleg³oœæ dziel¹c¹ dwa iteratory dostêpu swobodnego odejmuj¹c jeden od drugiego
+						 mo¿na indeksowaæ i dodawaæ liczby ca³kowite za pomoc¹ operatorów + i -
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C21
+
+Czasami do funkcji musimy przekazywaæ predykat, czyli funkjcê zwracaj¹c¹ wartoœæ logiczn¹, jeœli dane warunki siê spe³ni¹
+
+np.  bool is_greater__than_42(int x){return x>42;}
+
+Jednak takie u¿ycie predykatów jest niepraktyczne, nasza funkcja nie jest elastyczna i sprawdza tylko czy x jest wiêksze od 42
+jeœli bêdziemy chcieli sprawdziæ czy x jest wiêksze od 43 musimy wtedy napisaæ now¹ funkcjê
+
+Dlatego czêsto w STL-u u¿ywa siê obiektów funkcyjnych
+obiekt funkcyjny to klasa, które przechowuje wartoœci naszej "funkcji" i ma najczêœciej przeci¹¿ony operator () zwracaj¹cy typ bool
+
+class Greater_than
+{
+	int v;
+public:
+	Larger_than(int vv): v(vv){}
+	bool operator()(int x)const{return x>v;}
+}
+
+funkcja find_if np.:
+auto x= find_if(vec.begin(), vec.end(), Greater_than(31));
+
+najpierw wywo³a konstruktor klasy Greather_than z argumentem 31, a potem bêdzie u¿ywaæ jego operatora (), aby porównywaæ wartoœci
+
+Takie obiekty funkcyjne, jeœli s¹ ma³e i proste w implementacji, s¹ zazwyczaj bardzo wydajne a nawet wydajniejsze od wywo³ywania funkcji
+Wydajnoœæ ta dla prostych obiektów mo¿e wynosiæ nawet od 10 do 50 razy! 
+
+Jednak, gdy nasze porównanie jest proste, wtedy najlepiej jest poprostu u¿yæ wyra¿enia lambda i z g³owy
+[&](double a){return a>x} // ta funckja bêdzie dzia³aæ, jeœli x jest jak¹œ zmienn¹ w zakresie, wtedy ta zmienna x jest ³apana przez referencjê ([&]) ³apie nam te x
+
+bilbioteka standardowa zapewnia nam 4 algorytmy numeryczne, które znajdziemy w bibliotece <numeric>
+
+funkjce te czêsto przyjmuj¹ 3 albo 4 i 5 argument, którym jest rodzaj operacji do wykonania
+Przyjmuje on 2 argumenty, proste szablony operacji mno¿enia, dzielenia, dodawania, odejmowania czy dzielenia z reszt¹ znajdziemy w bilbiotece <functional>
+
+kontenery STL znajdziemy w nag³ówkach STL-a <map>, <set>, <unordered_map>, <unordered_set>
+
+unordered_map jest konterem map, który jest bardziej zoptymalizowany dla kluczy bêd¹cych ³añcuchami
+set to kontener przechowuj¹cy po prostu klucze
+
+gdy w mapie u¿ywamy funkcji insert, to jest zwracana para (pair) sk³adaj¹ca sie z iteratora na wstawiony element oraz wartoœci bool
+która jest ustawiona na true, jak wstawiaie powiod³o siê, a na false, jeœli wartoœæ znajduje siê ju¿ w drzewi
+
+mapa tak¿e przyjmujê argument Cmp, jest to komparator, który definiuje znaczenie porz¹dku w s³owniku
+standardowo jest on ustawiony na Less<Key>
+mo¿na te¿ u¿yæ go jako 3 argumentu w konstruktorze i daæ np. No_case, wtedy przy porównywaniu elementów nie bêdzie brana wielkoœæ liter
+
+w c++ istniej¹ iteratory strumieni
+istream_iterator<T> oraz ostream_iterator<T>
+
+nie wiem jak wyt³umaczyæ u¿ytecznoœæ tych iteratorów, ale mo¿na napisaæ sobie tak¹ funkcjê
+
+void f()
+{
+	string from,to;
+	cin>>from>>to;
+
+	ifstream is{from};
+	ostream os{to};
+
+	istream_iterator<string>ii{is};
+	ifstream_iterator<string>eos; // reprezentuje koniec danych wejœciowych (czêœciej nazywany eof)
+	ostream_iterator<string>oo{os, "\n"};
+
+	vector<string>b {ii,eos}; // kontenery mo¿emy inicjalizowaæ iteratorami, wtedy zostaje wczytana sekwencja <ii,eos)
+	sort(b.begin(), b.end());
+	copy(b.begin(),b.end(), oo);
+}
+
+powy¿szy kod mo¿e byæ uproszczony z u¿yciem kontenera set
+
+przy wstawianiu wartoœci do zbioru, duplikaty bêd¹ pomijane z automatu
+void f()
+{
+	string from,to;
+	cin>>from>>to;
+
+	ifstream is{from};
+	ostream os{to};
+
+	set<string> b {istream_iterator<string>{is}, istream_iterator<string>{}};
+	copy(b.begin, b.end(), ostream_iterator<string>{os, " "});
+}
+
+w c++ mamy dostêpne operacje wyszukiwania binarnego
+funckcje wyszukiwania binarnego:
+
+binary_search(...) - dokonuje wyszukiwania binarnego, zwraca iterator do wartoœci, jeœli j¹ znajdzie, mo¿na przeci¹¿yæ komparator
+
+equal_range(...) - zwraca zakres (2 iteratory pocz¹tku i koñca) w których jest wartoœæ x, mo¿na przeci¹¿yæ komparator
+upper_bound(...) - zwraca iterator do pierwszej wartoœci wiêkszej od x, mo¿na przeci¹¿yæ komparator
+lower_bound(...) - zwraca iterator do pierwszej wartoœci mniejszej od x, mo¿na przeci¹¿yæ komparator

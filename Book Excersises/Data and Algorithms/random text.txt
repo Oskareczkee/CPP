@@ -1,0 +1,3 @@
+C++ jest jezykiem ogolnego przeznaczenia, zaprojektowanym z mysla o tym, by uprzyjemnic programowanie doswiadczonym programistom.
+Z wyjatkiem kilku drobnych szczegolow, C++ jest nadzbiorem C. Jezyk C++ rozszerza zbior udogodnien dostarczanych przez C o elastyczne
+i efektywne udogodnienia do definiowania nowych typow

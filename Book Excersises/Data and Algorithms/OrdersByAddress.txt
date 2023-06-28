@@ -1,0 +1,56 @@
+Name: Kozlodui  Address: BUL,SOF,V.Levski35  Date: 11.03.2017
+
+Purchases:
+{
+Electricity  1.5  1000000
+Reactor  1e+09  2
+Turbine  1e+09  2
+}
+
+Name: Alibaba  Address: CHI,BJ,Mao  Date: 28.02.2017
+
+Purchases:
+{
+BMWReplica  15000.3  2
+MercedesReplics  8350.69  5
+}
+
+Name: Jumbo  Address: GRE,ATH,Papandreou140  Date: 01.03.2017
+
+Purchases:
+{
+Toy  5.2  10000
+Doll  2.34  5000
+Bike  50.23  300
+Pen  0.25  5000000
+}
+
+Name: Atom  Address: RU,Moscow,LeninBlvrd  Date: 28.02.2017
+
+Purchases:
+{
+Reactor  1.5e+08  2
+Compressors  8.39995e+06  2
+CoolingSystem  2.83001e+07  2
+ControlSystm  1.00035e+06  1
+}
+
+Name: Apple  Address: USA,LA,RocketRoad1  Date: 28.02.2017
+
+Purchases:
+{
+Iphone  500  2
+Ipad  300  2
+Imaiko  0  2
+}
+
+Name: Microsoft  Address: USA,LA,RocketRoad1  Date: 01.03.2017
+
+Purchases:
+{
+Windows98  100  5
+Windows7  12  5
+Windows10  0  5
+WindowsXP  150  5
+}
+

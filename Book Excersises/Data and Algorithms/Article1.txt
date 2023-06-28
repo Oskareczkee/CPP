@@ -1,0 +1,1243 @@
+Gastroenterologia Kliniczna
+2016, tom 8, nr 2, 62–73
+Copyright © 2016 Via Medica
+ISSN 2081–1020
+
+www.gastroenterologia.viamedica.pl
+
+Lucyna Ostrowska
+Zakład Dietetyki i Żywienia Klinicznego, Uniwersytet Medyczny w Białymstoku
+
+Wpływ mikrobioty jelitowej na zaburzenia
+metaboliczne i otyłość — punkt widzenia
+internisty i dietetyka
+The influence of intestinal microbiota on metabolic disorders
+and obesity; internist’s and dietetitian’s view
+Streszczenie
+Otyłość staje się jednym z najpoważniejszych problemów zdrowotnych większości społczeństw na świecie.
+Nadal poszukuje się przyczyn takiego stanu, a zwłaszcza modyfikowalnych czynników wpływających na
+równowagę energetyczną organizmu. W ostatnim czasie coraz więcej przeprowadzonych badań umożliwia
+lepsze zrozumienie funkcji mkirobioty jelitowej oraz jej
+wpływu na metabolizm i magazynowanie energii w organizmie gospodarza. W niniejszej pracy przedstawiono
+aktualną wiedzę na temat roli mikrobioty jelitowej w patogenezie otyłości, insulinooporności, cukrzycy typu 2,
+zaburzeń lipidowych i niealkoholowej stłuszczeniowej
+
+Abstract
+Obesity becomes one of the most serious health problem
+of most societis in the world. Factors that may modify
+human energy balance are being intensively evaluated
+and there is an increasing number of studies that help us
+to better understand the relationship between gut microbiota and human body metabolism and energy storage.
+This review presents the newest evidence on the role of
+intestinal microbiota in the patogenesis of obesity, insulin
+resistance, diabetes mellitus type 2, and non-alcoholic
+fatty liver disease. Intestinal microbiota differs substantially
+
+Wstęp
+
+Adres do korespondencji:
+dr hab. n. med. Lucyna Ostrowska
+Zakład Dietetyki
+i Żywienia Klinicznego UM
+Mieszka I 4B, 15−054 Białystok
+tel.: 85 732 82 44
+faks: 85 732 82 44
+e-mail: lucyna@umb.edu.pl
+
+62
+
+Otyłość jest chorobą przewlekłą bez tendencji do samoistnego ustępowania. Jej występowanie narasta zarówno w krajach wysoko
+uprzemysłowionych, jak i rozwijających się.
+Wyróżnia się otyłość gynoidalną, wisceralną
+(centralną, trzewną) oraz otyłość metaboliczną
+osób szczupłych, czyli zespół MONW (metabolically obese but normal weight). Otyłości
+
+choroby wątroby. Mikrobiota zdecydowanie różni się
+u osób otyłych i szczupłych; u osób otyłych charakteryzuje się głównie spadkiem różnorodności, zmniejszeniem liczby bakterii komensalnych o właściwościach
+przeciwzapalnych i wzrostem liczby drobnoustrojów patogennych. Generuje to ekspresję odmiennych szlaków
+metabolicznych, co może stanowić jeden z czynników
+etiologicznych otyłości i chorób jej towarzyszących.
+Pro- i prebiotykoterapia jest aktualnie wykorzystywana
+w celach rekompozycji ekosystemu jelitowego.
+Gastroenterologia Kliniczna 2016, tom 8, nr 2, 62–73
+Słowa kluczowe: otyłość, mikrobiota, zaburzenia
+metaboliczne, probiotyki, prebiotyki
+in normoweight and obese individualas; in the latter it is
+characterised by low species variety, decreased load of
+commensal bacteria with antiinflammatory activitiy and
+increased load of patogenic microorganisms. These alterations may promote abnormal metabolic pahtways and
+lead to obesity and obesity related disorders. Pro- and
+prebiotic therapy is used for recomposition of the intestinal
+ecosystem.
+Gastroenterologia Kliniczna 2016, tom 8, nr 2, 62–73
+Key words: obesity, microbiota, metabolic disorders,
+probiotics, prebiotics
+
+trzewnej towarzyszą insulinooporność i jej
+konsekwencje — cukrzyca typu 2, nadciśnienie tętnicze, zaburzenia lipidowe oraz niektóre nowotwory (u kobiet rak piersi i macicy,
+u mężczyzn rak prostaty, u obu płci — rak
+jelita grubego) [1]. Poza tym u osób otyłych
+częściej występują: kamica żółciowa, dna
+moczanowa, powikłania miażdżycy, choroba
+zwyrodnieniowa stawów, depresja [2]. Mimo
+coraz większej wiedzy na temat otyłości i jej
+
+powikłań, trwają badania nad poszukiwaniem
+czynników ryzyka i przyczyn tej choroby.
+Wśród najczęściej wymienianych są czynniki
+genetyczne i środowiskowe prowadzące do
+gromadzenia nadmiaru energii przyswojonej
+z pożywienia w postaci zapasowej tkanki
+tłuszczowej. Wśród innych przyczyn wymienia
+się czynniki endokrynologiczne, metaboliczne,
+psychologiczne oraz niektóre leki (przeciwcukrzycowe — w tym sulfonyloamidy i insulina,
+kardiologiczne — głównie beta-adrenolityki
+starszej generacji oraz leki przeciwpsychotyczne i przeciwdepresyjne). Wciąż nie jest
+znana przyczyna, dla której jedni magazynują
+dużo tkanki tłuszczowej podskórnej, a znacznie
+mniej tkanki tłuszczowej trzewnej (typ FOTI,
+fat outside, thin inside), a inni odwrotnie —
+mają mały depozyt tkanki tłuszczowej podskórnej, a duży tkanki wisceralnej (typ TOFI,
+thin outside, fat inside).
+Ostatnio coraz więcej badań dotyczy oceny wpływu mikroflory jelitowej (mikrobioty)
+na równowagę metaboliczną organizmu człowieka. Może on wynikać z wpływu mikrobioty
+na takie czynniki, jak: preferencje smakowe,
+apetyt, wykorzystanie energii z pożywienia,
+motoryka przewodu pokarmowego, metabolizm glukozy i lipidów oraz procesy stłuszczenia wątroby [3]. W niniejszym opracowaniu
+przedstawiono rolę mikrobioty jelitowej w rozwoju zaburzeń metabolicznych, tj. otyłości,
+insulinooporności, cukrzycy typu 2, zaburzeń gospodarki lipidowej i niealkoholowej
+choroby stłuszczeniowej wątroby (NAFLD,
+non-alcoholic fatty liver disease). Dodatkowo
+przedstawiono możliwości modulacji składu
+mikrobioty przez stosowanie pro- i prebiotyków oraz transplantację kału.
+Mikrobiom — kolejny organ gospodarza
+W przewodzie pokarmowym człowieka
+żyje i namnaża się flora jelitowa, która składa
+się nie tylko z bakterii, archeonów, wirusów,
+eukaryota, ale także grzybów [4, 5]. Szacuje
+się, że dorosły człowiek jest gospodarzem
+około 1,5−2,0 kg tych drobnoustrojów, których
+genom zawiera nawet 100 razy większą liczbę
+genów niż genom człowieka [6]. Mikroflora
+jelitowa jest zdominowana przez bakterie
+należące do pięciu rodzajów: Bacteroidetes
+i Firmicutes (stanowią około 90% wszystkich
+bakterii), Actinobacteria, Proteobacteria oraz
+Verrucomicrobia [7]. Początkowo badania biocenozy jelit były nieliczne, z powodu trudności
+w hodowli mikroorganizmów w warunkach
+
+laboratoryjnych. Obecnie intensywny rozwój
+technik analitycznych (w tym sekwencjonowanie genomu bakteryjnego i analiza metagenomu) pozwoliły na pogłębianie wiedzy
+o bakteriach niehodowlanych, ich funkcjach
+oraz możliwościach współdziałania z organizmem człowieka [6, 8].
+Zarówno rodzaj, gatunek, jak i szczepy
+zasiedlających jelita bakterii zależą od wielu
+czynników, w tym porodu drogami natury czy
+przez cięcie cesarskie, karmienia niemowląt
+naturalnego czy sztucznego, wieku, miejsca
+zamieszkania, pH jelita, dostępności tlenu
+czy stosowanej diety [4, 9]. Ze względu na
+pełnione funkcje flory jelitowej w przewodzie
+pokarmowym niemożliwe jest życie człowieka bez zasiedlających go mikroorganizmów.
+Bakterie komensalne jelit uczestniczą w metabolizowaniu niestrawionych resztek pokarmowych (z których organizm czerpie dodatkową
+energię), w produkcji i przyswajaniu witamin,
+utrzymaniu homeostazy nabłonka jelitowego,
+ochronie przed bakteriami chorobotwórczymi,
+immunomodulacji oraz metabolizowaniu leków i farmaceutyków [10−13]. Stąd niektórzy
+uważają, że mikrobiom stanowi odrębny organ
+u swojego gospodarza.
+Zaburzenia w równowadze pomiędzy
+ekosystemem bakterii probiotycznych a bakteriami patogennymi prowadzi do dysbiozy i jej
+konsekwencji dla ustroju gospodarza (jelito
+„przeciekające”, endotoksemia ogólnoustrojowa, nadwrażliwości pokarmowe). Skład
+mikrobioty jest silnie modyfikowany dietą
+gospodarza (szczególnie niekorzystna jest dieta
+tak zwana zachodnia — wysokotłuszczowa,
+wysokobiałkowa, ubogobłonnikowa) [14, 15].
+Dysbiozę w przewodzie pokarmowym mogą
+też wywołać infekcje, zabiegi chirurgiczne,
+leki (w tym niesteroidowe leki przeciwzapalne
+[NLPZ], inhibitory pompy protonowej [IPP],
+antybiotyki, glikokortykosteroidy, metformina,
+suplementacja żelazem i inne), radio- i chemioterapia [16].
+Wpływ mikrobioty na występowanie
+i leczenie otyłości
+Pierwsze badania nad wpływem mikroorganizmów bytujących w jelicie na występowanie otyłości przeprowadzono na modelu
+mysim pozbawionym kontaktu z mikroorganizmami (GF-mice, germ free mice). W tym
+celu przeniesiono drobnoustroje z jelit myszy
+z genetycznie wywołaną otyłością (ob/ob mice)
+do jelit myszy GF. Już po dwóch tygodniach
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+63
+
+od kolonizacji przewodu pokarmowego myszy
+GF zaobserwowano, że pozyskiwały one więcej
+kalorii z pożywienia i wykazywały znacznie
+większy przyrost tkanki tłuszczowej niż myszy, które otrzymały bakterie od szczupłych,
+zdrowych osobników [5]. W innym badaniu
+grupę kontrolną do myszy GF stanowiły myszy hodowane w warunkach tradycyjnych
+(CONV-R, conventionally raised mice) [8].
+W początkowym okresie obserwacji myszy
+hodowane tradycyjnie miały około 40% więcej
+tkanki tłuszczowej niż myszy GF, niezależnie
+od ilości spożywanego pożywienia. Następnie
+po skolonizowaniu jelit myszy GF mikroflorą
+przeniesioną od myszy hodowanej tradycyjnie,
+u biorców zanotowano istotny statystycznie
+wzrost zawartości tkanki tłuszczowej, rozwój
+insulinooporności oraz znamienny wzrost
+wątrobowej produkcji triglicerydów [17].
+W kolejnych badaniach przeniesienie mikroflory jelitowej od otyłych zwierząt do myszy
+GF powodowało przyrost masy ciała znacznie
+wyraźniejszy w porównaiu do myszy GF,
+których przewód pokarmowy zakolonizowano
+mikroflorą pobraną od zwierząt o prawidłowej
+masie ciała [5]. Wyniki tego doświadczenia
+próbowano wyjaśnić zwiększeniem wykorzystania energii z pożywienia przez myszy
+GF (biorców od otyłych zwierząt). W innym
+badaniu wykazano, że mikroorganizmy bytujące w jelitach mają zdolność syntetyzowania
+hydrolaz glikozydowych, czyli enzymów niezbędnych do rozkładania złożonych roślinnych
+polisacharydów (np. błonnika pokarmowego
+nierozpuszczalnego, który do tej pory był uważany za niestrawny dla organizmu człowieka)
+[18, 19]. Dodatkowe pozyskiwanie energii ze
+zwiazków, które nie są rozkładane przez enzymy trawienne, a które powstają w wyniku fermentacji przeprowadzonej przez bakterie, może
+zwięksyć ilość energii dostarczanej do ustroju
+gospodarza o około 4−10% (czyli 80−200 kcal/
+dobę) [20]. W innych badaniach stwierdzono,
+że mikrobiota na drodze hydrolizy i fermentacji
+krotkołańcuchowych kwasów tłuszczowych
+SCFAs (kwasy propionowy, masłowy i octowy), które następnie mogą ulegać absorpcji,
+może zwiększać przyswajanie energii przez
+organizm gospodarza o 150 kcal/dobę [5, 17].
+Poza tym kwas propionowy może być wykorzystywany w procesie syntezy glukozy i lipidów [21]. Na podstawie innych prac wykazano,
+że SCFAs mogą wpływać na apetyt gospodarza
+poprzez receptor Gpr41 oraz wpływ na sekrecję
+GLP-1 i receptor FFAR2 [22, 23], czas pasażu
+jelitowego [22], odzyskiwanie i wykorzysta-
+
+64
+
+Gastroenterologia Kliniczna 2016, tom 8, nr 2
+
+nie energii [24], co stanowi główne składowe
+zwiększania bilansu energetycznego człowieka. Kwasy tłuszczowe SCFAs mogą również
+wpływać na pobór pokarmu przez organizm
+gospodarza poprzez wpływ na białka G produkowane przez komórki endokrynne jelit,
+które stymulują uwalnianie molekularnych
+kontrolerów apetytu: glukagonopodobnego
+peptydu-1 (GLP-1) oraz peptydu YY [22, 23].
+Peptyd YY jest hormonem, który zmniejsza
+motorykę jelit, spowalnia pasaż jelitowy, co
+sprzyja zwiększonemu wchłanianiu składników
+odżywczych i rozwojowi otyłości [25]. Wydaje
+się, że korzystny wpływ na homeostazę energetyczną organizmu wykazuje kwas masłowy.
+Wykazano, że może on stymulować wytwarzanie leptyny w adipocytach i indukować wytwarzanie GLP-1 przez komórki L jelita [26].
+W innym badaniu wykazano, że maślany nasilają procesy termogenezy, wpływają na zwiększenie utleniania kwasów tłuszczowych [27].
+Ponadto zauważono, że wykazują one działania
+przeciwzapalne, obniża uwalnianie cytokin
+i chemokin [26]. W badaniach na myszach karmionych dietą wysokotłuszczową wzbogaconą
+o maślany obserwowano poprawę wrażliwości
+na insulinę [27].
+Inny mechanizm zwiększonego przyswajania energii z pożywienia przedstawili Stappenbeck i wsp. [28]. Stwierdzili oni, że niektóre
+rodzaje bakterii jelitowych, dzięki syntezie
+i wydzielaniu wielu związków chemicznych,
+mają zdolność podwajania gęstości naczyń
+włosowatych w nabłonku jelita cienkiego, co
+może sprzyjać zwiększonemu wchłanianiu
+monosacharydów w tym odcinku przewodu
+pokarmowego.
+Natomiast mechanizmem, dzięki któremu
+mikroflora jelit może sprzyjać gromadzeniu
+tkanki tłuszczowej wydaje się blokowanie ekspresji czynnika tkankowego indukowanego
+głodzeniem (FIAF, fasting-induced adipocyte
+factor), który hamuje działanie lipazy lipoproteinowej (LPL, lipoprotein lipase) [17]. Obniżona
+ekspresja FIAF prowadzi do zwiększenia aktywności LPL w komórkach tłuszczowych, przez co
+nasila procesy magazynowania energii w postaci
+tłuszczu. Potwierdzono to w doświadczeniu na
+modelu zwierzęcym, gdzie po przeniesieniu
+drobnoustrojów z jelita myszy hodowanych
+tradycyjnie do myszy GF, obserwowano zahamowanie ekspresji czynnika FIAF, co nasiliło
+ekspresję LPL i powodowało kumulację kwasów
+tłuszczowych w adipocytach [17, 29].
+W badaniach u myszy z genetycznie wywołaną otyłością zaobserwowano zmiany
+
+ekosystemu jelitowego, który w porównaniu ze
+zwierzętami o prawidłowej masie ciała, zawierał o 50% mniej bakterii Bacteroidetes i proporcjonalnie więcej bakterii Firmicutes [30].
+Wyniki badań na modelu zwierzęcym zainspirowały badaczy do przeprowadzenia podobnych
+analiz na mikroflorze ludzkiej. Ley i wsp. [31]
+stwierdzili analogiczne różnice u otyłych osób
+(spadek liczebności Bacteroidetes i proporcjonalny wzrost Firmicutes), natomiast w innym
+badaniu wykazano spadek liczebności Bacteroidetes i wzrost liczebności Actinobacteria [32].
+Są też badania, których wyniki nie potwierdziły
+spadku liczebności Bacteroidetes w trakcie
+analizy mikrobioty jelitowej osób otyłych [21].
+Duncan i wsp. [33] wykazali brak istotnych
+różnic w stosunku Bacteroidetes/Firmicutes
+u pacjentów otyłych i o prawidłowej masie ciała. Kolejną różnicą stwierdzaną w mikroflorze
+osób otyłych względem szczupłych jest większa liczebność bakterii metanogennych u osób
+otyłych, co może usprawnić procesy fermentacyjne przeprowadzane przez te bakterie [5].
+Potwierdzeniem tego mogą być badania nad
+głównym przedstawicielem archeonów Methanobrevibacter smithii, które wykazały wpływ
+tego drobnoustroju na usprawnienie procesów
+fermentacji polisacharydów w świetle jelita
+i wzrost pozyskiwania energii z pożywienia [34].
+Wciąż jednak do końca nie wiadomo, dlaczego
+i w jaki spsoób mikroflora jelit osobników otyłych ma zdolność odzyskiwania większej ilości
+energii z pożywienia i wymaga to prowadzenia
+dalszych badań. Wiadomym jest jednak, że na
+skutek operacyjnego leczenia otyłości metodą
+zespolenia omijającego żołądkowo-jelitowego
+z pętlą Roux-en-Y (RYGB, Roux-en-Y gastric bypass) badacze stwierdzili u pacjentów
+wzrost liczebności Bacteroidetes oraz to, że im
+wyższy był stosunek Bacteroidetes do Provotella, tym większy był obserwowany spadek
+masy tkanki tłuszczowej i stężenia leptyny
+w surowicy krwi [31, 35].
+Wpływ diety na kształtowanie
+ekosystemu jelitowego
+Dieta odgrywa istotną rolę w budowaniu
+mikrobioty jelitowej. De Filippo i wsp. [36]
+analizowali mikroflorę kału dzieci europejskich
+(u których dieta oparta była na produktach
+wysokotłuszczowych i wysokowęglowodanowych a ubogich w błonnik pokarmowy) oraz
+mikroflorę dzieci pochodzących z terenów
+wiejskich Burkina Faso (dieta niskokaloryczna,
+bogatobłonnikowa). U dzieci z Burkina Faso
+
+wykazano zwiększoną ilość Bacteroidetes i obniżoną ilość Firmicutes, duże ilości Provotella
+i Xylanibacter, przy jednocześnie mniejszej
+ilości w porównaniu z dziećmi europejskimi gatunków Enterobacteriaceae (rodzaje
+Shigella i Escherichia). Wydaje się więc, że
+poszczególne drobnoustroje mikroflory jelitowej są ściśle powiązane ze składem spożywanych pokarmów, stąd u dzieci z Burkina Faso,
+u których dieta opierała się w głównej mierze
+o składniki roślinne wzrastała znacząco liczba
+Provotella i Xylanibacter. W innym badaniu
+wykazano, że zmiana diety niskotłuszczowej
+na wysokotłuszczową powoduje (niezależnie
+od stanu odżywienia badanych osób) znaczące
+różnice ilościowe w składzie mikrobioty, obniża się liczebność bakterii Bacteroidetes przy
+jednoczasowym wzroście liczebności bakterii
+Firmicutes i Proteobacteria [37]. Również
+w badaniach na modelach zwierzęcych wykazano, że dieta bogata w tłuszcze wywołuje
+zmiany jakościowe i ilościowe w biocenozie
+jelit u otyłych zwierząt, zmieniając stosunek
+Bacreroidetes/Firmicutes [15]. Regularne spożycie czerwonego mięsa oraz diety zachodniej
+faworyzuje w jelicie rozwój Bacteroidetes,
+gdzie w metagenomie ekspresji podlegają geny,
+których produkty są zaangażowane w rozkład
+białek. I tak u pacjentów spożywajacych duże
+ilości produktów pochodzenia zwierzęcego
+wykazano wzrost ilości mikroorganizmów
+produkujących proteazy, tj. Alistipes, Bilophila
+i Bacteroides, a spadek ilości Firmicutes tj. Roseburia, Eubacterium rectale i Ruminococcus
+bromii (zaangażowanych w rozkład polisacharydów roślinnych) [38].
+Zauważono też, że dieta bogata w tłuszcze nasycone predysponuje do zwiększenia
+masy ciała i otyłości trzewnej poprzez wzrost
+odzyskiwania energii z pożywienia będących
+wynikiem modyfikacji składu mikrobioty [39].
+Wyniki innych badań wykazały, że dieta
+wysokotłuszczowa obniża ilość Bifidobaceria,
+głównych producentów kwasu masłowego biorącego udział w utrzymaniu integralności bariery jelitowej [40] oraz powoduje wzrost bakterii redukujących siarczany, a produkujących
+toksyny z rodziny Desulfovibrionaceae, co
+również zaburza funkcje barierowe jelita [41].
+Poza tym badana dieta zachodnia (bogatotłuszczowa i niskobłonnikowa) sprzyja rozrostowi
+bakterii chorobotwórczych Gram-ujemnych
+z następową translokacją bakteryjnych lipopolisacharydów [14]. Zdaniem autorów
+lipopolisacharydy, oddziałując z receptorami
+TLR-4/CD14, wywołują kaskadę zaburzeń im-
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+65
+
+munologicznych w organizmie gospodarza [42]
+i prowadzą do rozwoju otyłości, insulinooporności oraz cukrzycy typu 2 [14].
+Jak wspominano, 20% wzrost liczby Firmicutes i analogiczny spadek liczby Bacteroidetes odpowiada za zwiększenie o 150
+kcal/dobę poboru energii z pożywienia [43].
+Człowiekowi do przybrania na wadze o 1 kg
+potrzebne jest dodatkowe zwiększenie bilansu energetycznego o 7000 kcal, co mogłoby
+nastąpić w tym przypadku w ciągu niecałych dwóch miesięcy. Ley i wsp. wykazali
+jednak identyczną zawartość Bacteroidetes
+i Firmicutes u osób otyłych odżywiających
+się pokarmami wysokotłuszczowymi oraz po
+zmianie diety na niskotłuszczową [31]. Można
+też wyszukać prace, których autorzy sugerują,
+że nie ma korelacji między proporcją Bacteroidetes/Firmicutes a dietą i BMI (body mass
+index) [44]. Dlatego nie do końca wiadomo,
+czy zmiany w składzie mikrobioty u otyłych
+ludzi są skutkiem czy przyczyną otyłości, co
+skłania badaczy do dalszych badań. Główne
+charakterystyki mikrobioty jelitowej u otyłych
+pacjentów wskazują jednak na spadek różnorodności, zmniejszenie ilości bakterii komensalnych o właściwościach przeciwzapalnych
+i wzrost ilości drobnoustrojów patogennych.
+Zmiany jakościowe w ekosystemie jelitowym
+u otyłych polegające na zmniejszeniu ilości
+gatunku Akkermansia muciniphila (wykazującego właściwości przeciwzapalne) oraz wzrost
+ilości patogenów Campylobacter i Shigella
+skutkowało obniżeniem produkcji maślanu
+gwarantującego integralność bariery jelitowej
+i ochronę przed stresem oksydacyjnym [45].
+Mikrobiota a cukrzyca typu 2
+Wpływ mikrobioty na cukrzycę typu 2
+został zaobserwowany na modelu mysim,
+w którym myszom ob/ob podano antybiotyki
+(norfloksacynę i ampicylinę) i stwierdzono
+zmiany w składzie mikroflory jelitowej względem myszy nie leczonych antybiotykami,
+a przy tym poprawę badanych parametrów
+w surowicy krwi (glikemii na czczo, insulinowrażliwości oraz tolerancji glukozy) [46].
+Natomiast w innym badaniu również myszom
+ob/ob podano ampicylinę i neomycynę, co skutkowało obniżeniem stężenia endotoksyn oraz
+czynników zapalnych we krwi [47]. Również
+ostatnie badania donoszą, że bakterie jelitowe
+mogą wpływać na rozwój insulinooporności
+i cukrzycy poprzez udział mikrobioty w inicjacji metabolicznej endotoksemii. Stan zapalny
+
+66
+
+Gastroenterologia Kliniczna 2016, tom 8, nr 2
+
+w błonie śluzowej jelita (jako skutek dysbiozy)
+powoduje utratę integralności bariery jelitowej,
+co zwiększa jej przepuszczalność dla bakterii,
+lipopolisacharydu bakteryjnego, wysoce prozapalnego elementu ściany komórkowej bakterii
+wchodzących w skład mikrobioty jelitowej
+i innych cząstek bakteryjnych. W modelu
+mysim dożylne podanie lipopolisacharydów
+okazało się standardowym postępowaniem
+w celu wywoływania u nich insulinooporności oraz otyłości [14]. Również u ludzi podaż
+wysokoenergetycznego pożywienia wywołuje
+wzrost krążących w ustroju lipopolisacharydów [48], których stężenie jest wyższe u osób
+z cukrzycą niż u osób zdrowych i obniża się
+przy antybiotykoterapii rozyglitazonem [49].
+Zaobserwowano, że dieta wysokotłuszczowa
+promuje rozwój w jelicie bakterii zawierających lipopolisacharydy i dodatkowo wpływa na
+zwiększone ich stężenie w surowicy krwi. Natomiast u myszy ze zmutowanymi genami CD14/
+TLR-4 obserwowano oporność na skutki diety
+wysokotłuszczowej oraz były one jednocześnie
+oporne na działanie lipopolisacharydów, co
+z kolei wiązano z obniżoną ekspresją szlaków
+immunologicznych w wątrobie [14, 50]. Wywołana przez lipopolisacharydy endotoksemia
+wydaje się więc pierwszym etapem rozwoju
+insulinooporności oraz cukrzycy typu 2 [14].
+Stwierdzono, że u osób z wczesnym etapem rozwoju insulinooporności we krwi krążą
+głównie (85−90%) bakterie należące do gromady Proteobacteria, co może stanowić marker
+diagnostyczny rozwoju cukrzycy [51]. Kolejnym wskaźnikiem może się okazać obniżenie
+liczby producentów kwasu masłowego (Akkermansia muciniphila i Faecalibacterium prausnitzii) oraz bakterii Verrucomicrobiae, co koreluje ze spadkiem wrażliwości na insulinę [52].
+Wiadomo, że maślan pełni w jelitach rolę
+ochronną wzmagając poziom ekspresji genów
+ścisłych połączeń zamykających i redukuje tym
+samym możliwość translokacji bakteryjnej [53].
+Również w innym badaniu u otyłych chorych
+na cukrzycę obserwowano istotne zmniejszenie liczebności bakterii Faecalibacterium
+prausnitzii, gdzie po bariatrycznym leczeniu
+otyłości u tych pacjentów, obserwowano wzrost
+liczebności Faecalibacterium prausnitzii [35].
+Ponieważ po operacji obserwowano też skorelowany z liczebnością tych bakterii spadek markerów stanu zaplnego (białka CRP
+[C-reactive protein] i IL-6 [interleukine 6]),
+powiązano rolę mikrobioty z patogenezą insulinooporności u tych chorych. Dodatkowo
+po operacji zaobserwowano obniżenie stężenia
+
+glukozy, insuliny i glikowanej hemoglobiny
+oraz mniejszą insulinooporność (mierzoną
+wskaźnikiem HOMA-IR [homeostatic model
+assessment-insulin resistance]).
+Bardzo ciekawe było też badanie z transplantacją kału od dawców szczupłych do
+biorców z cukrzycą typu 2, gdzie badacze
+po skolonizowaniu przewodu pokarmowego
+biorców zauważyli wzrost ilości bakterii produkujących maślan, co korelowało ze wzrostem wrażliwosci na insulinę [54]. Tak więc
+wydaje się, że udział mikrobioty w patogenezie
+cukrzycy typu 2 może wiązać się z rozwojem
+metabolicznej endotoksemii oraz obniżeniem
+ilości bakterii produkujących kwas masłowy
+w jelitach, a wzrostem bakterii patogennych.
+Mikrobiota a NAFLD oraz zaburzenia
+gospodarki lipdowej
+W badaniach, zarówno na zwierzętach jak
+i na ludziach, potwierdzono związek między
+mikrobiotą jelitową a rozwojem NAFLD [55].
+Do występowania tego schorzenia może się również przyczyniać żywność wysokoenergetyczna
+i/lub wysokotłuszczowa, która także może
+zmieniać skład ekosystemu jelitowego [56].
+W badaniach na myszach GF wykazano,
+że mikrobiota jelitowa może wpływać na
+wzrost syntezy triglicerydów i akumulację
+kwasów tłuszczowych w hepatocytach [17].
+W badaniu na myszach ob/ob podanie norfloksacyny i ampicyliny prowadziło nie tylko
+do znacznej poprawy tolerancji glukozy, ale
+stwierdzono również obniżone stężenie triglicerydów w wątrobie oraz lipopolisacharydów we
+krwi, zwiększoną ilość glikogenu w wątrobie
+oraz adiponektyny we krwi [46]. Jednocześnie
+w innym badaniu wykazano, że krótkołańcuchowe kwasy tłuszczowe wpływają na metabolizm lipidów, nasilają lipogenezę [17] i obniżają utlenianie kwasow tłuszczowych [7, 57].
+Mikroflora jelitowa może wpływać na metabolizm lipidów gospodarza, hamując aktywność
+kinazy białkowej aktywowanej przez AMP-AMPK (adenosine monophospate activated
+protein kinase) [58]. Coraz częściej autorzy
+wiążą występowanie NAFLD ze stanem zapalnym wywołanym dysbiozą w przewodzie
+pokarmowym i zmianą integralności bariery
+jelitowej [59]. Poza tym mikrobiota wpływa
+na syntezę kwasów żółciowych i ich przemiany w organizmie. Natomiast kwasy żółciowe
+mogą aktywować szlaki sygnałowe poprzez
+receptory jądrowe (FXR, farnesoid X receptor)
+oraz te znajdujące się na powierzchni komórki
+
+(GPCRs, G protein-coupled receptors) i brać
+udział w szlakach metabolizmu glukozy i lipidów [60, 61]. Innym receptorem błonowym
+aktywowanym przez kwasy żółciowe może być
+receptor TGR5 [62]. Przekazywanie sygnału
+przez TGR5 powoduje zwiększenie stężenia
+cAMP, co prowadzi do wzmożonego zużycia
+energii w obrębie brunatnej tkanki tłuszczowej
+(co powoduje zapobieganie otyłości i insulinooporności).
+W badaniu na szczurach leczonych polimyksyną B (antybiotykiem, którego spektrum
+działania celowane jest na bakterie Gram-ujemne) wykazano spadek zawartości lipopolisacharydu (LPS, lipopolysaccharide)
+w osoczu krwi, zmniejszoną częstość występowania insulinooporności, stłuszczeniowego
+zapalenia wątroby oraz zaburzeń gospodarki
+lipidowej [63].
+Kolejnym czynnikiem mogącym mieć
+wpływ na rozwój stłuszczenia wątroby jest
+możliwość produkowania etanolu przez mikroflorę jelitową. Wykazano, że u myszy ob/ob
+ilość wydychanego z powietrzem etanolu
+była znacząco większa niż u myszy z prawidłową masą ciała, natomiast zastosowana
+antybiotykoterpia zmniejszyła o około 50%
+redukcję ilości produkowanego alkoholu etylowego u tych myszy [64]. Również u pacjentow
+z NASH (nonalcoholic steatohepatitis) wykazano wzrost ilości krążącego alkoholu etylowego wywołanego zmianą mikroflory jelitowej
+(przerost bakterii Enterobacteriaceae i Escherichia coli) [65]. Inny proponowany mechanizm wyjaśniający rolę mikrobioty w rozwoju
+NAFLD to zaburzony metabolizm choliny [66]
+i kwasów tłuszczowych [61]. Zaobserwowano,
+że karmienie myszy dietą wysokotłuszczową
+powoduje przekształcanie przez ich mikrobiotę
+choliny pochodzącej z pożywienia, w hepatotoksyczne metyloaminy [66]. Cholina jest
+niezbędna do wydzielania syntetyzowanej
+w wątrobie lipoproteiny VLDL (very low-density lipoprotein), której główna funkcja polega na transportowaniu lipidów z wątroby do
+adipocytów. Tak więc zmniejszona dostępność
+choliny może być przyczyną insulinooporności
+i stłuszczeniowego zapalenia wątroby [66].
+Zaburzony metabolizm choliny obserwowano też u chorych żywionych pozajelitowo,
+a suplementacja tego związku była wyraźnie
+związana z obniżeniem akumulacji tłuszczu
+w wątrobie [67]. Ponadto wyizolowano konkretne gatunki bakterii biorące udział w kontroli ilości tłuszczu gromadzonego w wątrobie
+(Gammaproteobacteria i Erysipelotrichi),
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+67
+
+których liczebność uległa zmianie przy stosowaniu diety zubożonej w cholinę [68]. Zaobserwowano też, że eksperymentalnie wywołana
+endotoksemia aktywowała odpowiedź zapalną
+wątroby poprzez aktywację komorek Kupffera
+w drodze mediowanej przez TLR-4 [69]. Wydaje się jednak, że głównym mechanizmem
+mogącym prowadzić do rozwoju NAFLD
+jest dysbioza jelitowa oraz wzrost przepuszczalności jelit prowadzący do metabolicznej
+endotoksemii. U otyłych pacjentów z NAFLD
+częstość SIBO i wzrost przepuszczalności
+jelit są zdecydowanie częstsze w porównaniu
+z osobami zdrowymi, a natężenie tych zmian
+było dodatnio skorelowane z intensywnością
+stłuszczenia wątroby [70].
+Możliwości modulacji mikroflory
+jelitowej w celu leczenia zaburzeń
+metabolicznych i otyłości
+Wykazane zmiany mikroflory jelitowej
+u osób otyłych w stosunku do osób szczupłych i ich wpływ na preferencje smakowe,
+wykorzystanie energii z pożywienia, motorykę
+przewodu pokarmowego oraz metabolizm
+glukozy i lipidów sprawiły, że rozpoczęto badania ze stosowaniem celowanych rodzajów
+i szczepów bakteryjnych w profilaktyce i leczeniu otyłości oraz chorób współistniejących.
+W licznych badaniach wykazano, że szczepy
+probiotyczne, w szczególności bakterie z rodzajów Lactobacillus oraz Bifidobacterium
+wpływają korzystnie na procesy utraty masy
+ciała, zmniejszenie intensywności stanu zapalnego w jelicie, uszczelniają barierę jelitową
+(zwłaszcza Bifidobacterium — przyczyniają się
+do wzrostu ekspresji genów kodujących białka
+połączeń ścisłych pomiędzy enterocytami)
+[71, 72], korzystnie wpływają na zmniejszenie
+ilości tkanki tłuszczowej trzewnej i rozmiar
+adipocytów (zwłaszcza Lactobacillus) [73−75].
+W badaniach na modelach zwierzęcych z wykorzystaniem szczepów Bifidobacterium wykazano głównie poprawę parametrów metabolicznych w surowicy krwi. W badaniu myszy
+C57BL/6 z zastosowaniem szczepu Bifidobacterium breve B-3 uzyskano obniżenie stężenia
+cholesterolu, glukozy, insuliny i wskaźnika
+HOMA w surowicy krwi oraz obniżenie masy
+ciała i ilości tłuszczu w najądrzach [76]. Potwierdzono to też w badaniu z Bifidobacterium
+pseudocatenulatum CECT 7765, gdzie po
+7 tygodniach stosowania probiotycznego szczepu zauważono wzrost ekspresji FIAF i adiponektyny, obniżenie stężenia cholesterolu, triglice-
+
+68
+
+Gastroenterologia Kliniczna 2016, tom 8, nr 2
+
+rydów, glukozy w surowicy, insulinooporności,
+leptyny, Il-6 oraz ilości tkanki tłuszczowej [77].
+Natomiast poprawę tolerancji glukozy, poprawę sprawności układu immunologicznego,
+obniżenie stężenia endotoksyn i zapalenia jelita
+obserwowano w badaniu szczurów karmionych dietą wysokotłuszczową i suplementowanych szczepem Bifidobacterium longum [78].
+W badaniach na modelu zwierzęcym z wykorzystaniem szczepów Lactobacillus (głównie L. rhamnosus, L. plantarum, L. gasseri,
+L. fermentum, L. reuteri, L. paracasei oraz
+L. acidophilus) uzyskano w różnym czasie stosowania (8 dni do 12 tygodni) obniżenie masy
+ciała i tkanki tluszczowej trzewnej, poprawę
+parametrów gospodarki węglowodanowej,
+lipidowej oraz stłuszczenia wątroby [73−75,
+79−85]. Natomiast w przypadku zastosowania
+u myszy Lactobacillus rhamnosus GG [81] czy
+Lactobacillus reuteri ATCC PTA 4659 [82] uzyskano wzrost utleniania kwasów tłuszczowych.
+Leczenie otyłości trzewnej u ludzi bardzo
+utrudnia współistniejąca insulinooporność
+czy endotoksemia metaboliczna. Wykazano,
+że mikroorganizmy z rodzaju Lactobacillus
+poprawiają wrażliwość na insulinę, oddziałując na ekspresję leptyny i syntetazy kwasów
+tłuszczowych, stymulują utlenienie kwasów
+tłuszczowych oraz hamują aktywność lipazy
+lipoproteinowej (przez białko angiopoetynopodobne) [79−81, 84, 85]. Obiecujące wyniki
+z podawaniem probiotyku zawierającego Lactobacillus gasseri SBT2055 uzyskano w badaniu trwającym 12 tygodni (randomizowanym,
+z użyciem placebo), w którym wykazano istotny spadek masy ciała, zmiejszenie zawartości
+tkanki tłuszczowej podskórnej i trzewnej [86].
+W badaniu randomizowanym z podwójnie ślepą próbą z zastosowniem u otyłych osób szczepu Lactobacillus rhamnosus CGMCC1.3724
+wykazano, że tylko u otyłych kobiet (nie potwierdzono tego u otyłych mężczyzn) probiotyk
+ten wpływał korzystnie na redukcję masy ciała,
+zmniejszenie tkanki tłuszczowej oraz stężenie
+leptyny w surowicy krwi [87]. W badaniu
+trwającym 12 tygodni u pacjentów z nadwagą
+po zastosowaniu szczepów Lactobacillus gasseri SBT2055 uzyskano redukcję masy ciała,
+zmniejszenie ilości tkanki tłuszczowej trzewnej
+i podskórnej, BMI, obwodu talii i bioder oraz
+wzrost stężenia adiponektyny w surowicy
+krwi [86]. Natomiast w kolejnym badaniu
+z tym szczepem bakterii, ale u osób otyłych,
+po 12 tygodniach suplementowania również
+uzyskano redukcję masy ciała, BMI, obwodu
+talii i bioder oraz masy tkanki tłuszczowej [88].
+
+W badaniu trwającym 90 dni u kobiet z pomenopauzalnym zespołem metabolicznym,
+którym podawano Lactobacillus plantarum,
+wykazano obniżenie stężenia glukozy i homocysteiny w surowicy krwi [89]. Zastosowanie
+probiotyku wieloszczepowego VSL#3 istotnie
+wpłynęło na poprawę tolerancji glukozy oraz
+zwiększenie produkowanych w jelicie SCFAs,
+w tym kwasu masłowego [90].
+W leczeniu osób otyłych zastosowanie
+znajdują również prebiotyki (nieulegające trawieniu polisacharydy), których zadaniem jest
+selektywna stymulacja wzrostu i/lub aktywności wybranych rodzajów/gatunków mikroflory jelitowej [91]. Najczęściej analizowano
+wpływ inuliny oraz różnego rodzaju fruktooligosacharydów. W modelach zwierzęcych
+prebiotyki najczęściej zmieniały skład mikroflory jelitowej, stymulowały wzrost Bifidobacteria [72, 92, 93], Bacteroidetes [92−94],
+Prevotella i Roseburia [92], a relatywnie
+zmniejszały populację Firmicutes [93, 94].
+W badaniach na szczurach wykazano, że
+dodanie do diety wysokotłuszczowej oligofruktozy zwiększało stężenie wydzielanej
+insuliny, obniżało stężenie glukozy we krwi,
+zmniejszało ilość uzyskiwanej energii z pożywienia oraz ograniczało przyrost masy ciała
+i tkanki tłuszczowej względem grupy kontrolnej (było to działanie hormonów jelitowych,
+inkretyn) [95]. Również w innych badaniach
+prebiotyki wpływając na kontrolę łaknienia
+(poprzez stymulację GLP-1 i peptydu YY oraz
+ograniczenie produkcji greliny) przyczyniały
+się do obniżenia masy ciała, tkanki tłuszczowej
+i rozmiaru adipocytów oraz akumulacji kawsów tłuszczowych w wątrobie [92, 93, 95, 96].
+W badaniu na myszach, żywionych dietą wysokotłuszczową, otrzymujących oligofruktozę zaobserwowano poprawę kolonizacji Bifidobacterium, co korelowało też z lepszą tolerancją
+glukozy, wydzielaniem insuliny pod wpływem
+zwiększonego stężenia glukozy oraz normalizację czynników prozapalnych [72]. Prebiotykom przypisuje się też ograniczanie stanu
+zapalnego w jelicie, poprawę integralności bariery jelitowej i wzrostu syntezy GLP-2 [92, 97]
+oraz poprawę tolerancji glukozy (oligofruktoza, arabinoksyloza) [92, 96]. Natomiast metaanaliza badań klinicznych u ludzi z użyciem
+prebiotyków w chorobach metabolicznych nie
+dała jednoznacznych wyników [98]. Badanie
+z zastosowaniem oligofruktozy przez 12 tygodni u osób dorosłych z nadwagą i otyłością
+spowodowało jednak redukcję masy ciała,
+ilości greliny, kaloryczności posiłków, stężenia
+
+glukozy i insuliny w surowicy krwi oraz wzrost
+stężenia peptydu YY [99]. U otyłych kobiet
+z dyslipidemią zastosowanie oligofruktozy
+przez 120 dni zredukowało masę ciała, BMI,
+obwód talii oraz obniżyło stężenia cholesterolu
+całkowitego i frakcji LDL w surowicy krwi
+[100]. Obserwowano też korzystne zmiany
+ekosystemu jelitowego u otyłych kobiet po
+zastosowaniu przez 3 miesiące fruktanów —
+inuliny (wzrosła ilość Bifidobacterium i Faecalibacterium prausnitzii natomiast obniżyła
+ilość Bacteroidetes oraz Propionibacterium),
+odnotowano też obniżenie stężenia LPS [101].
+Wydaje się, że zmiana diety u osób otyłych
+na dietę redukcyjną zbilansowaną i zwiększenie aktywności fizycznej może również
+przynieść poprawę składu mikrobioty jelitowej
+[102, 103], ale jest to znacznie mniej skuteczne działanie wobec stanu zapalnego u tych
+pacjentów [104]. Kolejne ciekawe obserwacje
+poczyniono w badaniach składu mikrobioty po
+operacyjnym leczeniu otyłości, zwłaszcza metodą RYGB [35, 105, 106]. Zaobserwowano wzrost
+ilości względnych beztlenowców, szczególnie
+Gammaproteobacteria, oraz zmniejszenie liczby
+Firmicutes, w szczególności bakterii metanotwórczych (odpowiedzialnych za wzrost odzysku
+energii z pożywienia). U pacjentów po RYGB
+znacznie redukujących masę ciała zaobserwowano wzrost populacji bakterii grupy Bacteroides-Prevotella, w szczegolności Fecalibacterium
+prausnitzii, o silnych właściwościach przeciwzapalnych [35]. W innym badaniu po wykonaniu u otyłych zabiegu RYGB obserwowano
+wzrost produkcji w jelicie kwasu gamma-amino-masłowego, co dodatkowo wzmagało
+uwalnianie GLP-1 i peptydu YY [106], a u operowanych otyłych z cukrzycą typu 2 występował wzrost wrażliwości na insulinę [107],
+co też mogło być skutkiem restrykcji dietetycznych. Należy jednak dodać, że po operacji
+RYGB obserwowano też niekorzystne zmiany
+w ekosystemie jelitowym, wzrost liczby bakterii patogennych, na przykład Escherichia
+coli i spadku bakterii komensalnych rodzajów
+Lactobacillus i Bifidobacterium [35], co być
+może stanie się podstawą do suplementowania
+diety tymi gatunkami/szczepami.
+Transplantacja kału jako alternatywna metoda leczenia otyłości została opisana w innym
+artykule [108].
+Podsumowanie
+Na podstawie przeglądu literatury tematu można stwierdzić, że dysbioza jelitowa
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+69
+
+oraz uszkodzenie bariery jelitowej wpływają
+niekorzystnie na otyłość i składowe zespołu
+metabolicznego oraz utrudniają leczenie tych
+schorzeń. Na podstawie dużej metaanalizy
+badań nad wpływem stosowania antybiotyków, pro- i prebiotyków oraz synbiotyków
+w celu redukacji masy ciała u osób otyłych
+w różnych grupach wiekowych stwierdzono,
+że nie obserwuje się istotnego efektu u dzieci
+i młodzieży, natomiast niewielką, ale istotną
+różnicę w zmniejszaniu masy ciała i BMI
+u osób dorosłych [109]. Natomiast główny cel
+podawanie probiotyków i synbiotyków u osób
+z nadwagą czy otyłością polega na korzystnym
+ich wpływie na procesy metaboliczne [3].
+Pro- i prebiotyki mogą być też pomocne
+w zmniejszaniu stanu zapalnego w ustroju
+oraz w prawidłowej pracy bariery jelitowej
+[3, 110, 111]. Najskuteczniejsze metabolicznie
+gatunki bakterii to Lactobacillus salivarius,
+Lactobacillus paracasei, Lactobacillus reuteri,
+Lactobacillus plantarum, Lactobacillus gaseri,
+Bifidobacterium lactis. Konieczne są jednak
+dalsze randomizowane badania kliniczne, których wyniki wskażą szczepy, ich dawkowanie
+i czas stosowania w leczeniu otyłości i chorób
+towarzyszących.
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+19.
+
+20.
+
+21.
+
+22.
+
+Piśmiennictwo:
+1.
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+7.
+
+8.
+9.
+
+10.
+11.
+
+70
+
+Swinburn B., Dietz W., Kleinert S. A Lancet Commission on
+obesity. Lancet 2015; 386: 1716−1717.
+World Health Organization. Obesity and overweight, updated
+January 2015, http://www.who.int/mediacentre/factsheets/
+fs311/en/; 5.11.2015.
+Festi D., Schiumerini R., Eusebi L.H., Marasco G., Taddia M.,
+Colecchia A. Gut microbiota and metabolic syndrome. World
+J. Gastroenterol. 2014; 20: 16079−16094.
+Di Baise J.K., Zhang H., Crowell M.D. i wsp. Gut microbiota
+and its possible relationship with obesity. Mayo Clin. Proc.
+2008; 83: 460−469.
+Turnbaugh P.J., Ley R.E., Mahowald M.A. i wsp. An obesity-associated gut microbiome with increased capacity for
+energy harvest. Nature 2006; 444: 1027−1031.
+Marchesi J., Shanahan F. The normal intestinal microbiota.
+Curr. Opin. Infect. Dis. 2007; 20: 508−513.
+Frank D.N., St Amand A.L., Feldman R.A. i wsp. Molecular-phylogenetic characterization of microbial community
+imbalances in human inflammatory bowel diseases. Proc.
+Natl. Acad. Sci. USA 2007; 104: 13780−13785.
+Turnbaugh P.J., Ley R.E., Hamady M. i wsp. The human
+microbiome project. Nature 2007; 449: 804−810.
+Favier C.F., Vaughan E.E., De Vos W.M., Akkermans A.D. Molecular monitoring of succession of bacterial communities in human neonates. Appl. Environ. Microbiol. 2002; 68: 219−226.
+Fukuda S., Ohno H. Gut microbiome and metabolic diseases.
+Semin. Immunopathol. 2014; 36: 103−114.
+Hooper L.V., Littman D.R., Macpherson A.J. Interaction between the microbiota and the immune system. Science 2012;
+336: 1268−1273.
+
+Gastroenterologia Kliniczna 2016, tom 8, nr 2
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
+31.
+
+Jia W., Li H., Zhao L., Nicholson J.K. Gut microbiota: a potential new territory for drug targeting. Nat. Rev. Drug. Discov.
+2008; 7: 123−129.
+Neu J., Douglas-Escobar M., Lopez M. Microbes and the
+developing gastrointestinal tract. Nutr. Clin. Pract. 2007; 22:
+174−182.
+CaniP.D., Amar J., Iglesias M.A. i wsp. Metabolic endotoxemia initiates obesity and insulin resistance. Diabetes 2007;
+56: 1761−1772.
+Turnbaugh P.J., Bäckhed F., Fulton L., Gordon J.I. Diet-induced obesity is linked to marked but reversible alterations in
+the mouse distal gut microbiome. Cell Host. Microbe 2008;
+3: 213−223.
+Marlicz W., Zawada I., Starzyńska T. Zespół nadwrażliwego
+jelita — nadwrażliwe jelito czy nadwrażliwy umysł? Polski
+Merkuriusz Lekarski 2012; XXXII, 187: 64−69.
+Bäckhed F., Ding H., Wang T. i wsp. The gut microbiota as
+an environmental factor that regulates fat storage. Proc. Natl.
+Acad. Sci. USA 2004; 101: 15718−15723.
+Bajzer M., Seeley R.J. Physiology: obesity and gut flora.
+Nature 2006; 444: 1009−1010.
+Flint H.J., Bayer E.A., Rincon M.T. i wsp. Polysaccharide
+utilization by gut bacteria: potential for new insights from
+genomic analysis. Nat. Rev. Microbiol., 2008; 6: 121−131.
+Harris K., Kassis A., Major G., Chou C.J. Is the gut microbiota
+a new factor contributing to obesity and its metabolic disorders? J. Obes. 2012; 2012: 879151.
+Schwiertz A., Taras D., Schäfer K. i wsp. Microbiota and
+SCFA in lean and overweight healthy subjects. Obesity (Silver
+Spring), 2010; 18: 190−195.
+Samuel B.S., Shaito A., Motoike T. i wsp. Effects of the gut
+microbiota on host adiposity are modulated by the shortchain fatty-acid binding G protein-coupled receptor, Gpr41.
+Proc. Natl. Acad. Sci. USA 2008; 105: 16767−16772.
+Tolhurst G., Heffron H., Lam Y.S. i wsp. Short-chain fatty acids stimulate glucagon-like peptide-1 secretion via the G-protein-coupled receptor FFAR2. Diabetes 2012; 61: 364−371.
+Hooper L.V., Wong M.H., Thelin A. i wsp. Molecular analysis
+of commensal host-microbial relationships in the intestine.
+Science 2001; 291: 881−884.
+Grudell A.B., Camilleri M. The role of peptide YY in integrative
+gut physiology and potential role in obesity. Curr. Opin. Endocrinol. Diabetes Obes. 2007; 14: 52−57.
+Nicholson J.K., Holmes E., Kinross J. i wsp. Host-gut
+microbiota metabolic interactions. Science 2012; 336:
+1262−1267.
+Gao Z., Yin J., Zhang J. i wsp. Butyrate improves insulin sensitivity and increases energy expenditure in mice. Diabetes
+2009, 58: 1509−1517.
+Stappenbeck T.S., Hooper L.V., Gordon J.I. Developmental regulation of intestinal angiogenesis by indigenous microbes via Paneth cell. Proc. Natl. Acad. Sci. USA 2002; 99:
+15451−15455.
+Mandard S., Zandbergen F., van Straten E. i wsp. The fasting-induced adipose factor/ angiopoietin-like protein 4 is
+physically associated with lipoproteins and governs plasma lipid levels and adiposity. J. Biol. Chem. 2006; 281:
+934−944.
+Ley R.E., Bäckhed F., Turnbaugh P.J. i wsp. Obesity alters gut
+microbial ecology. Proc. Natl. Acad. Sci. USA 2005; 102:
+11070−11075.
+Ley R.E., Turnbaugh P.J., Klein S. Gordon J.I. Microbial ecology: human gut microbes associated with obesity. Nature
+2006; 444: 1022−1023.
+
+32.
+
+33.
+
+34.
+
+35.
+
+36.
+
+37.
+
+38.
+
+39.
+
+40.
+
+41.
+
+42.
+
+43.
+
+44.
+45.
+
+46.
+
+47.
+
+48.
+
+49.
+
+Turnbaugh P.J., Ridaura V. K., Faith J.J i wsp. The effect of
+diet on the human gut microbiome: a metagenomic analysis
+in humanized gnotobiotic mice. Sci. Transl. Med. 2009; 1(6):
+6ra14.
+Duncan S.H., Lobley G.E., Holtrop G. i wsp. Human colonic
+microbiota associated with diet, obesity and weight loss. Int.
+J. Obes. (Lond.) 2008; 32: 1720−1724.
+Samuel B.S., Hansen E.E., Manchester J.K. i wsp. Genomic and metabolic adaptation of Methanobrevibacter smithii
+to human gut. Proc. Natl. Acad. Sci. USA 2007; 104:
+10643−10648.
+Furet J.P., Kong L.C., Tap J. i wsp. Differential adaptation of
+human gut microbiota to bariatric surgery-induced weight
+loss: links with metabolic and low-grade inflammation markers. Diabetes 2010; 59: 3049−3057.
+De Filippo C., Cavalieri D., Di Paola M. i wsp. Impact of diet
+in shaping gut microbiota revealed by a comparative study in
+children from Europe and rural Africa. Proc. Natl. Acad. Sci.
+USA 2010; 107: 14691−14696.
+Hildebrandt M.A., Hoffmann C., Sherrill-Mix S.A. i wsp. Highfat diet determines the composition of the murine gut microbiome independently of obesity. Gastroenterology 2009;
+137: 1716−1724.
+David L.A., Maurice C.F., Carmody R.N. i wsp. Diet rapidly
+and reproducibly alters the human gut microbiome. Nature
+2014; 505: 559−563.
+Shen W., Gaskins H.R., McIntosh M.K. Influence of dietary
+fat on intestinal microbes, inflammation, barrier function and
+metabolic outcomes. J. Nutr. Biochem. 2014; 25: 270−280.
+Brinkworth G.D., Noakes M., Clifton P.M. Bird A.R. Comparative effects of very low-carbohydrate, high-fat and
+high-carbohydrate, low-fat weight-loss diets on bowel habit
+and faecal short-chain fatty acids and bacterial populations.
+Br. J. Nutr. 2009; 101: 1493−1502.
+Zhang C., Zhang M., Wang S. i wsp. Interactions between gut
+microbiota, host genetics and diet relevant to development of
+metabolic syndromes in mice. ISME J. 2010; 4: 232−241.
+Wright S.D., Ramos R.A., Tobias P.S. i wsp. CD14, a receptor
+for complexes of lipopolysaccharide (LPS) and LPS binding
+protein. Science 1990; 249: 1431−1433.
+Jumpertz R., Le D.S., Turnbaugh P.J. i wsp. Energy-balance
+studies reveal associations between gut microbes, caloric
+load, and nutrient absorption in humans. AM. J. Clin. Nutr.
+2011; 94: 58−65.
+Arumugam M., Raes J., Pelletier E. i wsp. Enterotypes of the
+human gut microbiome. Nature 2011; 473: 174−180.
+Le Chatelier E., Nelson T., Qin J. i wsp. Richness of human
+gut microbiome correlates with metabolic markers. Nature
+2013; 500: 541−546.
+Membrez M., Blancher F., Jaquet M., Bibiloni R. i wsp.
+Gut microbiota modulation with norfloxacin and ampicillin
+enhances glucose tolerance in mice. FASEB J. 2008; 22:
+2416−2426.
+Cani P.D., Bibiloni R., Knauf C. i wsp. Changes in gut microbiota control metabolic endotoxemia-induced inflammation in
+high-fat diet induced obesity and diabetes in mice. Diabetes
+2008; 57: 1470−1481.
+Amar J., Burcelin R., Ruidavets J.B. i wsp. Energy intake is
+associated with endotoxemia in apparently healthy men. Am.
+J. Clin. Nutr. 2008; 87: 1219−1223.
+Creely S.J., McTernan P.G., Kusminski C.M. i wsp. Lipopolysaccharide activates an innate immune system response in
+human adipose tissue in obesity and type 2 diabetes. Am. J.
+Physiol. Endocrinol. Metab. 2007; 292: E740−E747.
+
+50.
+
+51.
+
+52.
+
+53.
+
+54.
+
+55.
+
+56.
+
+57.
+
+58.
+
+59.
+
+60.
+
+61.
+
+62.
+
+63.
+
+64.
+
+65.
+
+66.
+
+67.
+
+Shi H., Kokoeva M.V., Inouye K. i wsp. TLR4 liks innate
+immunity and fatty acid−induced insulin resistance. J. Clin.
+Invest. 2006; 116: 3015−3025.
+Amar J., Serino M., Lange C. i wsp. Involvement of tissue
+bacteria in the onset of diabetes in humans: evidence for
+a concept. Diabetologia 2011; 54: 3055−3061.
+Zhang X., Shen D., Fang Z. i wsp. Human gut microbiota
+changes reveal the progression of glucose intolerance. PLoS
+One 2013; 8: e71108
+Lewis K., Lutgendorff F., Phan V. i wsp. Enhanced translocation of bacteria across metabolically stressed epithelia
+is reduced by butyrate. Inflamm. Bowell. Dis. 2010; 16:
+1138−1148.
+Vrieze A., Van Nood E., Holleman F. i wsp. Transfer of intestinal microbiota from lean donors increases insulin sensitivity
+in individuals with metabolic syndrome. Gastroenterology
+2012; 143: 913−916.e7.
+Alisi A., Ceccarelli S., Panera N., Nobili V. Causative role gut
+microbiota in non-alcoholic fatty liver disease pathogenesis.
+Front. Cell Infect. Microbiol. 2012; 2: 132.
+Mishra A.K., Dubey V., Ghosh A.R. Obesity: An overview
+of possible role(s) of gut hormones, lipid sensing and gut
+microbiota. Metab. Clin. Experimental 2016; 65: 48−65
+Bäckhed F., Manchester J.K., Semenkovich C.F., Gordon J.I.
+Mechanisms underlying the resistance to diet-induced obesity in germ-free mice. Proc. Natl. Acad. Sci. USA 2007;
+104: 979−984.
+Bäckhed F., Crawford P.A., O’Donnell D., Gordon J.I. Postnatal
+lymphatic partitioning from the blood vasculature in the small
+intestine requires fasting-induced adipose factor. Proc. Natl.
+Acad. Sci. USA 2007; 104: 606−611.
+Vreugdenhil A.C., Rousseau C.H., Hartung T. i wsp. Lipopolysaccharide (LPS)-binding protein mediates LPS detoxification
+by chylomicrons. J. Immunol. 2003; 170: 1399−1405.
+Lefebvre P., Cariou B., Lien F. i wsp. Role of bile acids and bile
+acid receptors in metabolic regulation. Physiol. Rev. 2009;
+89: 147−191.
+Swann J.R., Want E.J., Geier F.M. i wsp. Systemic gut microbial modulation of bile acid metabolism in host tissue
+compartments. Proc. Natl. Acad. Sci. USA 2010; 108:
+4523−4530.
+Thomas C., Gioiello A., Noriega L. i wsp. TGR5-mediated
+bile acid sensing controls glucose homeostasis. Cell Metab.
+2009; 10: 167−177.
+Pappo I., Becovier H., Berry E.M., Freund H.R. Pollymyxin
+B reduces cecal flora, TNF production and hepatic steatosis
+during total parenteral nutrition in the rat. J. Surg. Res. 1991;
+51: 106−112.
+Cope K., Risby T., Diehl A.M. Increased gastrointestinal
+ethanol production in obese mice: implications for fatty
+liver disease pathogenesis. Gastroenterology 2000; 119:
+1340−1347.
+Zhu L., Baker S.S., Gill C. i wsp. Characterization of gut microbiomes in nonalcoholic steatohepatitis (NASH) patients:
+a connection between endogenous alcohol and NASH. Hepatology 2013; 57: 601−609.
+Dumas M.E., Barton R.H., Toye A. i wsp. Metabolic profiling
+reveals a contribution of gut microbiota to fatty liver phenotype in insulin-resistant mice. Proc. Natl. Acad. Sci. USA
+2006; 103: 12511−12516.
+Buchman A.L., Dubin M.D., Moukarzel A.A. i wsp. Choline
+deficiency: a cause of hepatic steatosis during parenteral
+nutrition that can be reversed with intravenous choline supplementation. Hepatology 1995; 22: 1399−1403.
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+71
+
+68.
+
+69.
+
+70.
+
+71.
+
+72.
+
+73.
+
+74.
+
+75.
+
+76.
+
+77.
+
+78.
+
+79.
+
+80.
+
+81.
+
+82.
+
+83.
+
+84.
+
+72
+
+Spencer M.D., Hamp T.J., Reid R.W. i wsp. Association
+between composition of the human gastrointestinal microbiome and development of fatty liver with choline deficiency.
+Gastroenterology 2011; 140: 976−986.
+Rivera C.A., Adegboyega P., van Rooijen N. i wsp. Toll-like
+receptor-4 signaling and Kupffer cells play pivotal roles in the
+pathogenesis of non-alcoholic steatohepatitis. J. Hepatol.
+2007; 47: 571−579.
+Miele L., Valenza V., La Torre G. i wsp. Increased intestinal
+permeability and tight junction alterations in nonalcoholic
+fatty liver disease. Hepatology 2009; 49: 1877−1887.
+Amar J., Chabo C., Waget A. i wsp. Intestinal mucosal adherence and translocation of commensal bacteria at the early
+onset of type 2 diabetes: molecular mechanism and probiotic
+treatment. EMBO Mol. Med. 2011; 3: 559−572.
+Cani P.D., Neyrinck A.M., Fava F. i wsp. Selective increases of
+bifidobacteria in gut microflora improve high-fat-diet-induced
+diabetes in mice through a mechanism associated with endotoxaemia. Diabetologia 2007; 50: 2374−2383.
+Lee H. Y., Park J.H., Seok S.H. i wsp. Human originated bacteria, Lactobacillus rhamnosus PL60, produce conjugated
+linoleic acid and show anti-obesity effects in diet-induced
+obese mice. Biochim. Biophys. Acta 2006; 1761: 736−744.
+Lee K., Paek K., Lee H.Y. i wsp. Antiobesity effect of
+trans-10,cis-12-conjugated linoleic acid-producing Lactobacillus plantarum PL62 on diet-induced obese mice. J. Appl.
+Microbiol. 2007; 103: 1140−1146.
+Sato M., Uzu K., Yoshida T. i wsp. Effects of milk fermented
+by Lactobacillus gasseri SBT2055 on adipocyte size in rates.
+Br. J. Nutr. 2008; 99: 1013−1017.
+Kondo S., Xiao J.Z., Satoh T. i wsp. Antiobesity effect of
+Bifidobacterium breve strain B-3 supplementation in a mouse
+model with high-fat diet-induced obesity. Biosci. Biotechnol.
+Biochem. 2010; 74: 1656−1661.
+Cano P.G., Santacruz A., Trejo F.M., Sanz Y. Bifidobacterium CECT 7765 improves metabolic and immunological
+alterations associated with obesity in high-fat diet-fed mice.
+Obesity (Silver Spring) 2013; 21: 2310−2321.
+Chen J.J., Wang R., Li X.F., Wang R.L. Bifidobacterium longumsuplementation improved high-fat-fed-induced metabolic
+syndrome and promoted intestinal Reg I gene expression.
+Exp. Biol. Med. (Maywood) 2011; 236: 823−831.
+Tomaro-Duchesneau C., Saha S., Malhotra M. i wsp. Effect of
+orally administered L. fermentum NCIMB 5221 on markers of
+metabolic syndrome: an in vivo analysis using ZDF rats. Appl.
+Microbiol. Biotechnol. 2014; 98: 115−126.
+Wang L.X., Liu K., Gao D.W., Hao J.K. Protective effects of
+two Lactobacillus plantarum strains in hyperlipidemic mice.
+World J. Gastroenterol. 2013; 19: 3150−3156.
+Kim S.W., Park K.Y., Kim B. i wsp. Lactobacillus rhamnosus
+GG improves insulin sensitivity and reduced adiposity in
+high-fat diet-fed mice through enhancement of adiponectin
+production. Biochem. Biophys. Res. Commun. 2013; 431:
+258−263.
+Fäk F., Bäckhed F. Lactobacillus reuteri prevents diet-induced
+obesity, but not atherosclerosis, in a strain dependent fashion
+in Apoe−/− mice. PLoS One 2012; 7 (10): e46837.
+Takemura N., Okubo T., Sonoyama K. Lactobacillus plantarum strain No. 14 reduced adipocyte size in mice fed high-fat
+diet. Exp. Biol. Med. (Maywood) 2010; 235: 849−856.
+Aronsson L., Huang Y., Parini P. i wsp. Decreased fat storage by Lactobacillus paracasei is associated with increased
+levels of angiopoietin-like 4 protein (ANGPTL4). PLoS One
+2010; 5: e13087.
+
+Gastroenterologia Kliniczna 2016, tom 8, nr 2
+
+85.
+
+Nerstedt A., Nilsson E.C., Ohlson K. i wsp. Administration of
+Lactobacillus evokes coordinated changes in the intestinal
+expression profile of genes regulating energy homeostasis and immune phenotype in mice. Br. J. Nutr. 2007; 97:
+1117−1127.
+86. Kadooka Y., Sato M., Imaizumi K. i wsp. Regulation of abdominal adiposity by probiotics (Lactobacillus gasseri
+SBT2055) in adults with obese tendencies in a randomized
+controlled trial. Eur. J. Clin. Nutr. 2010; 64: 636−643.
+87. Sanchez M., Darimont C., Drapeau V. i wsp. Effect of Lactobacillus rhamnosus CGMCC1.3724 supplementation on
+weight loss and maintenance in obese men and women. Br.
+J. Nutr. 2014; 111: 1507−1519.
+88. Kadooka Y., Sato M., Ogawa A. i wsp. Effect of Lactobacillus
+gasseri SBT2055 in fermented milk on abdominal adiposity
+in adults in a randomised controll trial. Br. J. Nutr. 2013; 110:
+1696−1703.
+89. Barreto F.M., Colado Simäo A.N., Morimoto H.K. i wsp. Beneficial effects of Lactobacillus plantarum on glycemia and homocysteine levels in postmenopausal women with metabolic
+syndrome. Nutrition 2014; 30: 939−942.
+90. Yadav H., Lee J.H., Lloyd J. i wsp. Beneficial metabolic
+effects of a probiotic via butyrate-induced GLP-1 hormone
+secretion. J. Biol. Chem 2013; 288: 25088−25097.
+91. Roberfroid M., Gibson G.R., Hoyles L. i wsp. Prebiotic effects: metabolic and health benefits. Br. J. Nutr. 2010; 104
+Suppl 2: S1−S63.
+92. Neyrinck A.M., Possemiers S., Druart C. i wsp. Prebiotic
+effects of wheat arabinoxylan related to the increase in bifidobacteria, Roseburia and Bacteroides/Prevotella in diet-induced obese mice. PLoS One 2011; 6(6): e20944.
+93. Parnell J.A., Reimer R.A. Prebiotic fibres dose-dependently
+increase satiety hormones and alter Bacteroidetes and Firmicutes in lean and obese JCR: LA-cprats. Br. J. Nutr. 2012;
+107: 601−613.
+94. Everard A., Lazarevic V., Derrien M. i wsp. Responses of gut
+microbiota and glucose and lipid metabolism to prebiotics in
+genetic obese and diet-induced leptin-resistant mice. Diabetes 2011; 60: 2775−2786.
+95. Cani P.D., Neyrinck A.M., Maton N., Delzenne N.M.
+Oligo-fructose promotes satiety in rats fed a high-fat diet:
+involvement of glucagon-like Peptide-1. Obes. Res. 2005;
+13: 1000−1007.
+96. Cani P.D., Daubioul C.A., Reusens B. i wsp. Involvement
+of endogenous glucagon−like peptide-1 (7-36) amide on
+glycaemia-lowering effect of oligofructose in streptozotocin-treated rats. J. Endocrinol. 2005; 185: 457−465.
+97. Cani P.D., Possemiers S., Van de Wiele T. i wsp. Changes in
+gut microbiota control inflammation in obese mice through
+a mechanism involving GLP-2 driven improvement of gut
+permeability. Gut 2009; 58: 1091−1103.
+98. Kellow N.J., Coughlan M.T., Reid C.M. Metabolic benefits
+of dietary prebiotics in human subjects: a systematic review of randomised controlled trials. Br. J. Nutr. 2014; 111:
+1147−1161.
+99. Parnell J. A., Reimer R.A. Weight loss during oligofructose
+supplementation is associated with decreased ghrelin and
+increased peptide YY in overweight and obese adults. Am. J.
+Clin. Nutr. 2009; 89: 1751−1759.
+100. Genta S., Cabrera W., Habib N. i wsp. Yacon syrup: beneficial
+effects on obesity and insulin resistance in humans. Clin.
+Nutr. 2009; 28: 182−187.
+101. Dewulf E.M., Cani P.D., Claus S.P. i wsp. Insight into the
+prebiotic concept: lessons from an exploratory, double blind
+
+102.
+103.
+
+104.
+
+105.
+
+106.
+
+107.
+
+intervention study with insulin-type fructans in obese women. Gut 2013; 62: 1112−1121.
+Sotos M., Nadal I., Marti A. i wsp. Gut microbes and obesity
+in adolescents. P. Nutr. Soc. 2008; 67: E20.
+Nadal I., Santacruz A., Marcos A. i wsp. Shifts in clostridia,
+bacteroides and immunoglobulin-coating fecal bacteria associated with weight loss in obese adolescents. Int. J. Obes.
+(lond) 2009; 33: 758−767.
+Cotillard A., Kennedy S.P., Kong L.C. i wsp. Dietary intervention impact on gut microbial gene richness. Nature 2013;
+500: 585−588.
+Zhang H., DiBaise J.K., Zuccolo A. i wsp. Human gut microbiota in obesity and after gastric bypass. Proc. Natl. Acad. Sci.
+USA 2009; 106: 2365−2370.
+Li J.V., Ashrafian H., Bueter M. i wsp. Metabolic surgery profoundly influences gut microbial-host metabolic cross-talk.
+Gut 2011; 60: 1214−1223.
+Lips M.A., de Groot G. H., van Klinken J.B. i wsp. Calorie restriction is a major determinant of the short-term
+
+108.
+
+109.
+
+110.
+
+111.
+
+metabolic effects of gastric bypass surgery in obese
+type 2 diabetic patients. Clin. Endocrinol. (Oxf) 2014;
+80: 834−842.
+Ostrowska L., Marlicz W., Łoniewski I. Transplantacja mikroflory jelitowej w leczeniu otyłości i zaburzeń metabolicznych
+— metoda nadal ryzykowna i niepotwierdzona wynikami
+badań klinicznych. Forum Zaburzeń Metabolicznych 2013;
+4: 161−169.
+Dror T., Dickstein Y., Dubourg G., Paul M. Microbiota manipulation for weight change. Microb. Pathog. 2016 [ahead
+of print].
+Gobel R.J., Larsen N., Jakobsen M. i wsp. Probiotics to
+adolescents with obesity: effects on inflammation and metabolic syndrome. J. Pediatr. Gastroenterol. Nutr. 2012; 55:
+673−678.
+Lee S.J., Bose S., Seo J.G. i wsp. The effects of co-administration of probiotics with herbal medicine on obesity, metabolic endotoxemia and dysbiosis: a randomized double-blind
+controlled clinical trial. Clin. Nutr. 2014; 33: 973−981.
+
+Lucyna Ostrowska, Mikrobiota jelitowa a zaburzenia metaboliczne i otyłość
+
+73
+
+

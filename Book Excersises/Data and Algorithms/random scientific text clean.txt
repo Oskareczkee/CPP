@@ -1,0 +1,79 @@
+introduction  the submucous turbinectomy  st  with neurovascular branches photocoagulation  nbp  has superior functional results in the surgical treatment of the inferior nasal turbinate hypertrophy  improving nasal obstruction and reducing the vasomotor reflex  however  it is difficult to perform in an outpatient setting  mainly because of the risk of postoperative bleeding  diode laser  980nm  finds the ideal characteristics to perform this procedure  allowing the photocoagulation of the neurovascular branches with simultaneous bleeding control  however  the feasibility and safety to perform this procedure in an outpatient setting were not described before  
+
+objective  describe a laser submucous turbinectomy  lst  technique with partial removal of the turbinate bone and neurovascular branches photocoagulation  nbp   demonstrating its feasibility and safety as an outpatient procedure  
+
+methods  with reb approval we retrospectively analyzed patients submitted to this procedure in the inferior nasal turbinate hypertrophy treatment  from january 2015 to december 2015  based on its physical interaction with the nasal mucosa  was selected the 980nm diode laser  applied with 7 watts of power in pulsed mode  20hz 25ms   patients were followed during 12 weeks after the procedure to register any possible complication  
+
+results  49 patients met the inclusion criteria  average age of 36  sd   18   31 male  58   and 18 female  42    the average energy applied was 1801 joules  sd   611  on the left inferior turbinate and 1563 joules  sd   457  on the right inferior turbinate  the average procedure time was 8’30 minutes  sd   2’45  on the left side and 7’30 minutes on the right side  sd 1’54   all procedures were performed in outpatient setting  without the use of nasal package  there were no complications  
+
+conclusion  the laser submucous turbinectomy  lst  technique described with neurovascular branches photocoagulation  nbp  has demonstrated feasibility and clinical safety in outpatient setting  
+
+
+
+the nasal chamber has three turbinates in the lateral wall  the superior and middle turbinate are part of the ethmoid bone  while the inferior turbinate  it  has a separate bone  recovered with a respiratory mucosa that plays a paramount role in filtering  warming and humidifying the air  
+
+during the inspiration  up to two thirds of the upper airway resistance is determined by the inferior turbinate and its hypertrophy compromises the nasal breathing and consequently the quality of life  1   
+
+the allergic rhinitis has a prevalence upon to 30   2 3   it is the main cause of it hipertrophy  characteristically associated with chronic inflammation  characterizing the chronic hypertrophic rhinitis  chr   4   specially  when the inferior turbinate bone is hypertrophied  this condition has poor response to drug treatment and surgical procedures may be necessary  5 6   
+
+the most performed procedure in these cases is the parcial turbinectomy  7   when the it is resected with its ciliated mucosa  typically it is followed by electro cauterization to prevent bleeding  causing further thermal demage to the mucosa  delayng the healing process with increased risk of prolonged crust formation and functional impairment  the major postoperative complications are bleeding and excessive resection  compromising the nasal physiology and causing the empty nose symdrome  ens   8 9   
+
+several mucosal sparing techniques were described in a attempt to achieve less invasive procedures  only partially removing the it mucosa  performed with conventional electrocautery  10   controlled temperature devices  11 12   microdebriders  13  and surgical lasers  14   however  recurrence of the obstructive symptoms in these procedures is higher  occuring on average two years after the procedure  specially in patients with refractary allergic rhinitis  15   
+
+the submucous turbinectomy  st  is a techinique that propitiate the best functional results  16   also allowing the partial resection of the inferior turbinate bone and the neurovascular branches  nbr  reducing secretion  sneezing and the vasomotor reflex in similar degree that the transnasal resection of the posterior nasal nerve  trpnn  at the sphenopalatine foramen does  17   however  as the turbinate has an abundant blood supply  this procedure was originally described followed by nasal packing to avoid postoperative bleeding and performed as inpatient surgery  18   
+
+according to its physical properties and tissue interaction  diode laser finds the ideal characteristics to perform this procedure in outpatient surgery  with better bleeding control and avoiding nasal package  if used with the appropriate parameters  it can also reduce the thermal damage to the mucosa and crust formation  shortening the recovery time  19 20   though its feasibility and safety in outpatient setting was never described before  
+
+
+
+the aim of this manuscript is to describe a laser submucous turbinectomy  lst  technique with partial removal of the inferior turbinate bone and neurovascular branches photocoagulation  nbp   demonstrating its feasibility and safety in an outpatient setting  
+
+
+
+with the approval of the research ethics board  reb  np 268 734  we retrospectively analyzed the electronic medical records from patients submitted to this procedure from january 2015 to december 2015  
+
+the procedure was proposed to patients with nasal obstruction secondary to chronical hypertrophy of the inferior turbinates  nonresponsive to at least three months of treatment with topical corticosteroids  mometasone   were also included procedures in association with sectorial septoplasty  patients with other causes of nasal obstruction and those who were not properly followed postoperatively were excluded  
+
+based on previous studies regarding laser physical interaction with the nasal mucosa  was selected the 980nm diode laser  dmc  brazil  with 7 watts of power in a pulsatile mode  20 hz  25msg   21 22   applied using a 600 micrometers optic fiber attached to a thin metal angled tip with the aid of a zero degree nasal endoscope coupled to a video system  to allow more control and precision  
+
+accordingly to our institutional protocol for outpatient surgery  the procedures were performed in the surgical theater after antibiotic profilaxia  cefazolin 2 grams   under propofol intravenous anesthesia and discharging home after six hours  
+
+the lst technique starts using the laser to perform a longitudinal incision along the inferior turbinate lower edge  figure 1 and 2   followed by sub periosteal dissection of the turbinate bone preserving the underlying mucosa  figure 3   
+
+
+after the subperiosteal dissection  two neurovascular branches are clearly visualized in the internal side of the turbinate bone  coming from its tail along the superior and inferioredges  before removing the turbinate bone  these branches are photocoagulated using the laser  figure 4  and finally is repositioned the mucosa with its integrity preserved  welding the incision edges also with the laser  figure 5   as the histological documentation of the turbinate neurovascular branches have not been done before  we preserved and sent to immune histochemical analysis part of the resected branches  
+
+
+during the posopersative care  topical oxymetazoline was prescribed in the first 72 hrs to reduce the risk of bleeding and aiming the early identifation of any surgical complication all patients were evaluated after three days  two weeks  four weeks  eight weeks and twelve weeks  nasal irrigation with hypertonic saline solution  3  sodium chloride  was also recommended during the first two weeks  
+
+
+during the period of analysis 57 patients met the inclusion criteria and were submitted to this procedure but only 49 successfully completed the posoperative protocol  the average age was 36 years  sd   18 8   31mens  58   and 18womens  42   the average energy applied was 1801 joules  sd   611  on left inferior turbinate and 1563 joules  sd   457  on right inferior turbinate  the average procedure time was 8’30 minutes  sd 2’54  on left side and 7’30 minutes  sd   1’54  on the right side  table 1 and 2   the immune histochemical analysis has confirmed that we are resecting the neurovascular branches   figure 6 and 7  
+
+
+in regard to the postoperative data  was gently aspirated any secretion or clots from the nasal cavity in the first evaluation  without removing the crusts over the incision  observing mild edema of the inferior turbinate mucosa that re absorved completely within 2 weeks  the healing has occurred within 4 weeks  
+
+increased secretion with infectious aspect was present in 2  4   of the cases between the first and second week  successfully treated with oral antibiotic  amoxacilin  for seven days  there were no major complications  such as bleeding  persistent crust formation  nasal synechiae or atrophic rhinitis with empty nose syndrome  
+
+
+
+the surgical treatment of the inferior turbinate hypertrophy has always been controversial counter balancing the function preservation with long term outcomes  several techniques were described in the past decades and some reviews have pointed out the submucosal turbinectomy as the procedure of choice  5 16   achieving less damage to the nasal mucosa and better functional result  15 23  with the partial removal of the turbinate bone  24   
+generally  allergic patients have the worse response to the turbinate surgery with recurrence of the symptoms related to the vasomotor reflex as congestion  secretion and sneezing  the transnasal resection of the posterior nasal nerve  trpn  at the sphenopalatine foramen is capable to reduce the recurrence of these symptoms  as the afferent sensory fibers to the nasal mucosa are ressected  improving sneezing and nasal secretion and reducing the local citokines released  however  it is more invasive and presents increased risk of postoperative bleeding  17 25   
+
+the selective resection of the peripheral posterior nasal nerve is an option less invasive and it can be performed during the submucosal removal of the turbinate bone  since the peripheral branches of the posterior nasal nerve are within the vascular branches  between the bone and the lateral turbinate mucosa  achieving the same results than the trpn  18   however  as the postoperative bleeding risk is still high  it is performed with nasal packing in an inpatient setting  
+
+although many studies have been published proposing the use of laser to reduce the inferior turbinate in outpatient surgery  it is always applied removing the mucosa  without the partial resection of the turbinate bone  14 26   
+
+the laser techniques described  beside good initial clinical results  has about 20  of recurrence rate in two years follow up  27 29  and it is controversial among rhinologists  mainly because the laser is applied to vaporize the mucosa  with epithelial destruction and physiology impairment  5 8 16   
+
+differently from other procedures described using the laser  in the present technique it was selected the 980 diode laser to perform the incision in the inferior turbinate and to photocoagulate the neurovascular branches  providing precision and more control over this critical step of the procedure  based in an electron microscopy analysis in the nasal mucosa that demonstrated better physical interaction for incision and coagulation  30   
+
+the pulsatile mode  in a low frequency  is able to provide good hemostasis with less thermal damage to the adjacent tissue  22   increasing the preservation of the mucosa  contributing to better healing process  reducing the postoperative bleeding risk and allowing an outpatient setting  
+
+
+the laser submucous turbinectomy  lst  technique presented  with partial bone removal and neurovascular branches photocoagulation  nbp   have demonstrated its feasibility and safety in an outpatient setting with low complication rate  
+
+
+
+
+
+
