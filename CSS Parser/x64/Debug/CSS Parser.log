@@ -1,0 +1,23 @@
+﻿  AttributeParser.cpp
+  CommandHandler.cpp
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(153,13): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(152,1): message : podczas kompilowania funkcji składowej „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(56,44): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” funkcji szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(41,24): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „dlink_list<CSSBlock>” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(210,39): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  CSSParser.cpp
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(153,13): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(152,1): message : podczas kompilowania funkcji składowej „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(56,44): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” funkcji szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(41,24): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „dlink_list<CSSBlock>” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(210,39): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  CSSProcessor.cpp
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(153,13): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(152,1): message : podczas kompilowania funkcji składowej „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(56,44): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „bool dlink_list<CSSBlock>::removeIndex(const unsigned int &)” funkcji szablon
+P:\Visual Studio Programy\CSS Parser\CSSParser.h(41,24): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „dlink_list<CSSBlock>” klasy klasa szablon
+P:\Visual Studio Programy\CSS Parser\dLinkList.h(210,39): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  SelectorParser.cpp
+  TokenStream.cpp
+  Generowanie kodu...
+  CSS Parser.vcxproj -> P:\Visual Studio Programy\CSS Parser\x64\Debug\CSS Parser.exe
