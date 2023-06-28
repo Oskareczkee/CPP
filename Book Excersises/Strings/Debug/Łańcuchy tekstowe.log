@@ -1,0 +1,13 @@
+﻿  Łańcuchy tekstowe.cpp
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(15,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(63,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(67,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(97,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(101,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(239,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(249,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(282,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(291,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(58): warning C4715: "zwroc_index_znacznika”: niewszystkie ścieżki kodu zwracają wartość
+P:\Visual Studio Programy\Łańcuchy tekstowe\Łańcuchy tekstowe.cpp(205): warning C4715: "formatuj_tekst”: niewszystkie ścieżki kodu zwracają wartość
+  Łańcuchy tekstowe.vcxproj -> P:\Visual Studio Programy\Łańcuchy tekstowe\Debug\Łańcuchy tekstowe.exe
