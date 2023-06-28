@@ -1,0 +1,2 @@
+P:\Visual Studio Programy\Polimorfizm i Dziedziczenie\Debug\Polimorfizm i Dziedziczenie.exe
+P:\Visual Studio Programy\Polimorfizm i Dziedziczenie\Debug\Polimorfizm i Dziedziczenie.pdb

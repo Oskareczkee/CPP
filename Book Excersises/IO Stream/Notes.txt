@@ -1,0 +1,100 @@
+Tutaj s¹ teraz notatki z dzia³u, tak jest wygodniej
+Notatki s¹ po polsku, ze wzglêdu, ¿e s¹ tworzone dla mnie samego i musz¹ byæ czytelne w ka¿dej mo¿liwej chwili
+Najlepiej odczytywaæ w jakimœ Visual Studio
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C10
+
+Pliki najlepiej otwieraæ automatycznie, bez u¿ycia open i close, sprawia to ¿e plik przy tworzeniu strumienia jest próbowany do odczytu, sprawdzamy wtedy b³êdy
+plik zamknie siê przy koñcu zakresu (np. przy wyjœciu z funkcji)
+Wykorzystanie zakresu minimalizuje ryzyko, ¿e ktoœ spróbuje u¿yæ strumienia plikowego zanim zostanie zwi¹zany z plikiem lub u¿yje go po zamkniêciu strumienia
+
+Funkcji open() i close() u¿ywamy, kiedy czas trwania po³¹czenia z plikiem nie jest dogodnie po³¹czony z ¿adnym zakresem (czyli nie mamy pewnoœci, ¿e po wyjœciu z danego zakresu strumieñ siê zamknie)
+
+Funkcja clear() czyœci flagi b³êdów, ustawiaj¹c ios::goodbut na true
+Funkcja unget() oddaje wstawia ostatnio pobrany znak/ci¹g do strumienia na nowo
+
+mo¿emy sprawdziæ flagi b³êdów funkcjami fail(), bad(), eof(), good()
+
+Jeœli chcemy dowiedzieæ siê, co spowodowa³o zakoñczenie wczytywania danych, mo¿na sprawdziæ flagi strumienia, albo przechwyciæ runtime_error
+
+ist.exceptions(ist.exceptions() | ios::badbit) sprawi, ¿e za ka¿dym razem, gdy flaga badbit bêdzie aktywna, zostanie rzucony podany wyj¹tek (w tym przypadku ios_base::failure, jeœli u¿yjemy takiej notacji)
+
+jeœli definiujemy operatory wyjœciowe i wejœciowe w klasie, zazwyczaj musz¹ one mieæ dodatkowo FRIENDLY w deklaracji, wtedy unikniemy nieprzyjemnych b³êdów, które wkurzaj¹
+
+no i oczywiœcie w przypadku operacji wyjœcia wyjœcia trzeba dosyæ skrupulatnie zajmowaæ siê ró¿nymi b³êdami, wyj¹tkami, gdy¿ te operacje s¹ bardzo nara¿one na w³aœnie takie b³êdy
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+C11
+
+hex,dec,oct - u¿yte w strumieniu sprawia, ¿e liczby bêd¹ odczytywane lub zapisywane w systemie 16, 10 lub 8
+
+Przedrostki 0x-system 16
+			0 - system 8
+
+showbase - pokazuje przedrostek (0x lub 0) przy wyœwietlaniu liczb
+noshowbase - anuluje u¿ywanie przedrostków
+
+cin.unsetf(ios::dec) - ustawia flagi cin, cin nie bêdzie zak³ada³ teraz z góry, ¿e liczby s¹ dziesiêtne
+					   Flagi dzia³aj¹ dla dec, hex, oct, wy³¹czenie wszystkich, sprawi, ¿e na wejœciu mo¿emy u¿yæ ka¿dego zapisu, zostan¹ one przekonwertowane wtedy na zapisy dziesiêtne
+					   przez strumieñ cout
+
+formaty liczb zmiennoprzecinkowych:
+	
+	defaultfloat - zwyk³y format z dok³adnoœci¹ do 6 cyfr
+	fixed - notacja sta³oprzecinkowa
+	scientific - notacja naukowa
+
+setprecision(int) ustawia precyzjê, z któr¹ maj¹ byæ wyœwietlane liczby (liczba w œrodku okreœla w ilu cyfrach ma siê zmieœciæ dana liczba), nie ucina miejsc przed przecinkiem, jeœli mo¿liwe
+dodaje zera do koñca zapisu
+
+setw(int) ustawia szerokoœæ pola, jeœli zapis jest mniejszy ni¿ szerokoœæ pola, dodaje spacje, jeœli wiêksza, to pomija formatowanie, szerokoœæ pola nie jest trwa³a, i przy ka¿dym zapisie trzeba j¹ ustawiaæ
+
+
+Tryby otwierania strumieni plikowych:
+			(ios_base::)
+			app - do³¹czanie
+			ate - "at end" otwiera na koñcu
+			binary - otwiera w trybie binarnym
+			in - odczyt
+			out - zapis
+			trunc - przycina plik do d³ugoœci 0
+
+ostream z automatu otwiera plik w trybie out, istream w trybie in
+
+Przy plikach binarnych nie powinno u¿ywaæ siê operatorów >> i <<, powinno u¿ywaæ siê funkcji read i write, oraz przekazywaæ bajty danych
+
+Przyk³ad u¿ycia:
+
+//odczytuje wartoœæ x, która jest intem i jest zapisana binarnie
+	for(int x;ifs.read(as_bytes(x), sizeof(int)))
+		v.push_back(x);
+
+//zapisuje wartoœæ x binarnie
+	ifs.write(as_bytes(x), sizeof(int));
+
+Jeœli program tego nie wymaga, nie zapisywaæ plików binarnie, w niektórych przypadkach mo¿e byæ to uci¹¿liwe, pozatym czasami chcemy, aby dane w pliku by³y czytelne dla cz³owieka
+
+
+setg(int) - "get" ustawia pozycjê odczytu pliku
+setp(int) - "put" ustawia pozycjê zapisu pliku
+
+Staraæ siê unikaæ pozycjonowania, ró¿ne systemy ró¿nie mog¹ je interpretowaæ, nie jest zdefiniowane zawsze co siê stanie, jeœli przejdziemy poza zakres pliku, przez co te funkcje w niektórych systemach
+mog¹ byæ niebezpieczne
+Pozatym jest to bardzo nieczytelne w kodzie, u¿ywaæ tylko wtedy jeœli jest to konieczne
+
+
+stringstream dzia³a tak samo jak inne strumienie
+istniej¹ odmiany ostringstream i istringstream
+Strumienia tego u¿ywamy, jeœli chcemy oddzieliæ operacje odczytu (typowego) od operacji przetwarzania pliku
+stringstream u¿ywamy do przetwarzania stringa
+
+ss.str() // zwraca kopiê stringa zawartego w strumieniu
+ss.str(s) // ustawia ³añcuch ss na kopiê s
+
+Jeœli chcemy wczytaæ ca³y wiersz danych, bez pomijania spacji u¿ywamy getline(strumieñ, output)
+Nie mieszaæ getline z operatorem >>, mo¿e to doprowadziæ do naszej frustracji
+(w sumie to nie testowa³em tego, ale chyba jeœli u¿yjemy operatora >> , a potem wyczyœcimy strumieñ, to powinno byæ mo¿liwe bezpieczne u¿ycie getline wtedy)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

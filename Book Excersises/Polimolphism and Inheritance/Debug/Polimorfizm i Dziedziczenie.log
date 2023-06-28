@@ -1,0 +1,3 @@
+﻿  Polimorfizm i Dziedziczenie.cpp
+P:\Visual Studio Programy\Polimorfizm i Dziedziczenie\Polimorfizm i Dziedziczenie.cpp(41,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Polimorfizm i Dziedziczenie.vcxproj -> P:\Visual Studio Programy\Polimorfizm i Dziedziczenie\Debug\Polimorfizm i Dziedziczenie.exe

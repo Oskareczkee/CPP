@@ -1,0 +1,4 @@
+﻿  Naglowki.cpp
+P:\Visual Studio Programy\Naglowki\Naglowki.cpp(17,9): warning C4101: "chuuuj": lokalna zmienna, do której nie istnieje odwołanie
+P:\Visual Studio Programy\Naglowki\Naglowek.h(175): warning C4715: "szukaj”: niewszystkie ścieżki kodu zwracają wartość
+  Naglowki.vcxproj -> P:\Visual Studio Programy\Naglowki\Debug\Naglowki.exe

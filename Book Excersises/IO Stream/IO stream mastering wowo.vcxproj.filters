@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów\C10">
+      <UniqueIdentifier>{7849956a-1ffb-4bc2-89cb-9d48df88e63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\C11">
+      <UniqueIdentifier>{a6f0bdb7-fac9-49c5-ac6a-3b24a1095acb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IO stream mastering wowo.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="C10.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C10.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="C11.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="concatenate.txt">
+      <Filter>Pliki zasobów\C10</Filter>
+    </Text>
+    <Text Include="Text with numbers.txt">
+      <Filter>Pliki zasobów\C10</Filter>
+    </Text>
+    <Text Include="Notes.txt">
+      <Filter>Pliki zasobów\C10</Filter>
+    </Text>
+    <Text Include="NumeroUno.txt">
+      <Filter>Pliki zasobów\C10</Filter>
+    </Text>
+    <Text Include="readings.txt">
+      <Filter>Pliki zasobów\C10</Filter>
+    </Text>
+    <Text Include="c11text.txt">
+      <Filter>Pliki zasobów\C11</Filter>
+    </Text>
+    <Text Include="c11texttoloweroutput.txt">
+      <Filter>Pliki zasobów\C11</Filter>
+    </Text>
+    <Text Include="Text.txt">
+      <Filter>Pliki zasobów\C11</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

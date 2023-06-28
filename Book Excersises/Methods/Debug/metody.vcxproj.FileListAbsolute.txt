@@ -1,0 +1,2 @@
+P:\Visual Studio Programy\metody\Debug\metody.exe
+P:\Visual Studio Programy\metody\Debug\metody.pdb
