@@ -1,4 +1,4 @@
-#Crack Engine
+# Crack Engine
 This project was never completed, I keep it so the code will remain maybe for future  
 
 I used [Rastertek](https://www.rastertek.com/tutdx11.html) tutorial, but it seems to be a little bit outdated (it really is, now we can find dx win 10 tutorial), DirectX 11 contains many new header files, while the old ones are not available
