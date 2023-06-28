@@ -1,0 +1,17 @@
+Car
+WAA21832
+14 52 30
+Alfa romeo
+Car
+WAA213213
+15 32 8
+Ford
+Car
+WAS2AGD2
+12 12 40
+Citroen
+Truck
+AUX22431
+16 32 28
+Scania
+10.2
