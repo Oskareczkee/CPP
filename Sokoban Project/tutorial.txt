@@ -1,0 +1,17 @@
+60
+Witaj w tutorialu!
+WASD - poruszanie
+JKIM - zmieniaj polozenie mapy
+Q - menu
+U,R - undo, redo
+╔══════════════════════════════════╗
+║  (•_•)                           ║                            
+║  <)(>           □         ▴      ║
+║   /\                             ║
+║                                  ║
+║                                  ║
+║                                  ║
+║                                  ║
+║                                  ║
+║                                  ║
+╚══════════════════════════════════╝

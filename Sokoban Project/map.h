@@ -14,15 +14,19 @@ struct Coords
 class Map
 {
 private:
-	void init(const string const* map, const unsigned int& mapSize)
+	void init(const wstring* map, const int& mapSize)
 	{
+		bool playerFound = false;
 		for (int x = 0; x < mapSize; x++)
 		{
 			for (int y = 0; y < map[x].size(); y++)
 			{
-				if (map[x][y] == (char)GameSymbols::Player)
+				if (map[x][y] == (wchar_t)GameSymbols::Player && playerFound==false)
+				{
 					player = Coords{ x,y };
-				else if (map[x][y] == (char)GameSymbols::Box)
+					playerFound = true;
+				}
+				else if (map[x][y] == (wchar_t)GameSymbols::Box)
 					boxCount++;
 			}
 		}
@@ -31,16 +35,25 @@ private:
 			throw exception("Player could not be found on the map!");
 	}
 public:
-	Map(string* data, unsigned int size) : map(data), size(size) { init(map, size); }
+	Map(wstring* data, unsigned int size, const wstring& name, const int& max_moves) : map(data), size(size), levelName(name), maxMoves(max_moves) { init(map, size); }
+	Map(){}
+
+	//otherwise it wont work with our stack
+	Map(const Map& other)
+	{
+		*this = other;
+	}
 	~Map() 
 	{
 		delete[] map;
 	}
 
-	string* map=nullptr;
-	unsigned int size = 0;
-	unsigned int boxCount=0;
-	unsigned int maxMoves = 15;
+	wstring* map=nullptr;
+	int size = 0;;
+	int boxCount=0;
+	int maxMoves = 100;
+	int moveCount = 0;
+	wstring levelName=L"";
 	Coords player{-1,-1};
 	Coords offset{ 0,0 };
 
@@ -55,7 +68,7 @@ public:
 	Map& operator=(const Map& other)
 	{
 		delete[] map;
-		map = new string[other.size];
+		map = new wstring[other.size];
 		size = other.size;
 
 		for (int x = 0; x < other.size; x++)
@@ -63,13 +76,14 @@ public:
 
 		boxCount = other.boxCount;
 		maxMoves = other.maxMoves;
-		player=other.player;
-		offset=other.offset;
+		player = other.player;
+		offset = other.offset;
+		moveCount = other.moveCount;
 
 		return *this;
 	}
 
-	friend ostream& operator<<(ostream& os, const Map& map)
+	friend wostream& operator<<(wostream& os, const Map& map)
 	{
 		if (!os)
 			return os;
