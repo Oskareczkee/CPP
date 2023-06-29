@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\siema\Desktop\Sokoban Project\map.h(17,25): warning C4114: ten sam kwalifikator typu użyty więcej niż raz
+C:\Users\siema\Desktop\Sokoban Project\map.h(19,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\siema\Desktop\Sokoban Project\map.h(49,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\siema\Desktop\Sokoban Project\map.h(61,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\siema\Desktop\Sokoban Project\map.h(77,36): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\siema\Desktop\Sokoban Project\Game.h(65,26): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+  projekt PP.vcxproj -> C:\Users\siema\Desktop\Sokoban Project\x64\Debug\projekt PP.exe

@@ -1,0 +1,31 @@
+    double mianownik = s * sqrt(2 * M_PI);
+    double sSquare = pow(s, 2);
+
+    //wybieramy sobie jako n = 6
+    double deltaX = (upper_bound - lower_bound) / 6;
+
+    double x = lower_bound;
+    long double sum = 0;
+    long double XminusMPocz = -pow((x - m), 2);
+    long double XminusMKonc = -pow((upper_bound - m), 2);
+
+    sum += ((1 / mianownik) * exp(XminusMPocz / sSquare));
+    sum += ((1 / mianownik) * exp(XminusMKonc / sSquare));
+
+    x += deltaX;
+
+    int iteracja = 0;
+
+    long double XminusMPow = -pow((x - m), 2);
+    while (iteracja < 4)
+    {
+        cout << "X: " << x<<"\n";
+        sum += ((1 / mianownik) * exp(XminusMPow / sSquare));
+        cout << "Suma: " << sum << "\n";
+        x += deltaX;
+        cout << "X: " << x << "\n";
+        XminusMPow = -pow((x - m), 2);
+        iteracja++;
+    }
+
+    return (deltaX / 2) * sum;

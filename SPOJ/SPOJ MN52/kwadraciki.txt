@@ -1,0 +1,26 @@
+    long double mianownik = s * sqrt(2 * M_PI);
+    double sSquare = 2*pow(s, 2);
+
+
+    //delta simpsona, nasze n w delcie ustawilismy sobie na 6, n musi być liczbą parzystą
+    double deltaX = (upper_bound - lower_bound) / 128;
+    cout << "deltaX: " << deltaX << "\n";
+    long double sum = 0;
+    long double x=lower_bound;
+
+    //obliczamy wartosci poczatkowe i koncowe, bo one jako jedyne nie są mnożone przez 4 lub 2
+
+
+    while (x < upper_bound)
+    {
+        long double Potega = -pow(((x + (x + deltaX)) / 2 - m), 2);
+        cout << "Potega: " << Potega << " ";
+        long double FuncVal = ((1 / mianownik) * exp(Potega / sSquare));
+        cout <<"FuncVal "<< FuncVal << "\n";
+
+        sum += deltaX * FuncVal;
+
+        x += deltaX;
+    }
+
+    return sum;

@@ -1,0 +1,34 @@
+    long double mianownik = s * sqrt(2 * M_PI);
+    long double sSquare = 2*pow(s, 2);
+
+
+    //delta simpsona, nasze n w delcie ustawilismy sobie na 4, n musi być liczbą parzystą, im większe n, tym większa dokladnosc
+    //ale tracimy na szybkosci obliczen
+    long double deltaX = (upper_bound - lower_bound) / 8;
+    long double x = lower_bound;
+    long double sum = 0;
+
+    //obliczamy wartosci poczatkowe i koncowe, bo one jako jedyne nie są mnożone przez 4 lub 2
+    long double XminusM = -pow((x - m), 2);
+    long double XminusMKonc = -pow((upper_bound - m), 2);
+
+    sum += (1 / mianownik) * exp(XminusM / sSquare);
+    sum += (1 / mianownik) * exp(XminusMKonc / sSquare);
+
+    x += deltaX;
+
+    int iteracja = 1;
+
+    while (x < upper_bound)
+    {
+        long double XminusMPow = -pow((x - m), 2);
+        if (iteracja % 2 == 0)
+            sum += 2 * (1/mianownik) * exp(XminusMPow / sSquare);
+        else
+            sum += 4 * (1/mianownik) * exp(XminusMPow / sSquare);
+
+        x += deltaX;
+        iteracja++;
+    }
+
+    return (deltaX / 3) * sum;
