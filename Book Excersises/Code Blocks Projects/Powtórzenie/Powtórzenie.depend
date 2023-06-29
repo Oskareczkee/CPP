@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1602617145 source:f:\programy\kalkulator\powtórzenie\main.cpp
+	<iostream>
+	<ctime>
+	<string>
+
+1602883118 source:f:\programy\kalkulator\powtórzenie\tablice.cpp
+	<iostream>
+	<ctime>
+	<string>
+	<cstdlib>
+
+1603050168 source:f:\programy\kalkulator\powtórzenie\wskazniki.cpp
+	<iostream>
+	<ctime>
+	<string>
+	<cstdlib>
+
+1603279199 source:f:\programy\kalkulator\powtórzenie\wskazniki2.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+
+1603918778 source:f:\programy\kalkulator\powtórzenie\czworki.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
+1603728496 source:f:\programy\kalkulator\powtórzenie\zadanko.cpp
+	<iostream>
+
+1605191626 source:d:\programy\kalkulator\powtórzenie\zadanko.cpp
+	<iostream>
+	<math.h>
+
+1606158023 source:p:\programy\kalkulator\powtórzenie\zadanko.cpp
+	<iostream>
+	<math.h>
+	<cstdlib>
+	<cstring>
+	<iomanip>
+
+1611831323 source:p:\programy\kalkulator\powtórzenie\sieuma.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+
+1608567042 source:p:\programy\kalkulator\powtórzenie\uhuhu.cpp
+	<cstdlib>
+	<iostream>
+	<string>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1611563880 source:p:\programy\kalkulator\£añcuchy tekstowe\³añcuchy tekstowe.cpp
+	<iostream>
+	<vector>
+	<string>
+

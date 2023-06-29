@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1580329140 source:f:\programy\kalkulator\dynamiczna alokacja pamiêci æwiczenia\æwiczenia part_1.cpp
+	<iostream>
+	<string>
+
+1580925183 source:f:\programy\kalkulator\dynamiczna alokacja pamiêci æwiczenia\æwiczenie part_2.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+

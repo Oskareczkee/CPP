@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1572778768 source:f:\programy\kalkulator\cwiczenia_losowosc\cwiczenie_losowosc 1.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1573226870 source:f:\programy\kalkulator\cwiczenia_losowosc\zgadnij liczbe.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1573227702 source:f:\programy\kalkulator\cwiczenia_losowosc\zgadnij liczbe, ale liczbe zgaduje program.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1573509511 source:f:\programy\kalkulator\cwiczenia_losowosc\jednorêki bandyta.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+

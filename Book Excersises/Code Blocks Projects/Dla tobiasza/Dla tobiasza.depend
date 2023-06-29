@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1582662713 source:f:\programy\kalkulator\dla tobiasza\program.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+	<ctime>
+

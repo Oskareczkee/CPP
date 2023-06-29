@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1574807261 source:f:\programy\kalkulator\tablice\zadanie 1.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1574962597 source:f:\programy\kalkulator\tablice\zadanie 2.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1574962731 source:f:\programy\kalkulator\tablice\zadanie 1 i 2.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1579193909 source:f:\programy\kalkulator\tablice\warcaby.cpp
+	<iostream>
+	<string>
+
+1576861233 source:f:\programy\kalkulator\tablice\pêtla do afk.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

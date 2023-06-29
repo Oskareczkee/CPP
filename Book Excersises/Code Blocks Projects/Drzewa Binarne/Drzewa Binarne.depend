@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1610877705 source:p:\programy\kalkulator\drzewa binarne\drzewa1.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1606693276 source:p:\programy\kalkulator\powtórzenie\zadanko.cpp
+	<iostream>
+	<windows.h>
+
+1610925661 source:p:\programy\kalkulator\drzewa binarne\ksiazka adresowa.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1572290736 source:f:\programy\kalkulator\cwiczenia_funkcje\cwiczenia_funkcje1.cpp
+	<iostream>
+	<string>
+
+1572378760 source:f:\programy\kalkulator\cwiczenia_funkcje\cwiczenie funkcje.cpp
+	<iostream>
+	<string>
+
+1572382049 source:f:\programy\kalkulator\cwiczenia\kalkulator.cpp
+	<iostream>
+

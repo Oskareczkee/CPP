@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1579645271 source:f:\programy\kalkulator\struktury\struktury cwiczenia.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	<ctime>
+

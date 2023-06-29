@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1514144174 source:f:\programy\kalkulator\cwiczenia\main.cpp
+	<iostream>
+
+1571935212 source:f:\programy\kalkulator\cwiczenia\cwiczenia.cpp
+	<iostream>
+	<string>
+
+1571936859 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 1.cpp
+	<iostream>
+	<string>
+
+1571939548 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 2.cpp
+	<iostream>
+
+1571941929 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 3.cpp
+	<iostream>
+
+1572383025 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 4.cpp
+	<iostream>
+	<string>
+
+1572114976 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 5.cpp
+	<iostream>
+
+1572117621 source:f:\programy\kalkulator\cwiczenia\cwiczenie petle 6.cpp
+	<iostream>
+
+1572114021 source:p:\programy\kalkulator\cwiczenia\cwiczenie petle 6.cpp
+	<iostream>
+
