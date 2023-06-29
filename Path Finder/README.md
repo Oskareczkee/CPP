@@ -14,7 +14,7 @@ Input consists of:
 + Number of flight connections
 + Flight connections (From, To, Cost)
 + Number of paths we want to get
-+ Paths (From, To, Bool: Show  Path - Cities we have  to go trough to get to out destination)  
++ Paths (From, To, Bool: Show  Path - Cities we have  to go through to get to out destination)  
 ### Example input:  
 ```
 20 20
