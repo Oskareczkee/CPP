@@ -1,5 +1,6 @@
 # Black Box Game
-Simple project written as an assignment job. It implements Black Box Game in C++ Console. It has simple interface and 3 difficulty levels
+Simple project written as an assignment job. It implements Black Box Game in C++ Console. It has simple interface and 3 difficulty levels  
+![Game's screenshot](screen.png)
 ## Controls
 WASD - move  
 Space - Shoot Beam  
