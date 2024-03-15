@@ -5,7 +5,8 @@ Project written as an assignment job. Its purpose is to generate candle stick ch
 ## How to use it?
 Simple. Choose your options from menu and then choose "Generate Chart".  
 Just do not generate to little graph, the minimum i reccomend is 50  
-**Please Remember to previously load file before creating graph**
+**Please Remember to previously load file before creating graph**  
+**Also please remember to open your graph file in wordpad with no line breaks rather in notepad**
 ## Meaning of symbols
 O - Rising Candle  
 \# - Decreasing Candle  
