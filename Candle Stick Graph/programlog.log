@@ -1,0 +1,31 @@
+
+[2024-01-02 13:21:37]  Program Start
+[2024-01-02 13:21:40]  Loaded File: intc_us_data.csv
+[2024-01-02 13:21:41]  Saved File: chart.txt
+[2024-01-02 13:21:48]  Changed grouping to: Month
+[2024-01-02 13:21:50]  Saved File: chart.txt
+[2024-01-02 13:21:59]  Changed output to: chart1.txt
+[2024-01-02 13:22:01]  Saved File: chart1.txt
+[2024-01-02 13:22:12]  Changed time range
+[2024-01-02 13:22:28]  Changed time range
+[2024-01-02 13:22:30]  Saved File: chart1.txt
+[2024-01-02 13:22:35]  Program exit
+
+
+[2024-01-03 23:48:54]  Program Start
+[2024-01-03 23:48:58]  Loaded File: intc_us_data.csv
+[2024-01-03 23:49:06]  Saved File: chart.txt
+[2024-01-05 01:45:41]  Program Start
+[2024-01-05 01:45:45]  Loaded File: intc_us_data.csv
+[2024-01-05 01:49:04]  Draw Slice
+[2024-01-05 01:49:08]  Program exit
+
+
+[2024-01-06 18:53:40]  Program Start
+[2024-01-06 18:53:48]  Loaded File: intc_us_data.csv
+[2024-03-15 02:09:12]  Program Start
+[2024-03-15 02:09:58]  Saved File: chart.txt
+[2024-03-15 02:10:05]  Program Start
+[2024-03-15 02:10:09]  Loaded File: intc_us_data.csv
+[2024-03-15 02:10:14]  Saved File: chart.txt
+[2024-03-15 02:11:33]  Program Start

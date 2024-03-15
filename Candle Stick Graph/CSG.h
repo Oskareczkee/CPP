@@ -1,71 +1,100 @@
 #pragma once
-#include <iomanip>
-#include <fstream>
-#include <sstream>
 #include "Candle.h"
+#include <time.h>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <math.h>
 #include "Utility.h"
+
+using namespace std;
 
 class CSG
 {
 private:
-	static const int BUFFER_SIZE = 1000; //string buffer size used in program, change it if program crashes
-									   //static is used, to make it compile time constant
-	//scaling factors, shadow_val and body_val is set when loading
-	double shadow_val = 10.0;
-	double body_val = .5;
-	double scale = 1;
+	static const int BUFFER_SIZE = 50; //buffer size used for strings, change it if too small
 
-	int _height = 1000;
-	int _width = 7000;
+	Candle* candles = nullptr; //all candles
+	Candle* candles_grouped = nullptr; //grouped candles, managed by GroupCandles function
+	int candle_count = 0;
+	int candle_grouped_size = 0;
+	int candle_grouped_max_size = -1; //max size of group, if < 0  there is no limit, used in generating slice of graph
+	int candle_buffer_size = 10000; //max number of candles that can be stored
 
-	CSGGrouping _grouping = CSGGrouping::Day;
+	const int padding_left = 10; //we need some additional space for y axis and values
+	const int padding_bottom = 10; //space for x axis
 
-	int _candle_count = 0;
-	Candle* _candles;
-	
-	//time range
-	tm time_range_begin;
-	tm time_range_end;
+	void Candles_Init();
+	void Candles_Delete();
+	void CandlesGrouped_Init();
+	void CandlesGrouped_Delete();
+	/// <summary>
+	/// Returns array of candles grouped by actual grouping
+	/// Sets size to array size
+	/// </summary>
+	void GroupCandles();
+	/// <summary>
+	/// Creates string representation of candle, buffer should be size of _width
+	/// </summary>
+	char* CreateCandleString(char* buffer, const int& size,const Candle& c);
 
+	int _width = 0 + padding_left;
+	int _height = 100 + padding_bottom;
+	GraphGrouping grouping = GraphGrouping::DAY;
 
-	char** framebuffer;
+	tm time_begin = make_time(); //check Utility.cpp
+	tm time_end = make_time(); //check Utility.cpp
+	tm graph_time_begin = make_time(); //original value from which data begun
+	tm graph_time_end = make_time(); //original value at which data end
 
-	//inits buffer with spaces
-	void init_buffer();
-	//deletes buffer
-	void delete_buffer();
-	//creates new buffer with _height and _width;
-	void create_buffer();
+	double unit_val = 0.0; //value of 1 unit on graph
+	double value_min = 0; //min value on graph
+	double value_max = 0; //max value on graph
+	double value_range = 0.0; //range of values |min-max|
 
-	/*generates candle, saves it to the buffer, returns pointer to the buffer, generated string is proper C string with '\0'
-	* ypos - used for drawing, pass it to calculate y coordinate to draw from
-	* nexty - used for drawing, pass it to receive next y coordinate that will be used for drawing
-	*/
-	char* generate_candle(const Candle& c, char* buffer, int& ypos, int& nexty);
-	//draws string reversed in the buffer
-	void buffer_draw_reverse(const char* s, const int& x_pos, const int& y_pos);
+	//framebuffer used to draw graph to file, it is cleared every time and initialized every time graph is being drawn
+	char** framebuffer = nullptr;
+	void FramebufferInit();
+	void FramebufferDelete();
+	/// <summary>
+	/// Draws given string reversed in the framebuffer
+	/// </summary>
+	void FramebufferDrawReversed(char* to_draw,const int& x_pos, const int& y_pos);
+	void FramebufferDrawAxis(const char* x_axis_name, const char* y_axis_name);
+	void FramebufferDrawGraph();
 public:
-	CSG();
-	CSG(const int& width, const int& height);
-	~CSG();
+	CSG() { Candles_Init(); FramebufferInit(); }
+	CSG(const int& width, const int& height) :_width(width), _height(height) { Candles_Init(); FramebufferInit(); }
+	~CSG() { Candles_Delete(); FramebufferDelete(); }
+	void LoadFromFile(const char* filename);
+	void SaveToFile(const char* filename);
+	/// <summary>
+	/// Draws a slice of graph in console
+	/// </summary>
+	void DrawSlice(const int& height, const int& width, const tm& begin, const tm& end, const GraphGrouping& grouping = GraphGrouping::DAY);
 
-	//loads from file, sets proper scaling factors
-	void load_from_file(const char* filename);
-	void load_from_stream(std::istream& stream);
-	void generate_chart(const char* outfile);
+	int GetTotalWidth() { return _width; }
+	int GetTotalHeight() { return _height; }
+	int GetGraphWidth() { return _width - padding_left; }
+	int GetGraphHeight() { return _height - padding_bottom; }
+	int GetCandleCount() { return candle_count; }
+	GraphGrouping GetGrouping() { return grouping; }
+	tm GetTimeBegin() { return time_begin; }
+	tm GetTimeEnd() { return time_end; }
 
-	void change_scale(const int& new_scale) { scale = new_scale; }
-	int get_candle_count() { return _candle_count; }
-	double get_scale() { return scale; }
-	int get_height() { return _height; }
-	void set_height(const int& height) { _height = height; }
-	int get_width() { return _width; }
-	CSGGrouping get_grouping() { return _grouping; }
-	void set_grouping(const CSGGrouping& grouping) { _grouping = grouping; }
+	void SetWidth(const int& width);
+	void SetHeight(const int& height);
+	void SetGrouping(const GraphGrouping& group) { grouping = group; }
+	void SetTimeBegin(const tm& time) { time_begin = time; }
+	void SetTimeEnd(const tm& time) { time_end = time; }
 
-	void printCandles()
+
+
+
+	void print_candles()
 	{
-		for (int x=0;x<_candle_count;x++)
-			std::cout << _candles[x];
+		for (int x = 0; x < candle_count; x++)
+			cout << candles[x];
 	}
 };
+

@@ -1,144 +1,333 @@
-﻿#include "CSG.h"
-
+﻿#include <iostream>
+#include "CSG.h"
+#include "Logger.h"
 using namespace std;
 
-char file_input[50] = "intc_us_data.csv";
-char file_output[50] = "chart.txt";
-
+char infile[100] = "intc_us_data.csv";
+char outfile[100] = "chart.txt";
+char logstr[100];
 CSG csg;
+Logger logger("programlog.log");
 
-void clean_cin()
+void ClearScreen()
 {
-	cin.clear();
-	cin.ignore(INT_MAX, '\n');
+    system("cls");
 }
 
-void wait_for_enter()
+void WaitForEnter()
 {
-	cin.ignore();
-	cin.get();
+    cin.ignore();
+    cin.get();
 }
 
-void clear_screen()
+void input_error()
 {
-	system("cls");
+    cout << "Inproper input!\n";
+    cin.clear();
+    cin.ignore(INT_MAX, '\n');
+    WaitForEnter();
 }
 
-void option_change_output()
+void menu_change_input()
 {
-	clear_screen();
-	cout << "New output file: ";
-	cin >> file_output;
-	cout << "Output has been succesfully changed!";
-	wait_for_enter();
+    ClearScreen();
+
+    cout << "New input file: ";
+    cin >> infile;
+    cout << "Input file has been changed succesfully!";
+    WaitForEnter();
 }
 
-void option_change_input()
+void menu_change_output()
 {
-	clear_screen();
-	cout << "New input file: ";
-	cin >> file_input;
-	cout << "Input has been succesfully changed!";
-	wait_for_enter();
+    ClearScreen();
+
+    cout << "New output file: ";
+    cin >> outfile;
+    cout << "Output file has been changed succesfully!";
+    WaitForEnter();
 }
 
-void option_change_height()
+void menu_change_height()
 {
-	clear_screen();
-	cout << "New height: ";
-	int height = 0;
-	cin >> height;
-	csg.set_height(height);
-	cout << "Height has been successfully set!\n";
-	wait_for_enter();
+    ClearScreen();
+
+    int input = 0;
+    cout << "Enter new height: ";
+    cin >> input;
+    if (!cin)
+    {
+        input_error();
+        return;
+    }
+
+    csg.SetHeight(input);
+    cout << "Height has been change succesfully!";
+    WaitForEnter();
 }
 
-void option_change_grouping()
+void menu_load_file()
 {
-	clear_screen();
-	cout << "Choose grouping: \n"
-		<< "1. Day\n"
-		<< "2. Week\n"
-		<< "3. Month\n";
-	int input = -1;
-	cin >> input;
-
-	switch (input)
-	{
-	case 1:
-		csg.set_grouping(CSGGrouping::Day);
-		break;
-	case 2:
-		csg.set_grouping(CSGGrouping::Week);
-		break;
-	case 3:
-		csg.set_grouping(CSGGrouping::Month);
-		break;
-	default:
-		cout << "Inproper input!";
-		wait_for_enter();
-		return;
-	}
-
-	cout << "Group has been succesfully changed";
-	wait_for_enter();
+    ClearScreen();
+    csg.LoadFromFile(infile);
+    cout << "File has been sucessfully loaded!";
+    WaitForEnter();
 }
+
+void menu_save_file()
+{
+    ClearScreen();
+    csg.SaveToFile(outfile);
+    cout << "Graph has been succesfully saved!";
+    WaitForEnter();
+}
+
+void menu_change_grouping()
+{
+    int input = -1;
+    ClearScreen();
+    cout << "Choose grouping: \n"
+        << "1. Day\n"
+        << "2. Week\n"
+        << "3. Month\n\n";
+    cin >> input;
+    if (!cin)
+    {
+        input_error();
+        return;
+    }
+
+    switch (input)
+    {
+    case 1:
+        csg.SetGrouping(GraphGrouping::DAY);
+        break;
+    case 2:
+        csg.SetGrouping(GraphGrouping::WEEK);
+        break;
+    case 3:
+        csg.SetGrouping(GraphGrouping::MONTH);
+        break;
+    default:
+        cout << "Inproper input!";
+        WaitForEnter();
+        return;
+    }
+
+    cout << "Grouping has been set succesfully!";
+    WaitForEnter();
+}
+
+void menu_change_time()
+{
+    int input = -1;
+    ClearScreen();
+    cout << "Choose time range:\n"
+        << "1. Begin\n"
+        << "2. End\n";
+
+    cin >> input;
+    if (!cin)
+    {
+        input_error();
+        return;
+    }
+
+    tm time{ 0 };
+    ClearScreen();
+    tm time_begin = csg.GetTimeBegin();
+    tm time_end = csg.GetTimeEnd();
+    cout << "Input Time YYYY-MM-DD\n";
+    cin >> get_time(&time, "%Y-%m-%d");
+    
+    switch (input)
+    {
+    case 1:
+    {
+        if (mktime(&time_end) < mktime(&time))
+        {
+            cout << "Begin time is bigger than End time!";
+            WaitForEnter();
+            return;
+        }
+        csg.SetTimeBegin(time);
+        break;
+    }
+    case 2:
+    {
+        if (mktime(&time_begin) > mktime(&time))
+        {
+            cout << "End time is smaller than Begin time!";
+            return;
+        }
+        csg.SetTimeEnd(time);
+        break;
+    }
+    default:
+        break;
+    }
+}
+
+void menu_draw_slice()
+{
+    const int width_max = 200;
+    const int height_max = 50;
+
+    int height = -1;
+    int width = -1;
+    int group = -1;
+    GraphGrouping grouping = GraphGrouping::DAY;
+    tm time_begin{ 0 }, time_end{ 0 };
+    ClearScreen();
+    cout << "Width [max "<<width_max<<"]: ";
+    cin >> width;
+
+    if (!cin || width > width_max || width <=0)
+    {
+        input_error();
+        return;
+    }
+
+    cout << "Height [max" << height_max << "]: ";
+    cin >> height;
+
+    if (!cin || height > height_max || height <=0)
+    {
+        input_error();
+        return;
+    }
+
+    cout << "Time range begin [YYYY-MM-DD]:\n";
+    cin >> get_time(&time_begin, "%Y-%m-%d");
+    cout << "Time range end [YYYY-MM-DD]:\n";
+    cin >> get_time(&time_end, "%Y-%m-%d");
+
+    if (mktime(&time_begin) > mktime(&time_end))
+    {
+        cout << "Improper time interval!";
+        WaitForEnter();
+        return;
+    }
+
+    cout << "Grouping: \n"
+        << "1. Day\n"
+        << "2. Week\n"
+        << "3. Month\n\n";
+
+    cin >> group;
+
+    if (!cin || group > 3 || group <=0)
+    {
+        input_error();
+        return;
+    }
+
+    switch (group)
+    {
+    case 1:
+        grouping = GraphGrouping::DAY;
+        break;
+    case 2:
+        grouping = GraphGrouping::WEEK;
+        break;
+    case 3:
+        grouping = GraphGrouping::MONTH;
+        break;
+    }
+
+    csg.DrawSlice(height, width, time_begin, time_end, grouping);
+    WaitForEnter();
+}
+
 
 int main()
 {
-	while (true)
-	{
-		clear_screen();
-		cout << setw(15)<< "Input [" << file_input << "]\n"
-			<< setw(15) << "Output [" << file_output << "]\n"
-			<< setw(15) << "Candle count [" << csg.get_candle_count() << "]\n"
-			<< setw(15) << "Grouping [" << group_to_string(csg.get_grouping()) << "]\n"
-			<< setw(15) << "Height [" << csg.get_height() << "]\n"
-			<< setw(15) << "Graph scale [" << csg.get_scale() << "]\n\n";
+    logger.WriteLine("Program Start");
 
-		cout << "Choose an option: \n"
-			<< "g - load data\n"
-			<< "o - change output file\n"
-			<< "i - change input file\n"
-			<< "j - change grouping\n"
-			<< "h - change height\n"
-			<< "q - quits the program\n";
+    int input = -1;
+    char time_buffer_begin[50], time_buffer_end[50];//used to show begin and end time range
+    while (true)
+    {
+        ClearScreen();
 
-		char input = ' ';
-		cin.get(input);
-		//make input case independent
-		input = tolower(input);
+        tm time_begin = csg.GetTimeBegin();
+        tm time_end = csg.GetTimeEnd();
 
-		if (!cin)
-		{
-			cout << "Improper input!\n";
-			system("cls");
-			clean_cin();
-		}
+        strftime(time_buffer_begin, sizeof(time_buffer_begin), "%Y-%m-%d", &time_begin);
+        strftime(time_buffer_end, sizeof(time_buffer_end), "%Y-%m-%d", &time_end);
 
-		switch (input)
-		{
-		case 'q':
-			return 0;
-		case 'g':
-			csg.load_from_file(file_input);
-			csg.generate_chart(file_output);
-			clean_cin();
-			break;
-		case 'o':
-			option_change_output();
-			break;
-		case 'i':
-			option_change_input();
-			break;
-		case 'h':
-			option_change_height();
-			break;
-		case 'j':
-			option_change_grouping();
-			break;
-		default:
-			break;
-		}
-	}
+        cout << setw(15) << "Input:\t[" << infile << "]\n"
+            << setw(15) << "Output:\t[" << outfile << "]\n"
+            << setw(15) << "Candles:\t[" << csg.GetCandleCount() << "]\n"
+            << setw(15) << "Width:\t[" << csg.GetGraphWidth() << "]\n"
+            << setw(15) << "Height:\t[" << csg.GetGraphHeight() << "]\n"
+            << setw(15) << "Grouping:\t[" << GroupToString(csg.GetGrouping()) << "]\n"
+            << setw(15) << "Begin:\t[" << time_buffer_begin << "]\n"
+            << setw(15) << "End:\t[" << time_buffer_end << "]\n\n\n";
+
+        cout << "1. Change input file\n"
+            << "2. Change output file\n"
+            << "3. Change Height\n"
+            << "4. Change Grouping\n"
+            << "5. Change Time Range\n"
+            << "6. Show Graph Slice\n"
+            << "7. Load\n"
+            << "8. Save\n"
+            << "0. Exit\n";
+
+        cin >> input;
+        if (!cin)
+            input_error();
+
+        switch (input)
+        {
+        case 1:
+            menu_change_input();
+            sprintf_s(logstr, sizeof(logstr), "Changed input to: %s", infile);
+            logger.WriteLine(logstr);
+            break;
+        case 2:
+            menu_change_output();
+            sprintf_s(logstr, sizeof(logstr), "Changed output to: %s", outfile);
+            logger.WriteLine(logstr);
+            break;
+        case 3:
+            menu_change_height();
+            sprintf_s(logstr, sizeof(logstr), "Changed graph height to: %d", csg.GetGraphHeight());
+            logger.WriteLine(logstr);
+            break;
+        case 4:
+            menu_change_grouping();
+            sprintf_s(logstr, sizeof(logstr), "Changed grouping to: %s", GroupToString(csg.GetGrouping()));
+            logger.WriteLine(logstr);
+            break;
+        case 5:
+            menu_change_time();
+            logger.WriteLine("Changed time range");
+            break;
+        case 6:
+            menu_draw_slice();
+            logger.WriteLine("Draw Slice");
+            break;
+        case 7:
+            sprintf_s(logstr, sizeof(logstr), "%s %s", "Loaded File:", infile);
+            logger.WriteLine(logstr);
+            menu_load_file();
+            break;
+        case 8:
+            sprintf_s(logstr, sizeof(logstr), "%s %s", "Saved File:", outfile);
+            logger.WriteLine(logstr);
+            menu_save_file();
+            break;
+        case 0:
+            logger.WriteLine("Program exit\n\n");
+            return 0;
+        default:
+            cout << "Inproper input !";
+            logger.WriteLine("Inproper input");
+            WaitForEnter();
+            break;
+        }
+    }
 }
+
