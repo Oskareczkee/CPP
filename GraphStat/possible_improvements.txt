@@ -1,0 +1,5 @@
+Implement hash set data structure to use in slf_coloring function and vertices_eccentrity
+Left Right planarity test algorithm for planarity testing
+Quicksort for faster sorting in some algorithm
+Sparse Matrix data structure for calculatin C4 subgraphs
+Optionally implementing Strassen's matrix multiplication algorithm, but sparse matrix should be better for graphs

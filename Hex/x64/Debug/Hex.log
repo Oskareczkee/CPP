@@ -1,0 +1,4 @@
+﻿  Hex.cpp
+P:\Visual Studio Programy\Hex\Hex.cpp(37,25): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+P:\Visual Studio Programy\Hex\Hex.cpp(39): warning C4172: zwracanie adresu lokalnej zmiennej lub tymczasowej: out
+  Hex.vcxproj -> P:\Visual Studio Programy\Hex\x64\Debug\Hex.exe
